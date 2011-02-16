@@ -100,11 +100,12 @@ public class TestClass {
 				BufferedWriter out = new BufferedWriter(new FileWriter(
 						"out.txt"));
 				String str;
+				out.write(0xfeff);
 				System.out.println("The translated lines are:");
 				while ((str = in.readLine()) != null) {
 					str = t.translateLine(str, "en", "ar");
 					System.out.println(str);
-					out.write(str);
+					out.write(str+"\r");
 				}
 
 				out.close();
