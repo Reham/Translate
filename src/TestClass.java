@@ -93,6 +93,7 @@ public class TestClass {
 			// Speak
 			System.out.println("Speak Method : "
 					+ t.speak("je suis pianiste", "fr", "audio/wav"));
+			// Translate line
 			try {
 
 				BufferedReader in = new BufferedReader(new FileReader("in.txt"));
@@ -110,8 +111,6 @@ public class TestClass {
 				in.close();
 			} catch (IOException e) {
 			}
-
-			// Translate line
 
 			// Array Translation
 			for (int i = 0; i < textsArray.length; i++) {
