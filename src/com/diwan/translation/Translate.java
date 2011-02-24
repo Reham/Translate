@@ -16,8 +16,13 @@ public class Translate {
     private SoapServiceStub stub = null;
     private TranslateOptions options = null;
 
+	public Translate()
+    {
+		this("6C9A92CF0DDDEF484F4C4ECEA2C82D8CE591A2AD", "text/plain", "general", "username", null);
+	}
+
 	public Translate(String id, String type, String catg, String use, String ur)
-        {
+    {
 		appid = id;
 		contenttype = type;
 		category = catg;
@@ -39,8 +44,7 @@ public class Translate {
 		}
 	}
 
-	public void addTranslation(String original, String text, String from,
-			String to, int rate) throws TranslateFault {
+	public void addTranslation(String original, String text, String from, String to, int rate) throws TranslateFault {
 		try {
             SoapServiceStub.AddTranslation addTranslation = new SoapServiceStub.AddTranslation();
             addTranslation.setAppId(appid);
@@ -60,10 +64,9 @@ public class Translate {
 		}
 	}
 
-	public int[] breakSentences(String text, String language)
-			throws TranslateFault {
+	public int[] breakSentences(String text, String language) throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.BreakSentences breakSentence = new SoapServiceStub.BreakSentences();
@@ -81,7 +84,7 @@ public class Translate {
 
 	public String detect(String text) throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			String detectString = "I have no idea what this language may be";
@@ -98,7 +101,7 @@ public class Translate {
 	public String[] detectArray(String[] texts) throws TranslateFault {
 
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.DetectArray detectArray = new SoapServiceStub.DetectArray();
@@ -115,10 +118,9 @@ public class Translate {
 
 	}
 
-	public String getAppIdToken(int minratingread, int maxratingwrite,
-			int expireseconds) throws TranslateFault {
+	public String getAppIdToken(int minratingread, int maxratingwrite, int expireseconds) throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.GetAppIdToken appIdToken = new SoapServiceStub.GetAppIdToken();
@@ -137,7 +139,7 @@ public class Translate {
 	public String[] getLanguagesNames(String locale, String[] codeString)
 			throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.GetLanguageNames languageNames = new SoapServiceStub.GetLanguageNames();
@@ -158,7 +160,7 @@ public class Translate {
 
 	public String[] getLanguageForSpeak() throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.GetLanguagesForSpeak languageSpeak = new SoapServiceStub.GetLanguagesForSpeak();
@@ -173,7 +175,7 @@ public class Translate {
 
 	public String[] getLanguagesForTranslate() throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.GetLanguagesForTranslate languagesTranslate = new SoapServiceStub.GetLanguagesForTranslate();
@@ -191,7 +193,7 @@ public class Translate {
 			throws TranslateFault {
 		String[] matches = null;
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.GetTranslations getTranslation = new SoapServiceStub.GetTranslations();
@@ -220,7 +222,7 @@ public class Translate {
 			throws TranslateFault {
 		String[] matches = null;
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.GetTranslationsArray translationArray = new SoapServiceStub.GetTranslationsArray();
@@ -254,7 +256,7 @@ public class Translate {
 	public String speak(String text, String language, String format)
 			throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.Speak speak = new SoapServiceStub.Speak();
@@ -272,7 +274,7 @@ public class Translate {
 	public String translateLine(String text, String from, String to)
 			throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.Translate translate = new SoapServiceStub.Translate();
@@ -291,7 +293,7 @@ public class Translate {
 
 	public TranslateArrayResponse[] translateArray(String[] texts, String from, String to) throws TranslateFault {
 		if (stub == null)
-			throw new TranslateFault("Class not initalized");
+			init();
 
 		try {
 			SoapServiceStub.TranslateArray translateArray = new SoapServiceStub.TranslateArray();
@@ -308,7 +310,7 @@ public class Translate {
 			throw new TranslateFault(e.getMessage());
 		}
 	}
-	
+
 
 
     /**
