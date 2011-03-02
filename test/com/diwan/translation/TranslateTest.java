@@ -5,8 +5,8 @@
 
 package com.diwan.translation;
 
-import com.diwan.soap.SoapServiceStub;
-import com.diwan.soap.SoapServiceStub.TranslateArrayResponse;
+import java.io.*;
+import org.apache.commons.io.output.FileWriterWithEncoding;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -21,6 +21,7 @@ import static org.junit.Assert.*;
 public class TranslateTest {
     String AppId = "6C9A92CF0DDDEF484F4C4ECEA2C82D8CE591A2AD";
     String[] textsArray = { "I want this translated", "to something", "in another language" };
+	String text = "Translate this text into German";
 	Translate t = null;
 
     public TranslateTest() {
@@ -28,6 +29,7 @@ public class TranslateTest {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
+        System.out.println("Terminal output encoding is: " + System.getProperty("file.encoding"));
     }
 
     @AfterClass
@@ -112,16 +114,13 @@ public class TranslateTest {
     @Test
     public void testGetAppIdToken() throws Exception {
         System.out.println("getAppIdToken");
-        int minratingread = 0;
-        int maxratingwrite = 0;
-        int expireseconds = 0;
+        int minratingread = 5;
+        int maxratingwrite = 4;
+        int expireseconds = 300;
         Translate instance = new Translate();
-        String expResult = "";
         String result = instance.getAppIdToken(minratingread, maxratingwrite, expireseconds);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+ 		System.out.println("Your tokenized AppId is: " + result);
+   }
 
     /**
      * Test of getLanguagesNames method, of class Translate.
@@ -129,14 +128,13 @@ public class TranslateTest {
     @Test
     public void testGetLanguagesNames() throws Exception {
         System.out.println("getLanguagesNames");
-        String locale = "";
-        String[] codeString = null;
-        Translate instance = new Translate();
-        String[] expResult = null;
-        String[] result = instance.getLanguagesNames(locale, codeString);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String locale = "en";
+        String[] codeString = { "de", "en", "fr", "ko" };
+        String result[] = t.getLanguagesNames(locale, codeString);
+        String[] expResult = {"German", "English", "French", "Korean"};
+        for (int i = 0; i < result.length; i++) {
+            assertEquals(expResult[i], result[i]);
+        }
     }
 
     /**
@@ -145,12 +143,11 @@ public class TranslateTest {
     @Test
     public void testGetLanguageForSpeak() throws Exception {
         System.out.println("getLanguageForSpeak");
-        Translate instance = new Translate();
-        String[] expResult = null;
-        String[] result = instance.getLanguageForSpeak();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String[] speakLanguages = t.getLanguageForSpeak();
+        for (int i = 0; i < speakLanguages.length; i++) {
+            System.out.println("The languages available are:"
+                    + speakLanguages[i]);
+        }
     }
 
     /**
@@ -159,12 +156,11 @@ public class TranslateTest {
     @Test
     public void testGetLanguagesForTranslate() throws Exception {
         System.out.println("getLanguagesForTranslate");
-        Translate instance = new Translate();
-        String[] expResult = null;
-        String[] result = instance.getLanguagesForTranslate();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String[] translateLanguages = t.getLanguagesForTranslate();
+        System.out.println("The languages available for translation are: ");
+        for (int i = 0; i < translateLanguages.length; i++) {
+            System.out.println(translateLanguages[i]);
+        }
     }
 
     /**
@@ -173,16 +169,11 @@ public class TranslateTest {
     @Test
     public void testGetTranslations() throws Exception {
         System.out.println("getTranslations");
-        String text = "";
-        String from = "";
-        String to = "";
-        int maxtranslations = 0;
-        Translate instance = new Translate();
-        String[] expResult = null;
-        String[] result = instance.getTranslations(text, from, to, maxtranslations);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String[] translations = t.getTranslations(
+                "To change this template, choose Tools", "en", "de", 5);
+        for (int i = 0; i < translations.length; i++) {
+            System.out.println("The matches are :" + translations[i]);
+        }
     }
 
     /**
@@ -191,16 +182,12 @@ public class TranslateTest {
     @Test
     public void testGetTranslationsArray() throws Exception {
         System.out.println("getTranslationsArray");
-        String[] texts = null;
-        String from = "";
-        String to = "";
-        int maxtranslations = 0;
-        Translate instance = new Translate();
-        String[] expResult = null;
-        String[] result = instance.getTranslationsArray(texts, from, to, maxtranslations);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String[] translationarray = t.getTranslationsArray(textsArray,
+                "en", "fr", 5);
+        for (int i = 0; i < translationarray.length; i++) {
+            System.out.println("The array of matches : "
+                    + translationarray[i]);
+        }
     }
 
     /**
@@ -209,15 +196,8 @@ public class TranslateTest {
     @Test
     public void testSpeak() throws Exception {
         System.out.println("speak");
-        String text = "";
-        String language = "";
-        String format = "";
-        Translate instance = new Translate();
-        String expResult = "";
-        String result = instance.speak(text, language, format);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("Speak Method : "
+                + t.speak("je suis pianiste", "fr", "audio/wav"));
     }
 
     /**
@@ -226,15 +206,20 @@ public class TranslateTest {
     @Test
     public void testTranslateLine() throws Exception {
         System.out.println("translateLine");
-        String text = "";
-        String from = "";
-        String to = "";
-        Translate instance = new Translate();
-        String expResult = "";
-        String result = instance.translateLine(text, from, to);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        BufferedReader in = new BufferedReader(new FileReader("in.txt"));
+        BufferedWriter out = new BufferedWriter(new FileWriterWithEncoding(
+                "out.txt", "UTF8"));
+        String str;
+        out.write(0xfeff);
+        System.out.println("The translated lines are:");
+        while ((str = in.readLine()) != null) {
+            str = t.translateLine(str, "en", "ar");
+            System.out.println(str);
+            out.write(str+"\r");
+        }
+
+        out.close();
+        in.close();
     }
 
     /**
@@ -243,15 +228,15 @@ public class TranslateTest {
     @Test
     public void testTranslateArray() throws Exception {
         System.out.println("translateArray");
+        // TODO fix api for Array.
+        fail("translateArray returns class from com.diwan.soap.SoapServiceStub.");
         String[] texts = null;
         String from = "";
         String to = "";
         Translate instance = new Translate();
-        TranslateArrayResponse[] expResult = null;
-        TranslateArrayResponse[] result = instance.translateArray(texts, from, to);
+        com.diwan.soap.SoapServiceStub.TranslateArrayResponse[] expResult = null;
+        com.diwan.soap.SoapServiceStub.TranslateArrayResponse[] result = instance.translateArray(texts, from, to);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -260,175 +245,15 @@ public class TranslateTest {
     @Test
     public void testTranslateXML() throws Exception {
         System.out.println("TranslateXML");
-        byte[] in = null;
-        Translate instance = new Translate();
-        byte[] expResult = null;
-        byte[] result = instance.TranslateXML(in);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+		File theXMLFile = new File("alto.xml");
+		byte[] xmlbytes = new byte[(int) theXMLFile.length()];
+		FileInputStream fis = new FileInputStream(theXMLFile);
+		fis.read(xmlbytes);
+		byte[] xmlout = t.translateXML(xmlbytes, "en", "ar");
+		String value = new String(xmlout);
+        FileOutputStream fos = new FileOutputStream("alto_out.xml");
+        fos.write(xmlout);
+        fos.close();
+		System.out.println(value);
     }
-
-    /**
-     * Test of getAppid method, of class Translate.
-     */
-    @Test
-    public void testGetAppid() {
-        System.out.println("getAppid");
-        Translate instance = new Translate();
-        String expResult = "";
-        String result = instance.getAppid();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setAppid method, of class Translate.
-     */
-    @Test
-    public void testSetAppid() {
-        System.out.println("setAppid");
-        String appid = "";
-        Translate instance = new Translate();
-        instance.setAppid(appid);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getContenttype method, of class Translate.
-     */
-    @Test
-    public void testGetContenttype() {
-        System.out.println("getContenttype");
-        Translate instance = new Translate();
-        String expResult = "";
-        String result = instance.getContenttype();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setContenttype method, of class Translate.
-     */
-    @Test
-    public void testSetContenttype() {
-        System.out.println("setContenttype");
-        String contenttype = "";
-        Translate instance = new Translate();
-        instance.setContenttype(contenttype);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getCategory method, of class Translate.
-     */
-    @Test
-    public void testGetCategory() {
-        System.out.println("getCategory");
-        Translate instance = new Translate();
-        String expResult = "";
-        String result = instance.getCategory();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setCategory method, of class Translate.
-     */
-    @Test
-    public void testSetCategory() {
-        System.out.println("setCategory");
-        String category = "";
-        Translate instance = new Translate();
-        instance.setCategory(category);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getUser method, of class Translate.
-     */
-    @Test
-    public void testGetUser() {
-        System.out.println("getUser");
-        Translate instance = new Translate();
-        String expResult = "";
-        String result = instance.getUser();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setUser method, of class Translate.
-     */
-    @Test
-    public void testSetUser() {
-        System.out.println("setUser");
-        String user = "";
-        Translate instance = new Translate();
-        instance.setUser(user);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getUri method, of class Translate.
-     */
-    @Test
-    public void testGetUri() {
-        System.out.println("getUri");
-        Translate instance = new Translate();
-        String expResult = "";
-        String result = instance.getUri();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setUri method, of class Translate.
-     */
-    @Test
-    public void testSetUri() {
-        System.out.println("setUri");
-        String uri = "";
-        Translate instance = new Translate();
-        instance.setUri(uri);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getStub method, of class Translate.
-     */
-    @Test
-    public void testGetStub() {
-        System.out.println("getStub");
-        Translate instance = new Translate();
-        SoapServiceStub expResult = null;
-        SoapServiceStub result = instance.getStub();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setStub method, of class Translate.
-     */
-    @Test
-    public void testSetStub() {
-        System.out.println("setStub");
-        SoapServiceStub stub = null;
-        Translate instance = new Translate();
-        instance.setStub(stub);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
 }

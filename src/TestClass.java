@@ -15,7 +15,7 @@ public class TestClass {
 				"in another language" };
 
 		try {
-
+            System.out.println("Terminal output encoding is: " + System.getProperty("file.encoding"));
 			Translate t = new Translate(AppId, "text/plain", "general", "username", null);
 			String text = "Translate this text into German";
 			t.init();

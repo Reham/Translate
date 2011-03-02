@@ -1,3 +1,4 @@
-translator/build
-translator/out.txt
+/build
+/out.txt
+/alto_out.xml
 .DS_Store

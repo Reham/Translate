@@ -322,7 +322,7 @@ public class Translate {
 	}
 
 	// Translate XML file
-	public byte[] TranslateXML(byte[] in) throws XMLStreamException {
+	public byte[] translateXML(byte[] in, String from, String to) throws TranslateFault {
 		ByteArrayOutputStream xmlbytesout = new ByteArrayOutputStream();
 		XMLEventWriter writer = null;
 		TreeMap<Integer, String> idOffsetMap = null;
@@ -333,19 +333,17 @@ public class Translate {
 		String currentStringID = null;
 		XMLEventFactory m_eventFactory = XMLEventFactory.newInstance();
 
+		if (stub == null)
+			init();
+
 		try {
-			Translate myTranslator = new Translate(
-					"6C9A92CF0DDDEF484F4C4ECEA2C82D8CE591A2AD", "text/plain",
-					"general", "username", null);
-			myTranslator.init();
 			EventProducerConsumer ms = new EventProducerConsumer();
-			XMLEventReader reader = XMLInputFactory.newInstance()
-					.createXMLEventReader(new ByteArrayInputStream(in));
-			writer = XMLOutputFactory.newInstance().createXMLEventWriter(
-					xmlbytesout);
+			XMLEventReader reader = XMLInputFactory.newInstance().
+                    createXMLEventReader(new ByteArrayInputStream(in));
+			writer = XMLOutputFactory.newInstance().createXMLEventWriter(xmlbytesout);
+            XMLEvent lastWhiteSpaceEvent = ms.getNewCharactersEvent(" ");
 			while (reader.hasNext()) {
 				XMLEvent event = (XMLEvent) reader.next();
-				// write this event to Consumer (XMLOutputStream)
 
 				if (event.getEventType() == XMLEvent.START_ELEMENT) {
 					StartElement startEvent = event.asStartElement();
@@ -363,7 +361,6 @@ public class Translate {
 
 						// find the ID
 						currentTextBlockID = iterateAttibutes(startEvent, "ID");
-
 					}
 
 					// start of a text line
@@ -377,37 +374,36 @@ public class Translate {
 						String theString = null;
 						if (iterateAttibutes(startEvent, "subs_type") != null) {
 							inHyph = true;
-							theString = iterateAttibutes(startEvent,
-									"SUBS_CONTENT");
+							theString = iterateAttibutes(startEvent, "SUBS_CONTENT");
 						} else {
 							inHyph = false;
 							theString = iterateAttibutes(startEvent, "content");
-							idOffsetMap.put(new Integer(blockText.length()),
-									currentStringID);
+							idOffsetMap.put(new Integer(blockText.length()), currentStringID);
 							blockText.append(theString);
 						}
 					}
 
+                    // space
 					if (startEventName.equalsIgnoreCase("sp")) {
 						blockText.append(" ");
 					}
 
-				} else if (currentStringID != null
+				}
+                
+                // I am at the closing text block tag so insert sentences
+                else if (currentStringID != null
 						&& event.getEventType() == XMLEvent.END_ELEMENT
 						&& event.asEndElement().getName().getLocalPart()
 								.equalsIgnoreCase("textblock")) {
-					int[] sentences = myTranslator.breakSentences(
-							blockText.toString(), "ar");
+					int[] sentences = breakSentences(blockText.toString(), from);
 					int sentenceStart = 0;
-					String sentenceStartID = idOffsetMap.firstEntry()
-							.getValue();
+					String sentenceStartID = idOffsetMap.firstEntry().getValue();
 					Integer currentKey = idOffsetMap.firstKey();
 					int sentenceBreakDelta = 0;
 					for (int sentenceLength : sentences) {
 						writer.add(ms.getNewSentenceEvent());
 
-						int sentenceEnd = sentenceStart + sentenceLength
-								- sentenceBreakDelta;
+						int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
 
 						// calculate the next sentence
 						Integer previousKey = currentKey;
@@ -425,37 +421,42 @@ public class Translate {
 
 						writer.add(ms.getNewSentenceStartId(sentenceStartID));
 						writer.add(ms.getNewSentenceEndId(sentenceEndID));
+						writer.add(lastWhiteSpaceEvent);
 
 						// calculate translated sentence
 						writer.add(ms.getNewAltEvent());
-						writer.add(ms.getNewAltLang("ar"));
+						writer.add(ms.getNewAltLang(to));
+						writer.add(lastWhiteSpaceEvent);
 
-						String translatedString = myTranslator.translateLine(
-								blockText.toString().substring(sentenceStart,
-										sentenceEnd), "en", "ar");
-						// System.out.println("Sentence Start ID: " +
-						// sentenceStartID);
-						// System.out.println(translatedString);
-						writer.add(ms.getNewCharactersEvent(translatedString));
+						String translatedString = translateLine(
+								blockText.toString().substring(sentenceStart, sentenceEnd),
+                                from, to);
+
+                        writer.add(ms.getNewCharactersEvent(translatedString));
+						writer.add(lastWhiteSpaceEvent);
+
 						writer.add(ms.getAltEndEvent());
+						writer.add(lastWhiteSpaceEvent);
 
 						writer.add(ms.getSentenceEndEvent());
+						writer.add(lastWhiteSpaceEvent);
 
 						// set ending state for next iteration
 						sentenceStart += sentenceLength;
 						sentenceStartID = idOffsetMap.get(currentKey);
 					}
-
 				}
 
-				writer.add(event);
+                else if (event.getEventType() == XMLEvent.CHARACTERS
+                            && event.asCharacters().isWhiteSpace())
+                    lastWhiteSpaceEvent = event;
 
+				writer.add(event);
 			}
 			writer.flush();
-		} catch (Exception ex) {
-			ex.printStackTrace();
-			if (writer != null)
-				writer.flush();
+		}
+        catch (Exception ex) {
+			throw new TranslateFault(ex.getMessage());
 		}
 		return xmlbytesout.toByteArray();
 	}
