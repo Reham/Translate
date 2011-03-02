@@ -16,8 +16,7 @@ public class TestClass {
 
 		try {
 
-			Translate t = new Translate(AppId, "text/plain", "general",
-					"username", null);
+			Translate t = new Translate(AppId, "text/plain", "general", "username", null);
 			String text = "Translate this text into German";
 			t.init();
 

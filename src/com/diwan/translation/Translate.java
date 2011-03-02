@@ -19,6 +19,11 @@ public class Translate {
 	private SoapServiceStub stub = null;
 	private TranslateOptions options = null;
 
+	public Translate()
+    {
+		this("6C9A92CF0DDDEF484F4C4ECEA2C82D8CE591A2AD", "text/plain", "general", "username", null);
+	}
+
 	public Translate(String id, String type, String catg, String use, String ur) {
 		appid = id;
 		contenttype = type;
