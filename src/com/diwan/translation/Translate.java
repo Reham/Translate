@@ -565,6 +565,20 @@ public class Translate {
 		this.stub = stub;
 	}
 
+    /**
+     * @return the options
+     */
+    public TranslateOptions getOptions() {
+        return options;
+    }
+
+    /**
+     * @param options the options to set
+     */
+    public void setOptions(TranslateOptions options) {
+        this.options = options;
+    }
+
 }
 
 class EventProducerConsumer {
