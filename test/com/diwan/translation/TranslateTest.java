@@ -88,10 +88,10 @@ public class TranslateTest {
     @Test
     public void testDetect() throws Exception {
         System.out.println("detect");
-        String text = "I have no idea what this language may be";
+        String text2 = "I have no idea what this language may be";
         Translate instance = new Translate();
         String expResult = "en";
-        String result = instance.detect(text);
+        String result = instance.detect(text2);
         assertEquals(expResult, result);
     }
 
@@ -228,15 +228,14 @@ public class TranslateTest {
     @Test
     public void testTranslateArray() throws Exception {
         System.out.println("translateArray");
-        // TODO fix api for Array.
-        fail("translateArray returns class from com.diwan.soap.SoapServiceStub.");
-        String[] texts = null;
-        String from = "";
-        String to = "";
-        Translate instance = new Translate();
-        com.diwan.soap.SoapServiceStub.TranslateArrayResponse[] expResult = null;
-        com.diwan.soap.SoapServiceStub.TranslateArrayResponse[] result = instance.translateArray(texts, from, to);
-        assertEquals(expResult, result);
+        String from = "en";
+        String to = "de";
+        Translate.TranslateArrayResult[] results = t.translateArray(textsArray, from, to);
+        Integer i = 0;
+        for (Translate.TranslateArrayResult result : results) {
+            System.out.println ("TranslateArrayResult[" + i.toString() + "]: " + result.localTranslatedText);
+            i++;
+        }
     }
 
     /**

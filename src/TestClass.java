@@ -20,9 +20,6 @@ public class TestClass {
 			String text = "Translate this text into German";
 			t.init();
 
-			// t.addTranslation("translate", "¸bersetzen", "en", "de", 1);
-			// t.addTranslationArray(translations, "en", "de", options);
-
 			// Break Sentences
 			String breaksentence = "Please break up this string into sentences! I would like this string to be broken into its respective sentences. Is this possible?";
 			System.out.println("The text is: " + breaksentence);

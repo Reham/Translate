@@ -18,15 +18,15 @@
                     </xs:extension>
                 </xs:complexContent>
             </xs:complexType>
-            <xs:complexType name="SoapServiceStub$TranslateArrayResponse">
-                <xs:sequence/>
-            </xs:complexType>
             <xs:complexType name="SoapServiceStub$TranslateOptions">
                 <xs:sequence/>
             </xs:complexType>
         </xs:schema>
         <xs:schema xmlns:ax21="http://translation.diwan.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://translation.diwan.com/xsd">
             <xs:complexType name="TranslateFault">
+                <xs:sequence/>
+            </xs:complexType>
+            <xs:complexType name="Translate$TranslateArrayResult">
                 <xs:sequence/>
             </xs:complexType>
         </xs:schema>
@@ -66,6 +66,13 @@
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="getOptionsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ns1:SoapServiceStub$TranslateOptions"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="translateArray">
                 <xs:complexType>
                     <xs:sequence>
@@ -78,14 +85,7 @@
             <xs:element name="translateArrayResponse">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ns1:SoapServiceStub$TranslateArrayResponse"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="getOptionsResponse">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element minOccurs="0" name="return" nillable="true" type="ns1:SoapServiceStub$TranslateOptions"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ns2:Translate$TranslateArrayResult"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
