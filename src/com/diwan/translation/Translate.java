@@ -24,6 +24,19 @@ public class Translate {
         this("6C9A92CF0DDDEF484F4C4ECEA2C82D8CE591A2AD", "text/plain", "general", "username", null);
     }
 
+    /**
+     * Class constructor
+     * @param id
+     * Bing appid
+     * @param type
+     * The format of the text being translated. The supported formats are "text/plain" and "text/html". 
+     * @param catg
+     * category (domain) of the translation. Defaults to "general". 
+     * @param use
+     * used to track the originator of the submission.
+     * @param ur
+     * content location of this translation.
+     */
     public Translate(String id, String type, String catg, String use, String ur) {
         appid = id;
         contenttype = type;
@@ -33,7 +46,8 @@ public class Translate {
     }
 
     /**
-     *init: to initialize the stub and adding translation options
+     * Initialize the stub and add translation options
+     * @throws TranslateFault
      */
     public void init() throws TranslateFault {
         try {
@@ -61,6 +75,7 @@ public class Translate {
      * the target language
      * @param rate
      * represents the quality rating for this text
+     * @throws TranslateFault
      */
     public void addTranslation(String original, String text, String from, String to, int rate) throws TranslateFault {
         try {
@@ -90,6 +105,7 @@ public class Translate {
      * @param language
      * the language code of the given text
      * @return array that contains length of each sentence 
+     * @throws TranslateFault
      */
     public int[] breakSentences(String text, String language) throws TranslateFault {
         if (stub == null) {
@@ -115,6 +131,7 @@ public class Translate {
      * @param text
      * the text to detect
      * @return the detected language
+     * @throws TranslateFault
      */
     public String detect(String text) throws TranslateFault {
         if (stub == null) {
@@ -139,6 +156,7 @@ public class Translate {
      * @param texts
      * array of strings that need to detect
      * @return array of detected languages
+     * @throws TranslateFault
      */
     public String[] detectArray(String[] texts) throws TranslateFault {
 
@@ -172,6 +190,7 @@ public class Translate {
      * @param expireseconds
      * defines the duration in seconds from now that the token is valid. The value can be between 1 and 86400 (24 hours).
      * @return AppID value
+     * @throws TranslateFault
      */
     public String getAppIdToken(int minratingread, int maxratingwrite, int expireseconds) throws TranslateFault {
         if (stub == null) {
@@ -199,6 +218,7 @@ public class Translate {
      * @param codeString
      * representing the ISO 639-1 language codes to retrieve the friendly name for.
      * @return names for languages passed in languageCodes 
+     * @throws TranslateFault
      */
     public String[] getLanguagesNames(String locale, String[] codeString)
             throws TranslateFault {
@@ -224,6 +244,7 @@ public class Translate {
     /**
      * Retrieves the languages available for speech synthesis.
      * @return array of languages available for speak
+     * @throws TranslateFault
      */
     public String[] getLanguageForSpeak() throws TranslateFault {
         if (stub == null) {
@@ -243,6 +264,7 @@ public class Translate {
     /**
      * Obtain a list of language codes representing languages that are supported by the Translation Service.
      * @return array of languages available for translation
+     * @throws TranslateFault
      */
     public String[] getLanguagesForTranslate() throws TranslateFault {
         if (stub == null) {
@@ -269,7 +291,8 @@ public class Translate {
      * the target language
      * @param maxtranslations
      * representing the maximum number of translations to return.
-     * @return array of translations 
+     * @return array of translations
+     * @throws TranslateFault
      */
     public String[] getTranslations(String text, String from, String to, int maxtranslations)
             throws TranslateFault {
@@ -313,6 +336,7 @@ public class Translate {
      * @param maxtranslations
      * representing the maximum number of translations to return.
      * @return array of strings of translations for each text
+     * @throws TranslateFault
      */
     public String[] getTranslationsArray(String[] texts, String from, String to, int maxtranslations)
             throws TranslateFault {
@@ -346,7 +370,6 @@ public class Translate {
         }
 
         return matches;
-
     }
 
     /**
@@ -358,6 +381,7 @@ public class Translate {
      * @param format
      * A string specifying the content-type ID. The default value is "audio/wav" which is the only currently allowed value.
      * @return URL to wave stream of text spoken 
+     * @throws TranslateFault
      */
     public String speak(String text, String language, String format)
             throws TranslateFault {
@@ -387,6 +411,7 @@ public class Translate {
      * @param to
      * the target language
      * @return the translated line 
+     * @throws TranslateFault
      */
     public String translateLine(String text, String from, String to)
             throws TranslateFault {
@@ -422,6 +447,7 @@ public class Translate {
      * @param to
      * the target language
      * @return the translated array
+     * @throws TranslateFault
      */
     public TranslateArrayResponse[] translateArray(String[] texts, String from, String to) throws TranslateFault {
         if (stub == null) {
@@ -454,6 +480,7 @@ public class Translate {
      * @param to
      * the target language
      * @return array of bytes of the xml file
+     * @throws TranslateFault
      */
     public byte[] translateXML(byte[] in, String from, String to) throws TranslateFault {
         ByteArrayOutputStream xmlbytesout = new ByteArrayOutputStream();
@@ -595,7 +622,7 @@ public class Translate {
     }
 
     /**
-     *  iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
+     * Iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
      * @param startEvent
      * the start element we are searching for
      * @param theAttribute
@@ -746,7 +773,7 @@ class EventProducerConsumer {
     }
 
     /**
-     * adding the sentence start ID
+     * Adding the sentence start ID
      * @param startId
      * the sentence start ID
      * @return attribute start
@@ -757,7 +784,7 @@ class EventProducerConsumer {
     }
 
     /**
-     * adding the sentence end ID
+     * Adding the sentence end ID
      * @param endId
      * the sentence end ID
      * @return attribute end
@@ -768,7 +795,7 @@ class EventProducerConsumer {
     }
 
     /**
-     * adding characters 
+     * Adding characters
      * @param characters
      * Current character event.
      * @return Characters New Characters
@@ -779,7 +806,7 @@ class EventProducerConsumer {
     }
 
     /**
-     * ending the sentence
+     * Ending the sentence
      * @return the end element 
      */
     public EndElement getSentenceEndEvent() {
@@ -788,7 +815,7 @@ class EventProducerConsumer {
     }
 
     /**
-     * adding an alt event
+     * Adding an alt event
      * @return Alt start element
      */
     public StartElement getNewAltEvent() {
@@ -797,7 +824,7 @@ class EventProducerConsumer {
     }
 
     /**
-     * get the Alt language
+     * Get the Alt language
      * @param language
      * Alt language
      * @return the lang attribute
@@ -808,7 +835,7 @@ class EventProducerConsumer {
     }
 
     /**
-     * ending the Alt event
+     * Ending the Alt event
      * @return the Alt end element
      */
     public EndElement getAltEndEvent() {
