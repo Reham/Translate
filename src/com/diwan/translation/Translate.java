@@ -53,7 +53,7 @@ public class Translate {
     }
 
     /**
-     *init: to initialize the stub and adding translation options
+     * Initialize the stub and add translation options
      * @throws TranslateFault
      */
     public void init() throws TranslateFault {
@@ -111,7 +111,7 @@ public class Translate {
      * the text you need to split into sentences
      * @param language
      * the language code of the given text
-     * @return array that contains length of each sentence
+     * @return array that contains length of each sentence 
      * @throws TranslateFault
      */
     public int[] breakSentences(String text, String language) throws TranslateFault {
@@ -224,7 +224,7 @@ public class Translate {
      * and an ISO 3166 two-letter uppercase subculture code to localize the language names or a ISO 639 lowercase culture code by itself.
      * @param codeString
      * representing the ISO 639-1 language codes to retrieve the friendly name for.
-     * @return names for languages passed in languageCodes
+     * @return names for languages passed in languageCodes 
      * @throws TranslateFault
      */
     public String[] getLanguagesNames(String locale, String[] codeString)
@@ -377,7 +377,6 @@ public class Translate {
         }
 
         return matches;
-
     }
 
     /**
@@ -388,7 +387,7 @@ public class Translate {
      * representing the supported language code to speak the text in.
      * @param format
      * A string specifying the content-type ID. The default value is "audio/wav" which is the only currently allowed value.
-     * @return URL to wave stream of text spoken
+     * @return URL to wave stream of text spoken 
      * @throws TranslateFault
      */
     public String speak(String text, String language, String format)
@@ -418,7 +417,7 @@ public class Translate {
      * the language code of the source
      * @param to
      * the target language
-     * @return the translated line
+     * @return the translated line 
      * @throws TranslateFault
      */
     public String translateLine(String text, String from, String to)
@@ -635,7 +634,7 @@ public class Translate {
     }
 
     /**
-     *  iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
+     * Iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
      * @param startEvent
      * the start element we are searching for
      * @param theAttribute
@@ -785,7 +784,7 @@ public class Translate {
         }
 
         /**
-         * adding the sentence start ID
+         * Adding the sentence start ID
          * @param startId
          * the sentence start ID
          * @return attribute start
@@ -796,7 +795,7 @@ public class Translate {
         }
 
         /**
-         * adding the sentence end ID
+         * Adding the sentence end ID
          * @param endId
          * the sentence end ID
          * @return attribute end
@@ -807,7 +806,7 @@ public class Translate {
         }
 
         /**
-         * adding characters
+         * Adding characters
          * @param characters
          * Current character event.
          * @return Characters New Characters
@@ -818,7 +817,7 @@ public class Translate {
         }
 
         /**
-         * ending the sentence
+         * Ending the sentence
          * @return the end element
          */
         public EndElement getSentenceEndEvent() {
@@ -827,7 +826,7 @@ public class Translate {
         }
 
         /**
-         * adding an alt event
+         * Adding an alt event
          * @return Alt start element
          */
         public StartElement getNewAltEvent() {
@@ -836,7 +835,7 @@ public class Translate {
         }
 
         /**
-         * get the Alt language
+         * Get the Alt language
          * @param language
          * Alt language
          * @return the lang attribute
@@ -847,7 +846,7 @@ public class Translate {
         }
 
         /**
-         * ending the Alt event
+         * Ending the Alt event
          * @return the Alt end element
          */
         public EndElement getAltEndEvent() {
@@ -868,8 +867,8 @@ public class Translate {
          */
         protected java.lang.String localFrom;
         /*  This tracker boolean wil be used to detect whether the user called the set method
-         *   for this attribute. It will be used to determine whether to include this field
-         *   in the serialized XML
+         *  for this attribute. It will be used to determine whether to include this field
+         *  in the serialized XML
          */
 
         /**
