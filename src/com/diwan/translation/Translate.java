@@ -31,18 +31,17 @@ public class Translate {
     }
 
     /**
-     * Constructs class with specific settings
+     * Class constructor
      * @param id
-     *  The application id used by the Microsoft Translator API
+     * Bing appid
      * @param type
-     *  The format of the text being translated.
-     *  The supported formats are "text/plain" and "text/html". Any HTML needs to be well-formed.
+     * The format of the text being translated. The supported formats are "text/plain" and "text/html". 
      * @param catg
-     *  The category of the text to translate. The only supported category is "general".
+     * category (domain) of the translation. Defaults to "general". 
      * @param use
-     *  A string used to track the originator of submissions to the translator.
+     * used to track the originator of the submission.
      * @param ur
-     *  Optional. A string containing the content location of submitted translations.
+     * content location of this translation.
      */
     public Translate(String id, String type, String catg, String use, String ur) {
         appid = id;
@@ -53,7 +52,7 @@ public class Translate {
     }
 
     /**
-     *init: to initialize the stub and adding translation options
+     * Initialize the stub and add translation options
      * @throws TranslateFault
      */
     public void init() throws TranslateFault {
@@ -377,7 +376,6 @@ public class Translate {
         }
 
         return matches;
-
     }
 
     /**
@@ -635,7 +633,7 @@ public class Translate {
     }
 
     /**
-     *  iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
+     * Iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
      * @param startEvent
      * the start element we are searching for
      * @param theAttribute
