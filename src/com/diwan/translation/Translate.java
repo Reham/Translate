@@ -111,7 +111,7 @@ public class Translate {
      * the text you need to split into sentences
      * @param language
      * the language code of the given text
-     * @return array that contains length of each sentence 
+     * @return array that contains length of each sentence
      * @throws TranslateFault
      */
     public int[] breakSentences(String text, String language) throws TranslateFault {
@@ -224,7 +224,7 @@ public class Translate {
      * and an ISO 3166 two-letter uppercase subculture code to localize the language names or a ISO 639 lowercase culture code by itself.
      * @param codeString
      * representing the ISO 639-1 language codes to retrieve the friendly name for.
-     * @return names for languages passed in languageCodes 
+     * @return names for languages passed in languageCodes
      * @throws TranslateFault
      */
     public String[] getLanguagesNames(String locale, String[] codeString)
@@ -387,7 +387,7 @@ public class Translate {
      * representing the supported language code to speak the text in.
      * @param format
      * A string specifying the content-type ID. The default value is "audio/wav" which is the only currently allowed value.
-     * @return URL to wave stream of text spoken 
+     * @return URL to wave stream of text spoken
      * @throws TranslateFault
      */
     public String speak(String text, String language, String format)
@@ -417,7 +417,7 @@ public class Translate {
      * the language code of the source
      * @param to
      * the target language
-     * @return the translated line 
+     * @return the translated line
      * @throws TranslateFault
      */
     public String translateLine(String text, String from, String to)
