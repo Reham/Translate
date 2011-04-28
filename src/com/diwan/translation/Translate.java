@@ -31,17 +31,18 @@ public class Translate {
     }
 
     /**
-     * Class constructor
+     * Constructs class with specific settings
      * @param id
-     * Bing appid
+     *  The application id used by the Microsoft Translator API
      * @param type
-     * The format of the text being translated. The supported formats are "text/plain" and "text/html". 
+     *  The format of the text being translated.
+     *  The supported formats are "text/plain" and "text/html". Any HTML needs to be well-formed.
      * @param catg
-     * category (domain) of the translation. Defaults to "general". 
+     *  The category of the text to translate. The only supported category is "general".
      * @param use
-     * used to track the originator of the submission.
+     *  A string used to track the originator of submissions to the translator.
      * @param ur
-     * content location of this translation.
+     *  Optional. A string containing the content location of submitted translations.
      */
     public Translate(String id, String type, String catg, String use, String ur) {
         appid = id;
@@ -783,7 +784,7 @@ public class Translate {
         }
 
         /**
-         * adding the sentence start ID
+         * Adding the sentence start ID
          * @param startId
          * the sentence start ID
          * @return attribute start
@@ -794,7 +795,7 @@ public class Translate {
         }
 
         /**
-         * adding the sentence end ID
+         * Adding the sentence end ID
          * @param endId
          * the sentence end ID
          * @return attribute end
@@ -805,7 +806,7 @@ public class Translate {
         }
 
         /**
-         * adding characters
+         * Adding characters
          * @param characters
          * Current character event.
          * @return Characters New Characters
@@ -816,7 +817,7 @@ public class Translate {
         }
 
         /**
-         * ending the sentence
+         * Ending the sentence
          * @return the end element
          */
         public EndElement getSentenceEndEvent() {
@@ -825,7 +826,7 @@ public class Translate {
         }
 
         /**
-         * adding an alt event
+         * Adding an alt event
          * @return Alt start element
          */
         public StartElement getNewAltEvent() {
@@ -834,7 +835,7 @@ public class Translate {
         }
 
         /**
-         * get the Alt language
+         * Get the Alt language
          * @param language
          * Alt language
          * @return the lang attribute
@@ -845,7 +846,7 @@ public class Translate {
         }
 
         /**
-         * ending the Alt event
+         * Ending the Alt event
          * @return the Alt end element
          */
         public EndElement getAltEndEvent() {
@@ -866,8 +867,8 @@ public class Translate {
          */
         protected java.lang.String localFrom;
         /*  This tracker boolean wil be used to detect whether the user called the set method
-         *   for this attribute. It will be used to determine whether to include this field
-         *   in the serialized XML
+         *  for this attribute. It will be used to determine whether to include this field
+         *  in the serialized XML
          */
 
         /**
