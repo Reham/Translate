@@ -1,14 +1,33 @@
-package com.diwan.translation;
+package org.diwan.translation;
 
+import com.diwan.AltoDoc;
+import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.apache.axis2.AxisFault;
-import com.diwan.soap.SoapServiceStub;
-import com.diwan.soap.SoapServiceStub.*;
+import org.diwan.soap.SoapServiceStub;
+import org.diwan.soap.SoapServiceStub.*;
 import java.io.*;
 import java.lang.String;
+import java.net.URL;
+import java.net.URLConnection;
 import javax.xml.stream.*;
 import javax.xml.stream.events.*;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import javax.xml.parsers.*;
+import org.apache.http.HttpConnection;
+import org.w3c.dom.*;
+
+
+
+
+
+
 
 /**
  * @author Reham Diwan Software Limited
@@ -22,6 +41,7 @@ public class Translate {
     private String uri;
     private SoapServiceStub stub = null;
     private TranslateOptions options = null;
+    private long startTime;
 
     /**
      * Constructs class with default parameters.
@@ -31,17 +51,18 @@ public class Translate {
     }
 
     /**
-     * Class constructor
+     * Constructs class with specific settings
      * @param id
-     * Bing appid
+     *  The application id used by the Microsoft Translator API
      * @param type
-     * The format of the text being translated. The supported formats are "text/plain" and "text/html". 
+     *  The format of the text being translated.
+     *  The supported formats are "text/plain" and "text/html". Any HTML needs to be well-formed.
      * @param catg
-     * category (domain) of the translation. Defaults to "general". 
+     *  The category of the text to translate. The only supported category is "general".
      * @param use
-     * used to track the originator of the submission.
+     *  A string used to track the originator of submissions to the translator.
      * @param ur
-     * content location of this translation.
+     *  Optional. A string containing the content location of submitted translations.
      */
     public Translate(String id, String type, String catg, String use, String ur) {
         appid = id;
@@ -113,7 +134,7 @@ public class Translate {
      * @return array that contains length of each sentence
      * @throws TranslateFault
      */
-    public int[] breakSentences(String text, String language) throws TranslateFault {
+    public int[] breakSentences(String text, String language) throws TranslateFault , InterruptedException {
         if (stub == null) {
             init();
         }
@@ -125,6 +146,11 @@ public class Translate {
             breakSentence.setText(text);
 
             BreakSentencesResponse sentenceLen = stub.breakSentences(breakSentence);
+ long endTime = System.currentTimeMillis();
+            long totalTime = startTime - endTime;
+            if (totalTime < 1200) {
+                Thread.sleep(endTime);
+            }
 
             return sentenceLen.getBreakSentencesResult().get_int();
         } catch (RemoteException e) {
@@ -290,7 +316,7 @@ public class Translate {
     /**
      * Retrieves an array of translations for a given language pair from the store and the MT engine.
      * @param text
-     *  text to translate. 
+     *  text to translate.
      * @param from
      * the language code of the source
      * @param to
@@ -379,7 +405,7 @@ public class Translate {
     }
 
     /**
-     * Returns a string which is a URL to a wave stream of the passed-in text being spoken in the desired language. 
+     * Returns a string which is a URL to a wave stream of the passed-in text being spoken in the desired language.
      * @param text
      * Containing a sentence or sentences of the specified language to be spoken for the wave stream.
      * @param language
@@ -409,9 +435,9 @@ public class Translate {
     }
 
     /**
-     * Translates a text string from one language to another. 
+     * Translates a text string from one language to another.
      * @param text
-     * string representing the text to translate. 
+     * string representing the text to translate.
      * @param from
      * the language code of the source
      * @param to
@@ -420,12 +446,13 @@ public class Translate {
      * @throws TranslateFault
      */
     public String translateLine(String text, String from, String to)
-            throws TranslateFault {
+            throws TranslateFault , InterruptedException {
         if (stub == null) {
             init();
         }
 
         try {
+            long startTime = System.currentTimeMillis();
             SoapServiceStub.Translate translate = new SoapServiceStub.Translate();
             translate.setAppId(appid);
             translate.setText(text);
@@ -433,10 +460,31 @@ public class Translate {
             translate.setTo(to);
             TranslateResponse result;
             result = stub.translate(translate);
+			  long endTime = System.currentTimeMillis();
+            long totalTime = startTime - endTime;
+            if (totalTime < 1200) {
+                Thread.sleep(endTime);
+            }
             return result.getTranslateResult();
         } catch (RemoteException e) {
             if (e.getMessage().contains("NoTranslationFound")) {
                 return text;
+			} else if (e.getMessage().contains("V2_Soap")) {
+                try {
+                    Thread.sleep(60000);
+                    SoapServiceStub.Translate translate = new SoapServiceStub.Translate();
+                    translate.setAppId(appid);
+                    translate.setText(text);
+                    translate.setFrom(from);
+                    translate.setTo(to);
+                    TranslateResponse result;
+                    result = stub.translate(translate);
+                    return result.getTranslateResult();
+                } catch (InterruptedException ex) {
+                    throw new TranslateFault(e.getMessage());
+                } catch (RemoteException ex) {
+                    throw new TranslateFault(e.getMessage());
+                }
             } else {
                 throw new TranslateFault(e.getMessage());
             }
@@ -447,7 +495,7 @@ public class Translate {
     /**
      * Retrieve translations for multiple source texts.
      * @param texts
-     * array containing the texts for translation. All strings should be of the same language. 
+     * array containing the texts for translation. All strings should be of the same language.
      * @param from
      * the language code of the source
      * @param to
@@ -483,7 +531,7 @@ public class Translate {
 
     /**
      * Translates an array of bytes extracted from an alto file and returns an array
-     * of bytes that contains the translation with addition of needed tags 
+     * of bytes that contains the translation with addition of needed tags
      * @param in
      * array of bytes extracted from an alto file
      * @param from
@@ -493,143 +541,169 @@ public class Translate {
      * @return array of bytes of the xml file
      * @throws TranslateFault
      */
-    public byte[] translateXML(byte[] in, String from, String to) throws TranslateFault {
-        ByteArrayOutputStream xmlbytesout = new ByteArrayOutputStream();
-        XMLEventWriter writer = null;
-        TreeMap<Integer, String> idOffsetMap = null;
-        StringBuffer blockText = null;
-        Boolean inTextBlock = false;
-        String currentTextBlockID = null;
-        String currentTextLineID = null;
-        String currentStringID = null;
-        XMLEventFactory m_eventFactory = XMLEventFactory.newInstance();
 
-        if (stub == null) {
-            init();
-        }
-
+  public void translateXML(String pid, String from, String to) {
         try {
-            EventProducerConsumer ms = new EventProducerConsumer();
-            XMLEventReader reader = XMLInputFactory.newInstance().
-                    createXMLEventReader(new ByteArrayInputStream(in));
-            writer = XMLOutputFactory.newInstance().createXMLEventWriter(xmlbytesout);
-            XMLEvent lastWhiteSpaceEvent = ms.getNewCharactersEvent(" ");
-            while (reader.hasNext()) {
-                XMLEvent event = (XMLEvent) reader.next();
-                // detect start element
-                if (event.getEventType() == XMLEvent.START_ELEMENT) {
-                    StartElement startEvent = event.asStartElement();
-                    String startEventName = startEvent.getName().getLocalPart();
+            XMLEventWriter writer = null;
+            FileOutputStream fos = null;
+            TreeMap<Integer, String> idOffsetMap = null;
+            StringBuffer blockText = null;
+            Boolean inTextBlock = false;
+            String currentTextBlockID = null;
+            String currentTextLineID = null;
+            String currentStringID = null;
+            XMLEventFactory m_eventFactory = XMLEventFactory.newInstance();
+            ArrayList<String> pageId = AltoDoc.getPageIds(pid);
+            String altoPage = null;
+            OutputStream outStream = new OutputStream() {
 
-                    // detect start of a text block
-                    if (startEventName.equalsIgnoreCase("textblock")) {
-                        // initial state for a new text block
-                        inTextBlock = true;
-                        idOffsetMap = new TreeMap();
-                        blockText = new StringBuffer();
-                        currentTextBlockID = null;
-                        currentTextLineID = null;
-                        currentStringID = null;
-
-                        // find the ID
-                        currentTextBlockID = iterateAttibutes(startEvent, "ID");
-                    }
-
-                    // start of a text line
-                    if (startEventName.equalsIgnoreCase("textline")) {
-                        currentTextLineID = iterateAttibutes(startEvent, "ID");
-                    }
-
-                    // the alto string
-                    if (startEventName.equalsIgnoreCase("string")) {
-                        currentStringID = iterateAttibutes(startEvent, "ID");
-                        boolean inHyph = false;
-                        String theString = null;
-                        if (iterateAttibutes(startEvent, "subs_type") != null) {
-                            inHyph = true;
-                            theString = iterateAttibutes(startEvent, "SUBS_CONTENT");
-                        } else {
-                            inHyph = false;
-                            theString = iterateAttibutes(startEvent, "content");
-                            idOffsetMap.put(new Integer(blockText.length()), currentStringID);
-                            blockText.append(theString);
-                        }
-                    }
-
-                    // space
-                    if (startEventName.equalsIgnoreCase("sp")) {
-                        blockText.append(" ");
-                    }
-
-                } // I am at the closing text block tag so insert sentences
-                else if (currentStringID != null
-                        && event.getEventType() == XMLEvent.END_ELEMENT
-                        && event.asEndElement().getName().getLocalPart().equalsIgnoreCase("textblock")) {
-                    int[] sentences = breakSentences(blockText.toString(), from);
-                    int sentenceStart = 0;
-                    String sentenceStartID = idOffsetMap.firstEntry().getValue();
-                    Integer currentKey = idOffsetMap.firstKey();
-                    int sentenceBreakDelta = 0;
-                    for (int sentenceLength : sentences) {
-                        writer.add(ms.getNewSentenceEvent());
-
-                        int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
-
-                        // calculate the next sentence
-                        Integer previousKey = currentKey;
-                        while (currentKey != null && currentKey < sentenceEnd) {
-                            previousKey = currentKey;
-                            currentKey = idOffsetMap.higherKey(currentKey);
-                        }
-                        if (currentKey == null) {
-                            currentKey = sentenceEnd;
-                        }
-
-                        String sentenceEndID = idOffsetMap.get(previousKey);
-                        sentenceBreakDelta = currentKey - sentenceEnd;
-                        if (currentKey > sentenceEnd) {
-                            sentenceEnd = currentKey;
-                        }
-
-                        writer.add(ms.getNewSentenceStartId(sentenceStartID));
-                        writer.add(ms.getNewSentenceEndId(sentenceEndID));
-                        writer.add(lastWhiteSpaceEvent);
-
-                        // calculate translated sentence
-                        writer.add(ms.getNewAltEvent());
-                        writer.add(ms.getNewAltLang(to));
-                        writer.add(lastWhiteSpaceEvent);
-
-                        String translatedString = translateLine(
-                                blockText.toString().substring(sentenceStart, sentenceEnd),
-                                from, to);
-
-                        writer.add(ms.getNewCharactersEvent(translatedString));
-                        writer.add(lastWhiteSpaceEvent);
-
-                        writer.add(ms.getAltEndEvent());
-                        writer.add(lastWhiteSpaceEvent);
-
-                        writer.add(ms.getSentenceEndEvent());
-                        writer.add(lastWhiteSpaceEvent);
-
-                        // set ending state for next iteration
-                        sentenceStart += sentenceLength;
-                        sentenceStartID = idOffsetMap.get(currentKey);
-                    }
-                } else if (event.getEventType() == XMLEvent.CHARACTERS
-                        && event.asCharacters().isWhiteSpace()) {
-                    lastWhiteSpaceEvent = event;
+                @Override
+                public void write(int b) throws IOException {
+                    throw new UnsupportedOperationException("Not supported yet.");
                 }
-
-                writer.add(event);
+            };
+            if (stub == null) {
+                try {
+                    init();
+                } catch (TranslateFault ex) {
+                    Logger.getLogger(Translate.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
-            writer.flush();
-        } catch (Exception ex) {
-            throw new TranslateFault(ex.getMessage());
+            int i = 0;
+            while (i < pageId.size()) {
+                altoPage = AltoDoc.getAlto(pageId.get(i));
+                StringReader serverStringReader = new StringReader(altoPage);
+                BufferedReader in = new BufferedReader(serverStringReader);
+
+                // DataInputStream in = new DataInputStream(uc.getInputStream());
+                try {
+                    EventProducerConsumer ms = new EventProducerConsumer();
+                    XMLEventReader reader = XMLInputFactory.newInstance().createXMLEventReader(in);
+                    fos = new FileOutputStream("altoOutput.xml");
+                    writer = XMLOutputFactory.newInstance().createXMLEventWriter(fos);
+                    XMLEvent lastWhiteSpaceEvent = ms.getNewCharactersEvent(" ");
+                    while (reader.hasNext()) {
+                        XMLEvent event = (XMLEvent) reader.next();
+                        // detect start element
+                        if (event.getEventType() == XMLEvent.START_ELEMENT) {
+                            StartElement startEvent = event.asStartElement();
+                            String startEventName = startEvent.getName().getLocalPart();
+                            // detect start of a text block
+                            if (startEventName.equalsIgnoreCase("textblock")) {
+                                // initial state for a new text block
+                                inTextBlock = true;
+                                idOffsetMap = new TreeMap();
+                                blockText = new StringBuffer();
+                                currentTextBlockID = null;
+                                currentTextLineID = null;
+                                currentStringID = null;
+                                // find the ID
+                                currentTextBlockID = iterateAttibutes(startEvent, "ID");
+                            }
+                            if (startEventName.equalsIgnoreCase("textline")) {
+                                currentTextLineID = iterateAttibutes(startEvent, "ID");
+                            }
+                            if (startEventName.equalsIgnoreCase("string")) {
+                                currentStringID = iterateAttibutes(startEvent, "ID");
+                                boolean inHyph = false;
+                                String theString = null;
+                                if (iterateAttibutes(startEvent, "subs_type") != null) {
+                                    inHyph = true;
+                                    theString = iterateAttibutes(startEvent, "SUBS_CONTENT");
+                                } else {
+                                    inHyph = false;
+                                    theString = iterateAttibutes(startEvent, "content");
+                                    idOffsetMap.put(new Integer(blockText.length()), currentStringID);
+                                    blockText.append(theString);
+                                }
+                            }
+                            if (startEventName.equalsIgnoreCase("sp")) {
+                                blockText.append(" ");
+                            }
+                        } // I am at the closing text block tag so insert sentences
+                        else if (currentStringID != null && event.getEventType() == XMLEvent.END_ELEMENT && event.asEndElement().getName().getLocalPart().equalsIgnoreCase("textblock")) {
+                            int[] sentences = breakSentences(blockText.toString(), from);
+                            int sentenceStart = 0;
+                            String sentenceStartID = idOffsetMap.firstEntry().getValue();
+                            Integer currentKey = idOffsetMap.firstKey();
+                            int sentenceBreakDelta = 0;
+                            for (int sentenceLength : sentences) {
+                                writer.add(ms.getNewSentenceEvent());
+                                int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
+                                // calculate the next sentence
+                                Integer previousKey = currentKey;
+                                while (currentKey != null && currentKey < sentenceEnd) {
+                                    previousKey = currentKey;
+                                    currentKey = idOffsetMap.higherKey(currentKey);
+                                }
+                                if (currentKey == null) {
+                                    currentKey = sentenceEnd;
+                                }
+                                String sentenceEndID = idOffsetMap.get(previousKey);
+                                sentenceBreakDelta = currentKey - sentenceEnd;
+                                if (currentKey > sentenceEnd) {
+                                    sentenceEnd = currentKey;
+                                }
+                                writer.add(ms.getNewSentenceStartId(sentenceStartID));
+                                writer.add(ms.getNewSentenceEndId(sentenceEndID));
+                                writer.add(lastWhiteSpaceEvent);
+                                // calculate translated sentence
+                                writer.add(ms.getNewAltEvent());
+                                writer.add(ms.getNewAltLang(to));
+                                writer.add(lastWhiteSpaceEvent);
+                                String translatedString = translateLine(blockText.toString().substring(sentenceStart, sentenceEnd), from, to);
+                                writer.add(ms.getNewCharactersEvent(translatedString));
+                                writer.add(lastWhiteSpaceEvent);
+                                writer.add(ms.getAltEndEvent());
+                                writer.add(lastWhiteSpaceEvent);
+                                writer.add(ms.getSentenceEndEvent());
+                                writer.add(lastWhiteSpaceEvent);
+                                // set ending state for next iteration
+                                sentenceStart += sentenceLength;
+                                sentenceStartID = idOffsetMap.get(currentKey);
+                            }
+                        } else if (event.getEventType() == XMLEvent.CHARACTERS && event.asCharacters().isWhiteSpace()) {
+                            lastWhiteSpaceEvent = event;
+                        }
+                        writer.add(event);
+                    }
+                } catch (Exception ex) {
+                    //nothing to do here move along
+                } finally {
+                    try {
+                        writer.flush();
+                        fos.close();
+                    } catch (IOException ex) {
+                        Logger.getLogger(Translate.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (XMLStreamException ex) {
+                        Logger.getLogger(Translate.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                i++;
+            }
+            URL url = new URL("http://dev.amuser-qstpb.com:8080/fedora/objects/iqra/part/" + pid + " /facet/F_MT/" + getLanguage(to));
+            HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
+            httpCon.setDoOutput(true);
+            httpCon.setRequestMethod("POST");
+            OutputStreamWriter out = new OutputStreamWriter(httpCon.getOutputStream());
+            System.out.println(httpCon.getResponseCode());
+            System.out.println(httpCon.getResponseMessage());
+            out.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Translate.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        return xmlbytesout.toByteArray();
+
+    }
+    public String getLanguage(String lang) {
+        String stringLang = null;
+        if (lang.equalsIgnoreCase("ar")) {
+            stringLang = "ar_QA";
+        } else if (lang.equalsIgnoreCase("en")) {
+            stringLang = "en_EN";
+        }
+        return stringLang;
+
     }
 
     /**
@@ -637,7 +711,7 @@ public class Translate {
      * @param startEvent
      * the start element we are searching for
      * @param theAttribute
-     * string that contains the name of the attribute 
+     * string that contains the name of the attribute
      * @return the value of the attribute
      */
     private static String iterateAttibutes(StartElement startEvent,
@@ -783,7 +857,7 @@ public class Translate {
         }
 
         /**
-         * adding the sentence start ID
+         * Adding the sentence start ID
          * @param startId
          * the sentence start ID
          * @return attribute start
@@ -794,7 +868,7 @@ public class Translate {
         }
 
         /**
-         * adding the sentence end ID
+         * Adding the sentence end ID
          * @param endId
          * the sentence end ID
          * @return attribute end
@@ -805,7 +879,7 @@ public class Translate {
         }
 
         /**
-         * adding characters
+         * Adding characters
          * @param characters
          * Current character event.
          * @return Characters New Characters
@@ -816,7 +890,7 @@ public class Translate {
         }
 
         /**
-         * ending the sentence
+         * Ending the sentence
          * @return the end element
          */
         public EndElement getSentenceEndEvent() {
@@ -825,7 +899,7 @@ public class Translate {
         }
 
         /**
-         * adding an alt event
+         * Adding an alt event
          * @return Alt start element
          */
         public StartElement getNewAltEvent() {
@@ -834,7 +908,7 @@ public class Translate {
         }
 
         /**
-         * get the Alt language
+         * Get the Alt language
          * @param language
          * Alt language
          * @return the lang attribute
@@ -845,7 +919,7 @@ public class Translate {
         }
 
         /**
-         * ending the Alt event
+         * Ending the Alt event
          * @return the Alt end element
          */
         public EndElement getAltEndEvent() {
@@ -866,8 +940,8 @@ public class Translate {
          */
         protected java.lang.String localFrom;
         /*  This tracker boolean wil be used to detect whether the user called the set method
-         *   for this attribute. It will be used to determine whether to include this field
-         *   in the serialized XML
+         *  for this attribute. It will be used to determine whether to include this field
+         *  in the serialized XML
          */
 
         /**
