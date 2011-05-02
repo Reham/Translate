@@ -24,11 +24,6 @@ import org.apache.http.HttpConnection;
 import org.w3c.dom.*;
 
 
-
-
-
-
-
 /**
  * @author Reham Diwan Software Limited
  */
