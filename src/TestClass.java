@@ -1,27 +1,38 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
 import com.diwan.translation.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class TestClass {
 
-	public static void main(String[] args) throws TranslateFault {
+	public static void main(String[] args) throws TranslateFault, FileNotFoundException, IOException {
 
 		String AppId = "6C9A92CF0DDDEF484F4C4ECEA2C82D8CE591A2AD";
 		String[] textsArray = { "I want this translated", "to something",
 				"in another language" };
 
 		try {
-            System.out.println("Terminal output encoding is: " + System.getProperty("file.encoding"));
+            //System.out.println("Terminal output encoding is: " + System.getProperty("file.encoding"));
 			Translate t = new Translate(AppId, "text/plain", "general", "username", null);
 			String text = "Translate this text into German";
 			t.init();
 
+			// t.addTranslation("translate", "¸bersetzen", "en", "de", 1);
+			// t.addTranslationArray(translations, "en", "de", options);
+
 			// Break Sentences
-			String breaksentence = "Please break up this string into sentences! I would like this string to be broken into its respective sentences. Is this possible?";
+		/*	String breaksentence = "Please break up this string into sentences! I would like this string to be broken into its respective sentences. Is this possible?";
 			System.out.println("The text is: " + breaksentence);
 			System.out
 					.println("BreakSentences broke up the above sentence into "
@@ -87,10 +98,10 @@ public class TestClass {
 			 * t.getTranslationsArray(textsArray, "en", "fr")[0]);
 			 */
 			// Speak
-			System.out.println("Speak Method : "
-					+ t.speak("je suis pianiste", "fr", "audio/wav"));
+			/*System.out.println("Speak Method : "
+					+ t.speak("je suis pianiste", "fr", "audio/wav"));*/
 			// Translate line
-			try {
+			/*try {
 
 				BufferedReader in = new BufferedReader(new FileReader("in.txt"));
 				BufferedWriter out = new BufferedWriter(new FileWriter(
@@ -107,14 +118,32 @@ public class TestClass {
 				out.close();
 				in.close();
 			} catch (IOException e) {
-			}
+			}*/
+
+
+                         System.out.println("TranslateXML");
+		String urlIn = "http://localhost:8080/alto.xml";
+                  URL urlOut = new URL("http://localhost:8080/alto_out.xml");
+		
+		t.translateXML("iqra:55", "en", "ar");
+	/*	 URLConnection  uc=url.openConnection();
+        OutputStream fout = uc.getOutputStream();
+          int lengthRead = 1;
+           byte[] bytes = new byte[500];
+            InputStream  is = url.openStream();
+            while (lengthRead != -1) {
+                lengthRead = is.read(bytes);
+                fout.write(bytes);*/
+      //      }
+
+       //     fout.close();
 
 			// Array Translation
-			for (int i = 0; i < textsArray.length; i++) {
+		/*	for (int i = 0; i < textsArray.length; i++) {
 				System.out.println("Array Translation: "
 						+ t.translateArray(textsArray, "en", "fr")[i]
 								.getTranslatedText());
-			}
+			}*/
 
 		}
 

@@ -1,14 +1,14 @@
-package org.diwan.translation;
+package com.diwan.translation;
 
-import com.diwan.AltoDoc;
+import com.diwan.translation.AltoDoc;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.axis2.AxisFault;
-import org.diwan.soap.SoapServiceStub;
-import org.diwan.soap.SoapServiceStub.*;
+import com.diwan.soap.SoapServiceStub;
+import com.diwan.soap.SoapServiceStub.*;
 import java.io.*;
 import java.lang.String;
 import java.net.URL;
@@ -22,6 +22,11 @@ import java.util.ArrayList;
 import javax.xml.parsers.*;
 import org.apache.http.HttpConnection;
 import org.w3c.dom.*;
+
+
+
+
+
 
 
 /**
