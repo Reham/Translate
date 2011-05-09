@@ -1,7 +1,5 @@
 package com.diwan.translation;
 
-import com.diwan.translation.AltoDoc;
-import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 import java.util.*;
 import java.util.logging.Level;
@@ -9,25 +7,13 @@ import java.util.logging.Logger;
 import org.apache.axis2.AxisFault;
 import com.diwan.soap.SoapServiceStub;
 import com.diwan.soap.SoapServiceStub.*;
-import java.io.*;
 import java.lang.String;
-import java.net.URL;
-import java.net.URLConnection;
 import javax.xml.stream.*;
 import javax.xml.stream.events.*;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import javax.xml.parsers.*;
-import org.apache.http.HttpConnection;
-import org.w3c.dom.*;
-
-
-
-
-
-
 
 /**
  * @author Reham Diwan Software Limited
@@ -41,7 +27,6 @@ public class Translate {
     private String uri;
     private SoapServiceStub stub = null;
     private TranslateOptions options = null;
-    private long startTime;
 
     /**
      * Constructs class with default parameters.
@@ -85,7 +70,6 @@ public class Translate {
             options.setUser("siteuser");
 
         } catch (AxisFault e) {
-            e.printStackTrace();
             throw new TranslateFault(e.getReason());
         }
     }
@@ -140,16 +124,17 @@ public class Translate {
         }
 
         try {
+            long startTime = System.currentTimeMillis();
             SoapServiceStub.BreakSentences breakSentence = new SoapServiceStub.BreakSentences();
             breakSentence.setLanguage(language);
             breakSentence.setAppId(appid);
             breakSentence.setText(text);
 
             BreakSentencesResponse sentenceLen = stub.breakSentences(breakSentence);
- long endTime = System.currentTimeMillis();
-            long totalTime = startTime - endTime;
+            long endTime = System.currentTimeMillis();
+            long totalTime = endTime - startTime;
             if (totalTime < 1200) {
-                Thread.sleep(endTime);
+                Thread.sleep(1200 - totalTime);
             }
 
             return sentenceLen.getBreakSentencesResult().get_int();
@@ -460,10 +445,10 @@ public class Translate {
             translate.setTo(to);
             TranslateResponse result;
             result = stub.translate(translate);
-			  long endTime = System.currentTimeMillis();
-            long totalTime = startTime - endTime;
+			long endTime = System.currentTimeMillis();
+            long totalTime = endTime - startTime;
             if (totalTime < 1200) {
-                Thread.sleep(endTime);
+                Thread.sleep(1200 - totalTime);
             }
             return result.getTranslateResult();
         } catch (RemoteException e) {
@@ -556,7 +541,6 @@ public class Translate {
             ArrayList<String> pageId = AltoDoc.getPageIds(pid);
             String altoPage = null;
             OutputStream outStream = new OutputStream() {
-
                 @Override
                 public void write(int b) throws IOException {
                     throw new UnsupportedOperationException("Not supported yet.");
