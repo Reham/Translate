@@ -121,11 +121,12 @@ public class TestClass {
 			}*/
 
 
-                         System.out.println("TranslateXML");
+        System.out.println("TranslateXML");
 		String urlIn = "http://localhost:8080/alto.xml";
-                  URL urlOut = new URL("http://localhost:8080/alto_out.xml");
+        URL urlOut = new URL("http://localhost:8080/alto_out.xml");
 		
 		t.translateXML("iqra:55", "en", "ar");
+
 	/*	 URLConnection  uc=url.openConnection();
         OutputStream fout = uc.getOutputStream();
           int lengthRead = 1;

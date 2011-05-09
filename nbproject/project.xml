@@ -16,5 +16,8 @@
                 <root id="test.test.dir"/>
             </test-roots>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>tokenized</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>
