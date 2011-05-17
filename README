@@ -1,0 +1,2 @@
+Translator is now a web project implementing a single servlet
+Takes an ALTO file and outputs an ALTO file with translations

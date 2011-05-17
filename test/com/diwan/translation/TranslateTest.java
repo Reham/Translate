@@ -244,15 +244,6 @@ public class TranslateTest {
     @Test
     public void testTranslateXML() throws Exception {
         System.out.println("TranslateXML");
-		File theXMLFile = new File("alto.xml");
-		byte[] xmlbytes = new byte[(int) theXMLFile.length()];
-		FileInputStream fis = new FileInputStream(theXMLFile);
-		fis.read(xmlbytes);
-		byte[] xmlout = t.translateXML(xmlbytes, "en", "ar");
-		String value = new String(xmlout);
-        FileOutputStream fos = new FileOutputStream("alto_out.xml");
-        fos.write(xmlout);
-        fos.close();
-		System.out.println(value);
+        t.translateXML("http://dev.amuser-qstpb.com:8080/fedora", "iqra:55", "en", "ar", ""); //last string blank so that a facet is not really created
     }
 }
