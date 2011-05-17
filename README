@@ -1,0 +1,53 @@
+Tranaslator Web Service
+
+Is a SOAP compliant web service that can be called to translate single lines of text to full web pages.
+Code is documented use Javadoc ti generate documentation.
+
+Steps for setting up NetBeans:
+=================================
+1. Install netbeans 6.9.1 with java EE and Glassfish from (http://netbeans.org/downloads/index.html)
+2. Download axis2 1.5.4 from the following website (http://axis.apache.org/axis2/java/core/download.cgi)
+3. Netbeans -> services tab -> expand the Servers you will find GlassFish Server -> right click on it 
+    - Start the Server
+    - select view admin console. 
+    This will open a browser window. Select the applications folder in the list on the left 
+        -> press 'Deploy' -> click browse -> find axis2.war in the 'release' directory of this project
+4. In netbeans open tools -> plugins search for Axis2 under the 'Available' tab -> check it -> install it
+5. Restart netbeans then go to tools -> options -> axis2 tab. Set two things:
+   a. The location of the axis2 files in glassfish:
+      to find this location you can go to glassfish admin console -> in the Enterprise Server option 
+	  you should see: "Configuration directory". Copy that directory but instead of the "config" folder 
+	  put "applications/axis2" and paste it in the "location" box.
+   b. The web address url that will be there already.
+6. Now you have Axis2 under the translator project -> right click -> deploy. Then right click -> show 
+service in browser.
+
+The translator service is now deployed in Netbeans. 
+
+-----------------------------------------------------------------------------------------------------------
+How to use Axis2 to build a client:
+===================================
+1. Set environment variables:
+right click my computer -> properties -> advanced -> environment variables -> create two user variable
+JAVA_HOME:"the directory where you installed java" 
+and AXIS2_HOME:"the directory where you installed Axis2"
+2. Open command window -> change your directory to where the wsdl2java.bat is ->
+write this command line 
+  wsdl2java.bat -o C:\\your output folder -p org.diwan -ns2p org.tempuri=org.diwan -s -or -uri http://localhost:8080/axis2/services/Translate?wsdl
+  You get this url by right click on the axis2 under your translator project in NetBeans -> select Show service in Browser
+  wsdl2java.bat will automatically create a stub class that will call the Translate API. To see how to call the class add -t option to the
+  call which will generate test code.
+3. In the output folder you will get a build.xml file with folder
+4. Go through: (http://ant.apache.org/manual/index.html) to install ant 
+5. In the command window change your directory to be in your output folder -> type ant 
+If the build succeeded you will have in the build folder a new .jar file 
+6. In NetBeans right click on the project translator -> Libraries -> Add JAR/Folder -> browse
+you will need to add the .jar in the build folder and under axis2-1.5.4\lib select all the jar files except the log4j.jar 
+
+How to use Netbeans to build a client:
+======================================
+
+1. Go to Services window - >Web Services Tab. Right click and select Add Web Service
+2. Enter the URL to the Translate WDSL e.g. http://localhost:8080/axis2/services/Translate?wsdl
+3. A new entry called Translate will be added.
+4. Expand this to see the commands. These can be dragged and dropped into your own code and Netbeans automatically creates the bindings.
