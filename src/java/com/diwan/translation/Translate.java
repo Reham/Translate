@@ -640,45 +640,77 @@ public class Translate {
                             }
                         } // I am at the closing text block tag so insert sentences
                         else if (currentStringID != null && event.getEventType() == XMLEvent.END_ELEMENT && event.asEndElement().getName().getLocalPart().equalsIgnoreCase("textblock")) {
-                            int[] sentences = breakSentences(blockText.toString(), from);
-                            int sentenceStart = 0;
-                            String sentenceStartID = idOffsetMap.firstEntry().getValue();
-                            Integer currentKey = idOffsetMap.firstKey();
-                            int sentenceBreakDelta = 0;
-                            for (int sentenceLength : sentences) {
+                            try {
+                                int[] sentences = breakSentences(blockText.toString(), from);
+                                int sentenceStart = 0;
+                                String sentenceStartID = idOffsetMap.firstEntry().getValue();
+                                Integer currentKey = idOffsetMap.firstKey();
+                                int sentenceBreakDelta = 0;
+                                for (int sentenceLength : sentences) {
+                                    writer.add(ms.getNewSentenceEvent());
+                                    int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
+                                    // calculate the next sentence
+                                    Integer previousKey = currentKey;
+                                    while (currentKey != null && currentKey < sentenceEnd) {
+                                        previousKey = currentKey;
+                                        currentKey = idOffsetMap.higherKey(currentKey);
+                                    }
+                                    if (currentKey == null) {
+                                        currentKey = sentenceEnd;
+                                    }
+                                    String sentenceEndID = idOffsetMap.get(previousKey);
+                                    sentenceBreakDelta = currentKey - sentenceEnd;
+                                    if (currentKey > sentenceEnd) {
+                                        sentenceEnd = currentKey;
+                                    }
+                                    writer.add(ms.getNewSentenceStartId(sentenceStartID));
+                                    writer.add(ms.getNewSentenceEndId(sentenceEndID));
+                                    writer.add(lastWhiteSpaceEvent);
+                                    // calculate translated sentence
+                                    writer.add(ms.getNewAltEvent());
+                                    writer.add(ms.getNewAltLang(to));
+                                    writer.add(lastWhiteSpaceEvent);
+                                    try {
+                                        String translatedString = translateLine(blockText.toString().substring(sentenceStart, sentenceEnd), from, to);
+                                        writer.add(ms.getNewCharactersEvent(translatedString));
+                                    } catch  (TranslateFault ex) {
+                                        System.out.println(ex.toString());
+                                        System.out.println("Translate fail at Book: " + pid + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
+                                        writer.add(ms.getNewCharactersEvent(blockText.toString().substring(sentenceStart, sentenceEnd)));
+                                    }
+                                    writer.add(lastWhiteSpaceEvent);
+                                    writer.add(ms.getAltEndEvent());
+                                    writer.add(lastWhiteSpaceEvent);
+                                    writer.add(ms.getSentenceEndEvent());
+                                    writer.add(lastWhiteSpaceEvent);
+                                    // set ending state for next iteration
+                                    sentenceStart += sentenceLength;
+                                    sentenceStartID = idOffsetMap.get(currentKey);
+                                    if (sentenceStartID == null) {
+                                        //I have gone past the last key so get the lower key
+                                        currentKey = idOffsetMap.lowerKey(currentKey);
+                                        sentenceStartID = idOffsetMap.get(currentKey);
+                                    }
+                                }
+                            } catch (TranslateFault ex)
+                            {
+                                //break sentence failed so insert single dummy word here
+                                System.out.println(ex.toString());
+                                System.out.println("Break sentence fail at Book: " + pid + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
+                                String sentenceStartID = idOffsetMap.firstEntry().getValue();
                                 writer.add(ms.getNewSentenceEvent());
-                                int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
-                                // calculate the next sentence
-                                Integer previousKey = currentKey;
-                                while (currentKey != null && currentKey < sentenceEnd) {
-                                    previousKey = currentKey;
-                                    currentKey = idOffsetMap.higherKey(currentKey);
-                                }
-                                if (currentKey == null) {
-                                    currentKey = sentenceEnd;
-                                }
-                                String sentenceEndID = idOffsetMap.get(previousKey);
-                                sentenceBreakDelta = currentKey - sentenceEnd;
-                                if (currentKey > sentenceEnd) {
-                                    sentenceEnd = currentKey;
-                                }
                                 writer.add(ms.getNewSentenceStartId(sentenceStartID));
-                                writer.add(ms.getNewSentenceEndId(sentenceEndID));
+                                writer.add(ms.getNewSentenceEndId(sentenceStartID));
                                 writer.add(lastWhiteSpaceEvent);
-                                // calculate translated sentence
                                 writer.add(ms.getNewAltEvent());
                                 writer.add(ms.getNewAltLang(to));
                                 writer.add(lastWhiteSpaceEvent);
-                                String translatedString = translateLine(blockText.toString().substring(sentenceStart, sentenceEnd), from, to);
-                                writer.add(ms.getNewCharactersEvent(translatedString));
+                                writer.add(ms.getNewCharactersEvent("empty"));
                                 writer.add(lastWhiteSpaceEvent);
                                 writer.add(ms.getAltEndEvent());
                                 writer.add(lastWhiteSpaceEvent);
                                 writer.add(ms.getSentenceEndEvent());
                                 writer.add(lastWhiteSpaceEvent);
-                                // set ending state for next iteration
-                                sentenceStart += sentenceLength;
-                                sentenceStartID = idOffsetMap.get(currentKey);
                             }
                         } else if (event.getEventType() == XMLEvent.CHARACTERS && event.asCharacters().isWhiteSpace()) {
                             lastWhiteSpaceEvent = event;
