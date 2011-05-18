@@ -26,7 +26,7 @@
 <descriptor>
      <ticketId>iqra:55</ticketId>
      <inputFacet language="EN_UK">F_OCR</inputFacet>
-     <outputFacet language="AR_AR">MT_ar_QA</outputFacet>
+     <outputFacet language="AR_AR">F_MT_ar_QA</outputFacet>
      <user>169</user>
      <url>http://dev.amuser-qstpb.com:8080/fedora</url>
 </descriptor>

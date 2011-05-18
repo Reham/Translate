@@ -206,7 +206,7 @@ public class TranslateTest {
     @Test
     public void testTranslateLine() throws Exception {
         System.out.println("translateLine");
-        BufferedReader in = new BufferedReader(new FileReader("in.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("test-files/in.txt"));
         BufferedWriter out = new BufferedWriter(new FileWriterWithEncoding(
                 "out.txt", "UTF8"));
         String str;

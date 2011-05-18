@@ -27,7 +27,42 @@ public class Translate {
     private String uri;
     private SoapServiceStub stub = null;
     private TranslateOptions options = null;
+    private long startTime = 0;
+    private long numberOfCalls = 0;
+    private boolean firstTime = true;
 
+    private void checkTime()
+    {
+        long endTime = System.currentTimeMillis();
+        long totalTime = endTime - startTime;
+        try {
+            //in case this is called multiple times with a new class - always delay first call for 1.2 seconds
+            if (firstTime)
+            {
+                firstTime = false;
+                if (totalTime < 1200)
+                    Thread.sleep(1200 - totalTime);
+                return;
+            }
+
+            if (startTime == 0 || totalTime > 60000) {
+                startTime = System.currentTimeMillis();
+                numberOfCalls = 0;
+            }
+            else
+            {
+                numberOfCalls++;
+                if (numberOfCalls > 50) {
+                    Thread.sleep(60000 - totalTime);
+                    startTime = System.currentTimeMillis();
+                    numberOfCalls = 0;
+                }
+            }
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Translate.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     /**
      * Constructs class with default parameters.
      */
@@ -49,12 +84,13 @@ public class Translate {
      * @param ur
      *  Optional. A string containing the content location of submitted translations.
      */
-    public Translate(String id, String type, String catg, String use, String ur) {
+    public Translate(String id, String type, String catg, String use, String uri) {
         appid = id;
         contenttype = type;
         category = catg;
         user = use;
-        uri = ur;
+        this.uri = uri;
+        startTime = System.currentTimeMillis();
     }
 
     /**
@@ -119,24 +155,18 @@ public class Translate {
      * @throws TranslateFault
      */
     public int[] breakSentences(String text, String language) throws TranslateFault , InterruptedException {
+        checkTime();
         if (stub == null) {
             init();
         }
 
         try {
-            long startTime = System.currentTimeMillis();
             SoapServiceStub.BreakSentences breakSentence = new SoapServiceStub.BreakSentences();
             breakSentence.setLanguage(language);
             breakSentence.setAppId(appid);
             breakSentence.setText(text);
 
             BreakSentencesResponse sentenceLen = stub.breakSentences(breakSentence);
-            long endTime = System.currentTimeMillis();
-            long totalTime = endTime - startTime;
-            if (totalTime < 1200) {
-                Thread.sleep(1200 - totalTime);
-            }
-
             return sentenceLen.getBreakSentencesResult().get_int();
         } catch (RemoteException e) {
             throw new TranslateFault(e.getMessage());
@@ -151,6 +181,7 @@ public class Translate {
      * @throws TranslateFault
      */
     public String detect(String text) throws TranslateFault {
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -176,7 +207,7 @@ public class Translate {
      * @throws TranslateFault
      */
     public String[] detectArray(String[] texts) throws TranslateFault {
-
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -210,6 +241,7 @@ public class Translate {
      * @throws TranslateFault
      */
     public String getAppIdToken(int minratingread, int maxratingwrite, int expireseconds) throws TranslateFault {
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -239,6 +271,7 @@ public class Translate {
      */
     public String[] getLanguagesNames(String locale, String[] codeString)
             throws TranslateFault {
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -264,6 +297,7 @@ public class Translate {
      * @throws TranslateFault
      */
     public String[] getLanguageForSpeak() throws TranslateFault {
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -284,6 +318,7 @@ public class Translate {
      * @throws TranslateFault
      */
     public String[] getLanguagesForTranslate() throws TranslateFault {
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -314,6 +349,7 @@ public class Translate {
     public String[] getTranslations(String text, String from, String to, int maxtranslations)
             throws TranslateFault {
         String[] matches = null;
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -358,6 +394,7 @@ public class Translate {
     public String[] getTranslationsArray(String[] texts, String from, String to, int maxtranslations)
             throws TranslateFault {
         String[] matches = null;
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -402,6 +439,7 @@ public class Translate {
      */
     public String speak(String text, String language, String format)
             throws TranslateFault {
+        checkTime();
         if (stub == null) {
             init();
         }
@@ -432,12 +470,12 @@ public class Translate {
      */
     public String translateLine(String text, String from, String to)
             throws TranslateFault , InterruptedException {
+        checkTime();
         if (stub == null) {
             init();
         }
 
         try {
-            long startTime = System.currentTimeMillis();
             SoapServiceStub.Translate translate = new SoapServiceStub.Translate();
             translate.setAppId(appid);
             translate.setText(text);
@@ -445,11 +483,6 @@ public class Translate {
             translate.setTo(to);
             TranslateResponse result;
             result = stub.translate(translate);
-			long endTime = System.currentTimeMillis();
-            long totalTime = endTime - startTime;
-            if (totalTime < 1200) {
-                Thread.sleep(1200 - totalTime);
-            }
             return result.getTranslateResult();
         } catch (RemoteException e) {
             if (e.getMessage().contains("NoTranslationFound")) {
@@ -489,6 +522,7 @@ public class Translate {
      * @throws TranslateFault
      */
     public TranslateArrayResult[] translateArray(String[] texts, String from, String to) throws TranslateFault {
+        checkTime();
         if (stub == null) {
             init();
         }

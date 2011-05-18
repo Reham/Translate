@@ -1,5 +1,5 @@
-/build
+/build/
 /out.txt
 /alto_out.xml
-/nbproject/private
+nbproject/private/
 .DS_Store
