@@ -23,11 +23,11 @@ public class AltoDoc {
         return DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(uri);
     }
 
-    public static String getAlto(String pid) {
+    public static String getAlto(String sourceUrl,String pid) {
         InputStream in = null;
         String altoXml = "", tmp = "";
         try {
-            URL u = new URL("http://dev.amuser-qstpb.com:8080/fedora/objects/" + pid + "/datastreams/F_OCR/content");
+            URL u = new URL(sourceUrl + "/objects/" + pid + "/datastreams/F_OCR/content");
             in = u.openStream();
             int size = in.available();
             byte[] buf = new byte[size];
@@ -55,10 +55,10 @@ public class AltoDoc {
         return altoXml;
     }
 
-    public static ArrayList<String> getPageIds(String pid) {
+    public static ArrayList<String> getPageIds(String sourceURL,String pid) {
         ArrayList<String> pageIds = null;
         try {
-            Document doc = parserXML("http://dev.amuser-qstpb.com:8080/fedora/objects/" + pid + "/datastreams/RELS-EXT/content");
+            Document doc = parserXML(sourceURL + "/objects/" + pid + "/datastreams/RELS-EXT/content");
             if (doc != null) {
                 NodeList hasPage = doc.getElementsByTagName("hasPageStruct");
                 if (hasPage != null) {
@@ -71,7 +71,7 @@ public class AltoDoc {
                                 String value = attr.getNodeValue();
                                 if (value != null) {
                                     String pageId = value.split("/")[1];
-                                    Document doc2 = parserXML("http://dev.amuser-qstpb.com:8080/fedora/objects/" + pageId + "/datastreams/RELS-EXT/content");
+                                    Document doc2 = parserXML(sourceURL + "/objects/" + pageId + "/datastreams/RELS-EXT/content");
                                     if (doc2 != null) {
                                         NodeList desc = doc2.getElementsByTagName("rdf:Description");
                                         if (desc != null) {

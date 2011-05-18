@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<axis2 xmlns="http://www.netbeans.org/ns/axis2/1">
-    <service name="Translate">
-        <service-class>com.diwan.translation.Translate</service-class>
-        <generate-wsdl targetNamespace="http://translation/diwan/com/" schemaNamespace="http://translation/diwan/com/xsd"/>
-    </service>
-</axis2>

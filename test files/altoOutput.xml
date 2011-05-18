@@ -1,0 +1,2058 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<alto xmlns="http://schema.ccs-gmbh.com/ALTO">
+  <Description>
+    <MeasurementUnit>inch1200</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>/mnt/lustre01.iarchives.com/lustre01/root/projects/production/newspaper/Univ_of_Hawaii/NDNP_2008/MS91059-1899_00/ocr/0239a.tif</fileName>
+    </sourceImageInformation>
+    <OCRProcessing ID="OCR.0">
+      <ocrProcessingStep>
+        <processingStepSettings>abbyy8.version:8.1.0.6184-12
+Abbyy8.cache-check.image-CRC:c69ed56d212eb149db458d9fd98f368d
+Conf:0.998
+Lang:en_US
+Abbyy8.cache-check.base-page-CRC:a2273a2d8978ef7b2921dc5d7a49bd99
+Conf.SPead:0.998
+source-image:/mnt/lustre01.iarchives.com/lustre01/root/projects/production/newspaper/Univ_of_Hawaii/NDNP_2008/MS91059-1899_00/ocr/0239a.tif
+Character Count:2965
+Predicted Word Accuracy:99.8%
+abbyy8.option.detect-negative-images:false
+Node Count:580
+Suspicious Character Count:253
+abbyy8.option.ocr-auto-pictures:true
+abbyy8.option.orientation:off
+Dictionary Words:532
+abbyy8.option.analyze-manual-zones:false
+abbyy8.option.analyze-zones:true
+Option Count:580
+Word Count:580
+Abbyy8.cache-check.wrapper-version:1.16
+width:3246
+height:4230
+xdpi:300
+ydpi:300
+</processingStepSettings>
+        <processingSoftware>
+          <softwareCreator>iArchives</softwareCreator>
+          <softwareName>Abbyy FineReader</softwareName>
+          <softwareVersion>8.1.0.6184-12</softwareVersion>
+          <applicationDescription>iArchives OCR Framework [Abbyy FineReader 8.1.0.6184-12]</applicationDescription>
+        </processingSoftware>
+      </ocrProcessingStep>
+    </OCRProcessing>
+  </Description>
+  <Styles>
+    <TextStyle FONTSIZE="7.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_7.0_BA" />
+    <TextStyle FONTSIZE="10.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_10.0_B" />
+    <TextStyle FONTSIZE="9.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_9.0_BA" />
+    <TextStyle FONTSIZE="23.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_23.0_BA" />
+    <TextStyle FONTSIZE="10.0" FONTSTYLE="bold smallcaps" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_10.0_BMA" />
+    <TextStyle FONTSIZE="10.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_10.0_BA" />
+    <TextStyle FONTSIZE="14.0" ID="TS_14.0" />
+    <TextStyle FONTSIZE="12.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_12.0_BA" />
+    <TextStyle FONTSIZE="8.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_8.0_BA" />
+    <TextStyle FONTSIZE="8.0" ID="TS_8.0" />
+    <TextStyle FONTSIZE="8.0" FONTSTYLE="italics" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_8.0_I" />
+    <TextStyle FONTSIZE="8.0" FONTSTYLE="smallcaps" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_8.0_M" />
+    <TextStyle FONTSIZE="40.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_40.0_B" />
+    <TextStyle FONTSIZE="17.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_17.0_B" />
+    <TextStyle FONTSIZE="11.0" FONTSTYLE="bold italics smallcaps" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_11.0_BIMA" />
+    <TextStyle FONTSIZE="8.0" FONTSTYLE="underline" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_8.0_U" />
+    <TextStyle FONTSIZE="20.0" FONTSTYLE="bold smallcaps" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_20.0_BM" />
+    <TextStyle FONTSIZE="20.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_20.0_B" />
+    <TextStyle FONTSIZE="11.0" ID="TS_11.0" />
+    <TextStyle FONTSIZE="27.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_27.0_B" />
+    <TextStyle FONTSIZE="16.0" ID="TS_16.0" />
+    <TextStyle FONTSIZE="19.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_19.0_B" />
+    <TextStyle FONTSIZE="23.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_23.0_B" />
+    <TextStyle FONTSIZE="8.0" FONTSTYLE="bold italics" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_8.0_BIA" />
+    <TextStyle FONTSIZE="14.0" FONTSTYLE="bold italics" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_14.0_BI" />
+    <TextStyle FONTSIZE="8.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_8.0_B" />
+    <TextStyle FONTSIZE="11.0" FONTSTYLE="italics" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_11.0_I" />
+    <TextStyle FONTSIZE="11.0" FONTSTYLE="smallcaps" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_11.0_M" />
+    <TextStyle FONTSIZE="14.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_14.0_B" />
+    <TextStyle FONTSIZE="15.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_15.0_B" />
+    <TextStyle FONTSIZE="6.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_6.0_B" />
+    <TextStyle FONTSIZE="5.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_5.0_BA" />
+    <TextStyle FONTSIZE="14.0" FONTSTYLE="italics" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_14.0_I" />
+    <TextStyle FONTSIZE="14.0" FONTSTYLE="smallcaps" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_14.0_M" />
+    <TextStyle FONTSIZE="24.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_24.0_B" />
+    <TextStyle FONTSIZE="24.0" FONTSTYLE="bold italics" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_24.0_BI" />
+    <TextStyle FONTSIZE="16.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_16.0_B" />
+    <TextStyle FONTSIZE="11.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_11.0_B" />
+    <TextStyle FONTSIZE="19.0" FONTSTYLE="bold smallcaps" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_19.0_BM" />
+    <TextStyle FONTSIZE="17.0" FONTSTYLE="bold smallcaps" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_17.0_BM" />
+    <TextStyle FONTSIZE="10.0" FONTSTYLE="bold italics" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_10.0_BI" />
+    <TextStyle FONTSIZE="16.0" FONTSTYLE="bold" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_16.0_BA" />
+    <TextStyle FONTSIZE="9.0" FONTSTYLE="bold italics" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_9.0_BIA" />
+    <TextStyle FONTSIZE="7.0" FONTSTYLE="bold italics" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_7.0_BIA" />
+    <TextStyle FONTSIZE="11.0" FONTSTYLE="bold italics" FONTTYPE="sans-serif" FONTWIDTH="proportional" ID="TS_11.0_BIA" />
+    <TextStyle FONTSIZE="9.0" FONTSTYLE="bold" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_9.0_B" />
+    <TextStyle FONTSIZE="9.0" FONTSTYLE="bold italics" FONTTYPE="serif" FONTWIDTH="proportional" ID="TS_9.0_BI" />
+  </Styles>
+  <Layout>
+    <Page HEIGHT="16920" ID="PAGE.0" PC="0.998" PHYSICAL_IMG_NR="396" PRINTED_IMG_NR="2" PROCESSING="OCR.0" WIDTH="12984">
+      <PrintSpace HEIGHT="16920.0" HPOS="0.0" ID="PS.0" VPOS="0.0" WIDTH="12984.0">
+        <TextBlock xmlns:ns1="http://www.w3.org/1999/xlink" HEIGHT="100" HPOS="1700" ID="TB.0239a.1" VPOS="1052" WIDTH="212" language="en" ns1:type="simple">
+          <TextLine HEIGHT="100.0" HPOS="1700.0" ID="TB.0239a.1_0" VPOS="1052.0" WIDTH="212.0">
+            <String CONTENT="-f" HEIGHT="64.0" HPOS="1700.0" ID="TB.0239a.1_0_0" STYLEREFS="TS_7.0_BA" VPOS="1088.0" WC="0.22" WIDTH="40.0" />
+            <SP HPOS="1740.0" VPOS="1052.0" WIDTH="116.0" />
+            <String CONTENT="?" HEIGHT="100.0" HPOS="1856.0" ID="TB.0239a.1_0_1" STYLEREFS="TS_7.0_BA" VPOS="1052.0" WC="0.25" WIDTH="56.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.1_0_0" End="TB.0239a.1_0_1">
+        <Alt lang="ar">
+        -f؟
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns2="http://www.w3.org/1999/xlink" HEIGHT="932" HPOS="1652" ID="TB.0239a.2" VPOS="1180" WIDTH="7356" language="en" ns2:type="simple">
+          <TextLine HEIGHT="176.0" HPOS="1652.0" ID="TB.0239a.2_0" VPOS="1244.0" WIDTH="268.0">
+            <String CONTENT=":VV" HEIGHT="176.0" HPOS="1652.0" ID="TB.0239a.2_0_0" STYLEREFS="TS_10.0_B" VPOS="1244.0" WC="0.148" WIDTH="268.0" />
+          </TextLine>
+          <TextLine HEIGHT="84.0" HPOS="1780.0" ID="TB.0239a.2_1" VPOS="1180.0" WIDTH="240.0">
+            <String CONTENT="..." HEIGHT="28.0" HPOS="1780.0" ID="TB.0239a.2_1_0" STYLEREFS="TS_9.0_BA" VPOS="1236.0" WC="0.436" WIDTH="176.0" />
+            <SP HPOS="1956.0" VPOS="1180.0" WIDTH="28.0" />
+            <String CONTENT="'-" HEIGHT="68.0" HPOS="1984.0" ID="TB.0239a.2_1_1" STYLEREFS="TS_9.0_BA" VPOS="1180.0" WC="0.62" WIDTH="36.0" />
+          </TextLine>
+          <TextLine HEIGHT="252.0" HPOS="2376.0" ID="TB.0239a.2_2" VPOS="1308.0" WIDTH="844.0">
+            <String HEIGHT="252" HPOS="2376" ID="TB.0239a.2_2_0" STYLEREFS="TS_23.0_BA" VPOS="1308" WC="0.162" WIDTH="0" />
+          </TextLine>
+          <TextLine HEIGHT="116.0" HPOS="2460.0" ID="TB.0239a.2_3" VPOS="1976.0" WIDTH="452.0">
+            <String CONTENT="a." HEIGHT="96.0" HPOS="2460.0" ID="TB.0239a.2_3_0" STYLEREFS="TS_10.0_BMA" VPOS="1992.0" WC="0.34" WIDTH="196.0" />
+            <SP HPOS="2656.0" VPOS="1976.0" WIDTH="40.0" />
+            <String CONTENT="'a" HEIGHT="116.0" HPOS="2696.0" ID="TB.0239a.2_3_1" STYLEREFS="TS_10.0_BA" VPOS="1976.0" WC="0.455" WIDTH="104.0" />
+            <SP HPOS="2800.0" VPOS="1976.0" WIDTH="96.0" />
+            <String CONTENT="'" HEIGHT="24.0" HPOS="2896.0" ID="TB.0239a.2_3_2" STYLEREFS="TS_10.0_BA" VPOS="1976.0" WC="0.55" WIDTH="16.0" />
+          </TextLine>
+          <TextLine HEIGHT="168.0" HPOS="5780.0" ID="TB.0239a.2_4" VPOS="1944.0" WIDTH="3228.0">
+            <String CONTENT="AUSTIN'S" HEIGHT="160.0" HPOS="5780.0" ID="TB.0239a.2_4_0" STYLEREFS="TS_14.0" VPOS="1944.0" WC="0.469" WIDTH="932.0" />
+            <SP HPOS="6712.0" VPOS="1944.0" WIDTH="184.0" />
+            <String CONTENT="HAWAIIAN" HEIGHT="164.0" HPOS="6896.0" ID="TB.0239a.2_4_1" STYLEREFS="TS_14.0" VPOS="1944.0" WC="0.515" WIDTH="1052.0" />
+            <SP HPOS="7948.0" VPOS="1944.0" WIDTH="172.0" />
+            <String CONTENT="WEEKLY" HEIGHT="152.0" HPOS="8120.0" ID="TB.0239a.2_4_2" STYLEREFS="TS_14.0" VPOS="1960.0" WC="0.375" WIDTH="888.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.2_0_0" End="TB.0239a.2_1_0">
+        <Alt lang="ar">
+        : VV.... 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.2_1_1" End="TB.0239a.2_3_0">
+        <Alt lang="ar">
+        '-عقوبة. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.2_3_1" End="TB.0239a.2_4_2">
+        <Alt lang="ar">
+        ' ' أوستن في هاواي أسبوعيا
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns3="http://www.w3.org/1999/xlink" HEIGHT="88" HPOS="408" ID="TB.0239a.3" VPOS="4140" WIDTH="60" language="en" ns3:type="simple">
+          <TextLine HEIGHT="88.0" HPOS="408.0" ID="TB.0239a.3_0" VPOS="4140.0" WIDTH="60.0">
+            <String CONTENT="?" HEIGHT="88.0" HPOS="408.0" ID="TB.0239a.3_0_0" STYLEREFS="TS_10.0_BA" VPOS="4140.0" WC="0.17" WIDTH="60.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.3_0_0" End="TB.0239a.3_0_0">
+        <Alt lang="ar">
+        ?
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns4="http://www.w3.org/1999/xlink" HEIGHT="12544" HPOS="328" ID="TB.0239a.4" VPOS="4288" WIDTH="2172" language="en" ns4:type="simple">
+          <TextLine HEIGHT="144.0" HPOS="328.0" ID="TB.0239a.4_0" VPOS="4288.0" WIDTH="196.0">
+            <String CONTENT="14" HEIGHT="144.0" HPOS="328.0" ID="TB.0239a.4_0_0" STYLEREFS="TS_12.0_BA" VPOS="4288.0" WC="0.33" WIDTH="196.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="2468.0" ID="TB.0239a.4_1" VPOS="11676.0" WIDTH="32.0">
+            <String CONTENT=":" HEIGHT="140.0" HPOS="2468.0" ID="TB.0239a.4_1_0" STYLEREFS="TS_10.0_BA" VPOS="11676.0" WC="0.15" WIDTH="32.0" />
+          </TextLine>
+          <TextLine HEIGHT="116.0" HPOS="1564.0" ID="TB.0239a.4_2" VPOS="15576.0" WIDTH="260.0">
+            <String CONTENT="Yv." HEIGHT="116.0" HPOS="1564.0" ID="TB.0239a.4_2_0" STYLEREFS="TS_10.0_BA" VPOS="15576.0" WC="0.24" WIDTH="260.0" />
+          </TextLine>
+          <TextLine HEIGHT="104.0" HPOS="344.0" ID="TB.0239a.4_3" VPOS="16592.0" WIDTH="140.0">
+            <String CONTENT="?tf" HEIGHT="104.0" HPOS="344.0" ID="TB.0239a.4_3_0" STYLEREFS="TS_8.0_BA" VPOS="16592.0" WC="0.275" WIDTH="140.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="336.0" ID="TB.0239a.4_4" VPOS="16696.0" WIDTH="1480.0">
+            <String CONTENT="itoVaiix?" HEIGHT="136.0" HPOS="336.0" ID="TB.0239a.4_4_0" STYLEREFS="TS_8.0" VPOS="16696.0" WC="0.161" WIDTH="592.0" />
+            <SP HPOS="928.0" VPOS="16696.0" WIDTH="28.0" />
+            <String CONTENT="Mt" HEIGHT="88.0" HPOS="956.0" ID="TB.0239a.4_4_1" STYLEREFS="TS_8.0_I" VPOS="16728.0" WC="0.197" WIDTH="248.0" />
+            <SP HPOS="1204.0" VPOS="16696.0" WIDTH="152.0" />
+            <String CONTENT="." HEIGHT="24.0" HPOS="1356.0" ID="TB.0239a.4_4_2" STYLEREFS="TS_8.0" VPOS="16780.0" WC="0.337" WIDTH="20.0" />
+            <SP HPOS="1376.0" VPOS="16696.0" WIDTH="172.0" />
+            <String CONTENT="-&amp;k" HEIGHT="104.0" HPOS="1548.0" ID="TB.0239a.4_4_3" STYLEREFS="TS_8.0_M" VPOS="16704.0" WC="0.25" WIDTH="268.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.4_0_0" End="TB.0239a.4_3_0">
+        <Alt lang="ar">
+        14:Yv.؟tf
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.4_4_0" End="TB.0239a.4_4_0">
+        <Alt lang="ar">
+        تفيتوفييكس؟ 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.4_4_1" End="TB.0239a.4_4_1">
+        <Alt lang="ar">
+        النقل المتعدد الوسائط 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.4_4_2" End="TB.0239a.4_4_3">
+        <Alt lang="ar">
+        -&amp; ك
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns5="http://www.w3.org/1999/xlink" HEIGHT="480" HPOS="2576" ID="TB.0239a.5" VPOS="2680" WIDTH="3352" language="en" ns5:type="simple">
+          <TextLine HEIGHT="480.0" HPOS="2576.0" ID="TB.0239a.5_0" VPOS="2680.0" WIDTH="3352.0">
+            <String CONTENT="Alexander" HEIGHT="472.0" HPOS="2576.0" ID="TB.0239a.5_0_0" STYLEREFS="TS_40.0_B" VPOS="2680.0" WC="0.463" WIDTH="1632.0" />
+            <SP HPOS="4208.0" VPOS="2680.0" WIDTH="72.0" />
+            <String CONTENT="&amp;" HEIGHT="464.0" HPOS="4280.0" ID="TB.0239a.5_0_1" STYLEREFS="TS_40.0_B" VPOS="2688.0" WC="0.36" WIDTH="240.0" />
+            <SP HPOS="4520.0" VPOS="2680.0" WIDTH="72.0" />
+            <String CONTENT="Baldwin" HEIGHT="472.0" HPOS="4592.0" ID="TB.0239a.5_0_2" STYLEREFS="TS_40.0_B" VPOS="2688.0" WC="0.424" WIDTH="1336.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.5_0_0" End="TB.0239a.5_0_2">
+        <Alt lang="ar">
+        ألكسندر &amp; بالدوين
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns6="http://www.w3.org/1999/xlink" HEIGHT="836" HPOS="6040" ID="TB.0239a.6" VPOS="2656" WIDTH="2996" language="en" ns6:type="simple">
+          <TextLine HEIGHT="296.0" HPOS="6040.0" ID="TB.0239a.6_0" VPOS="2656.0" WIDTH="2996.0">
+            <String CONTENT="Shipping" HEIGHT="292.0" HPOS="6040.0" ID="TB.0239a.6_0_0" STYLEREFS="TS_17.0_B" VPOS="2660.0" WC="0.22" WIDTH="728.0" />
+            <SP HPOS="6768.0" VPOS="2656.0" WIDTH="36.0" />
+            <String CONTENT="and" HEIGHT="256.0" HPOS="6804.0" ID="TB.0239a.6_0_1" STYLEREFS="TS_17.0_B" VPOS="2656.0" WC="0.17" WIDTH="292.0" />
+            <SP HPOS="7096.0" VPOS="2656.0" WIDTH="40.0" />
+            <String CONTENT="Commission" HEIGHT="252.0" HPOS="7136.0" ID="TB.0239a.6_0_2" STYLEREFS="TS_17.0_B" VPOS="2656.0" WC="0.544" WIDTH="984.0" />
+            <SP HPOS="8120.0" VPOS="2656.0" WIDTH="48.0" />
+            <String CONTENT="Merhcants" HEIGHT="252.0" HPOS="8168.0" ID="TB.0239a.6_0_3" STYLEREFS="TS_17.0_B" VPOS="2660.0" WC="0.378" WIDTH="868.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="6876.0" ID="TB.0239a.6_1" VPOS="2920.0" WIDTH="1304.0">
+            <String CONTENT="jUdd" HEIGHT="140.0" HPOS="6876.0" ID="TB.0239a.6_1_0" STYLEREFS="TS_11.0_BIMA" VPOS="2920.0" WC="0.218" WIDTH="444.0" />
+            <SP HPOS="7320.0" VPOS="2920.0" WIDTH="88.0" />
+            <String CONTENT="buildinq" HEIGHT="108.0" HPOS="7408.0" ID="TB.0239a.6_1_1" STYLEREFS="TS_11.0_BIMA" VPOS="2952.0" WC="0.512" WIDTH="772.0" />
+          </TextLine>
+          <TextLine HEIGHT="152.0" HPOS="6076.0" ID="TB.0239a.6_2" VPOS="3092.0" WIDTH="2956.0">
+            <String CONTENT="Agent!" HEIGHT="128.0" HPOS="6076.0" ID="TB.0239a.6_2_0" STYLEREFS="TS_8.0" VPOS="3108.0" WC="0.393" WIDTH="404.0" />
+            <SP HPOS="6480.0" VPOS="3092.0" WIDTH="44.0" />
+            <String CONTENT="for" HEIGHT="120.0" HPOS="6524.0" ID="TB.0239a.6_2_1" STYLEREFS="TS_8.0" VPOS="3108.0" WC="0.537" WIDTH="160.0" />
+            <SP HPOS="6684.0" VPOS="3092.0" WIDTH="48.0" />
+            <String CONTENT="Haiku" HEIGHT="120.0" HPOS="6732.0" ID="TB.0239a.6_2_2" STYLEREFS="TS_8.0" VPOS="3104.0" WC="0.404" WIDTH="348.0" />
+            <SP HPOS="7080.0" VPOS="3092.0" WIDTH="52.0" />
+            <String CONTENT="Sugar" HEIGHT="132.0" HPOS="7132.0" ID="TB.0239a.6_2_3" STYLEREFS="TS_8.0" VPOS="3108.0" WC="0.538" WIDTH="332.0" />
+            <SP HPOS="7464.0" VPOS="3092.0" WIDTH="44.0" />
+            <String CONTENT="Co.," HEIGHT="120.0" HPOS="7508.0" ID="TB.0239a.6_2_4" STYLEREFS="TS_8.0" VPOS="3112.0" WC="0.685" WIDTH="236.0" />
+            <SP HPOS="7744.0" VPOS="3092.0" WIDTH="92.0" />
+            <String CONTENT="Hawaiian" HEIGHT="116.0" HPOS="7836.0" ID="TB.0239a.6_2_5" STYLEREFS="TS_8.0" VPOS="3096.0" WC="0.368" WIDTH="536.0" />
+            <SP HPOS="8372.0" VPOS="3092.0" WIDTH="32.0" />
+            <String CONTENT="'Sugar" HEIGHT="152.0" HPOS="8404.0" ID="TB.0239a.6_2_6" STYLEREFS="TS_8.0" VPOS="3092.0" WC="0.518" WIDTH="344.0" />
+            <SP HPOS="8748.0" VPOS="3092.0" WIDTH="48.0" />
+            <String CONTENT="Co.," HEIGHT="120.0" HPOS="8796.0" ID="TB.0239a.6_2_7" STYLEREFS="TS_8.0" VPOS="3112.0" WC="0.653" WIDTH="236.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="6212.0" ID="TB.0239a.6_3" VPOS="3232.0" WIDTH="2824.0">
+            <String CONTENT="Hawaiian." HEIGHT="136.0" HPOS="6212.0" ID="TB.0239a.6_3_0" STYLEREFS="TS_8.0" VPOS="3236.0" WC="0.352" WIDTH="568.0" />
+            <SP HPOS="6780.0" VPOS="3232.0" WIDTH="48.0" />
+            <String CONTENT="Com." HEIGHT="108.0" HPOS="6828.0" ID="TB.0239a.6_3_1" STYLEREFS="TS_8.0" VPOS="3240.0" WC="0.655" WIDTH="300.0" />
+            <SP HPOS="7128.0" VPOS="3232.0" WIDTH="80.0" />
+            <String CONTENT="and" HEIGHT="112.0" HPOS="7208.0" ID="TB.0239a.6_3_2" STYLEREFS="TS_8.0" VPOS="3232.0" WC="0.663" WIDTH="208.0" />
+            <SP HPOS="7416.0" VPOS="3232.0" WIDTH="68.0" />
+            <String CONTENT="Sugar" HEIGHT="128.0" HPOS="7484.0" ID="TB.0239a.6_3_3" STYLEREFS="TS_8.0" VPOS="3240.0" WC="0.644" WIDTH="332.0" />
+            <SP HPOS="7816.0" VPOS="3232.0" WIDTH="44.0" />
+            <String CONTENT="Co;," HEIGHT="120.0" HPOS="7860.0" ID="TB.0239a.6_3_4" STYLEREFS="TS_8.0" VPOS="3240.0" WC="0.515" WIDTH="236.0" />
+            <SP HPOS="8096.0" VPOS="3232.0" WIDTH="64.0" />
+            <String CONTENT="Paia" HEIGHT="108.0" HPOS="8160.0" ID="TB.0239a.6_3_5" STYLEREFS="TS_8.0" VPOS="3236.0" WC="0.237" WIDTH="244.0" />
+            <SP HPOS="8404.0" VPOS="3232.0" WIDTH="56.0" />
+            <String CONTENT="Plantation" HEIGHT="108.0" HPOS="8460.0" ID="TB.0239a.6_3_6" STYLEREFS="TS_8.0" VPOS="3236.0" WC="0.62" WIDTH="576.0" />
+          </TextLine>
+          <TextLine HEIGHT="128.0" HPOS="6208.0" ID="TB.0239a.6_4" VPOS="3364.0" WIDTH="1884.0">
+            <String CONTENT="Co.." HEIGHT="116.0" HPOS="6208.0" ID="TB.0239a.6_4_0" STYLEREFS="TS_8.0_U" VPOS="3368.0" WC="0.64" WIDTH="236.0" />
+            <SP HPOS="6444.0" VPOS="3364.0" WIDTH="84.0" />
+            <String CONTENT="Klhel" HEIGHT="112.0" HPOS="6528.0" ID="TB.0239a.6_4_1" STYLEREFS="TS_8.0_U" VPOS="3364.0" WC="0.504" WIDTH="300.0" />
+            <SP HPOS="6828.0" VPOS="3364.0" WIDTH="60.0" />
+            <String CONTENT="Plantation" HEIGHT="112.0" HPOS="6888.0" ID="TB.0239a.6_4_2" STYLEREFS="TS_8.0_U" VPOS="3364.0" WC="0.374" WIDTH="580.0" />
+            <SP HPOS="7468.0" VPOS="3364.0" WIDTH="72.0" />
+            <String CONTENT="Company" HEIGHT="124.0" HPOS="7540.0" ID="TB.0239a.6_4_3" STYLEREFS="TS_8.0_U" VPOS="3368.0" WC="0.593" WIDTH="552.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.6_0_0" End="TB.0239a.6_2_0">
+        <Alt lang="ar">
+        بويلدينقاجينت الشحن وميرهكانتسجود لجنة! 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.6_2_1" End="TB.0239a.6_3_0">
+        <Alt lang="ar">
+        لشركة سكر هايكو، هاواي ' شركة السكر، وهاواي. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.6_3_1" End="TB.0239a.6_4_0">
+        <Alt lang="ar">
+        Com. والسكر؛ اﻷول أكسيد الكربون، وإذا بلانتاتيونكو... 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.6_4_1" End="TB.0239a.6_4_3">
+        <Alt lang="ar">
+        شركة مزارع كليل
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns7="http://www.w3.org/1999/xlink" HEIGHT="940" HPOS="2880" ID="TB.0239a.7" VPOS="3604" WIDTH="5516" language="en" ns7:type="simple">
+          <TextLine HEIGHT="300.0" HPOS="2880.0" ID="TB.0239a.7_0" VPOS="3604.0" WIDTH="5516.0">
+            <String CONTENT="Theo." HEIGHT="240.0" HPOS="2880.0" ID="TB.0239a.7_0_0" STYLEREFS="TS_20.0_BM" VPOS="3604.0" WC="0.45" WIDTH="1020.0" />
+            <SP HPOS="3900.0" VPOS="3604.0" WIDTH="264.0" />
+            <String CONTENT="H." HEIGHT="212.0" HPOS="4164.0" ID="TB.0239a.7_0_1" STYLEREFS="TS_20.0_B" VPOS="3620.0" WC="0.575" WIDTH="388.0" />
+            <SP HPOS="4552.0" VPOS="3604.0" WIDTH="248.0" />
+            <String CONTENT="Davies" HEIGHT="232.0" HPOS="4800.0" ID="TB.0239a.7_0_2" STYLEREFS="TS_20.0_BM" VPOS="3624.0" WC="0.647" WIDTH="1308.0" />
+            <SP HPOS="6108.0" VPOS="3604.0" WIDTH="216.0" />
+            <String CONTENT="&amp;" HEIGHT="220.0" HPOS="6324.0" ID="TB.0239a.7_0_3" STYLEREFS="TS_20.0_B" VPOS="3640.0" WC="0.47" WIDTH="248.0" />
+            <SP HPOS="6572.0" VPOS="3604.0" WIDTH="104.0" />
+            <String CONTENT="." HEIGHT="28.0" HPOS="6676.0" ID="TB.0239a.7_0_4" STYLEREFS="TS_20.0_B" VPOS="3820.0" WC="0.53" WIDTH="24.0" />
+            <SP HPOS="6700.0" VPOS="3604.0" WIDTH="148.0" />
+            <String CONTENT="Co.," HEIGHT="260.0" HPOS="6848.0" ID="TB.0239a.7_0_5" STYLEREFS="TS_20.0_B" VPOS="3644.0" WC="0.71" WIDTH="584.0" />
+            <SP HPOS="7432.0" VPOS="3604.0" WIDTH="220.0" />
+            <String CONTENT="Ltd." HEIGHT="232.0" HPOS="7652.0" ID="TB.0239a.7_0_6" STYLEREFS="TS_20.0_BM" VPOS="3640.0" WC="0.382" WIDTH="744.0" />
+          </TextLine>
+          <TextLine HEIGHT="188.0" HPOS="3372.0" ID="TB.0239a.7_1" VPOS="3952.0" WIDTH="3832.0">
+            <String CONTENT="." HEIGHT="32.0" HPOS="3372.0" ID="TB.0239a.7_1_0" STYLEREFS="TS_10.0_B" VPOS="4076.0" WC="0.24" WIDTH="48.0" />
+            <SP HPOS="3420.0" VPOS="3952.0" WIDTH="276.0" />
+            <String CONTENT=".;" HEIGHT="152.0" HPOS="3696.0" ID="TB.0239a.7_1_1" STYLEREFS="TS_10.0_B" VPOS="3984.0" WC="0.57" WIDTH="132.0" />
+            <SP HPOS="3828.0" VPOS="3952.0" WIDTH="188.0" />
+            <String CONTENT="." HEIGHT="24.0" HPOS="4016.0" ID="TB.0239a.7_1_2" STYLEREFS="TS_10.0_B" VPOS="4116.0" WC="0.54" WIDTH="28.0" />
+            <SP HPOS="4044.0" VPOS="3952.0" WIDTH="344.0" />
+            <String CONTENT="SUGAR" HEIGHT="164.0" HPOS="4388.0" ID="TB.0239a.7_1_3" STYLEREFS="TS_10.0_B" VPOS="3952.0" WC="0.284" WIDTH="1128.0" />
+            <SP HPOS="5516.0" VPOS="3952.0" WIDTH="196.0" />
+            <String CONTENT="FACTORS" HEIGHT="172.0" HPOS="5712.0" ID="TB.0239a.7_1_4" STYLEREFS="TS_10.0_B" VPOS="3964.0" WC="0.237" WIDTH="1492.0" />
+          </TextLine>
+          <TextLine HEIGHT="156.0" HPOS="4320.0" ID="TB.0239a.7_2" VPOS="4204.0" WIDTH="3004.0">
+            <String CONTENT="Importers" HEIGHT="156.0" HPOS="4320.0" ID="TB.0239a.7_2_0" STYLEREFS="TS_11.0" VPOS="4204.0" WC="0.546" WIDTH="684.0" />
+            <SP HPOS="5004.0" VPOS="4204.0" WIDTH="140.0" />
+            <String CONTENT="and" HEIGHT="120.0" HPOS="5144.0" ID="TB.0239a.7_2_1" STYLEREFS="TS_11.0" VPOS="4212.0" WC="0.887" WIDTH="244.0" />
+            <SP HPOS="5388.0" VPOS="4204.0" WIDTH="152.0" />
+            <String CONTENT="Commission" HEIGHT="132.0" HPOS="5540.0" ID="TB.0239a.7_2_2" STYLEREFS="TS_11.0" VPOS="4216.0" WC="0.782" WIDTH="860.0" />
+            <SP HPOS="6400.0" VPOS="4204.0" WIDTH="152.0" />
+            <String CONTENT="Merchants." HEIGHT="128.0" HPOS="6552.0" ID="TB.0239a.7_2_3" STYLEREFS="TS_11.0" VPOS="4224.0" WC="0.619" WIDTH="772.0" />
+          </TextLine>
+          <TextLine HEIGHT="144.0" HPOS="5088.0" ID="TB.0239a.7_3" VPOS="4400.0" WIDTH="1440.0">
+            <String CONTENT="Kaahumanu" HEIGHT="132.0" HPOS="5088.0" ID="TB.0239a.7_3_0" STYLEREFS="TS_11.0" VPOS="4400.0" WC="0.659" WIDTH="840.0" />
+            <SP HPOS="5928.0" VPOS="4400.0" WIDTH="152.0" />
+            <String CONTENT="Street." HEIGHT="128.0" HPOS="6080.0" ID="TB.0239a.7_3_1" STYLEREFS="TS_11.0" VPOS="4416.0" WC="0.713" WIDTH="448.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.7_0_0" End="TB.0239a.7_0_4">
+        <Alt lang="ar">
+        حاء – ديفيس ثيو. &amp;. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.7_0_5" End="TB.0239a.7_1_0">
+        <Alt lang="ar">
+        المحدودة. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.7_1_1" End="TB.0239a.7_1_1">
+        <Alt lang="ar">
+        .; 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.7_1_2" End="TB.0239a.7_1_2">
+        <Alt lang="ar">
+        . 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.7_1_3" End="TB.0239a.7_3_1">
+        <Alt lang="ar">
+        السكر فاكتورسيمبورتيرس وشارع Merchants.Kaahumanu اللجنة.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns8="http://www.w3.org/1999/xlink" HEIGHT="336" HPOS="2576" ID="TB.0239a.8" VPOS="4720" WIDTH="3408" language="en" ns8:type="simple">
+          <TextLine HEIGHT="336.0" HPOS="2576.0" ID="TB.0239a.8_0" VPOS="4720.0" WIDTH="3408.0">
+            <String CONTENT="TALK" HEIGHT="320.0" HPOS="2576.0" ID="TB.0239a.8_0_0" STYLEREFS="TS_27.0_B" VPOS="4720.0" WC="0.312" WIDTH="1120.0" />
+            <SP HPOS="3696.0" VPOS="4720.0" WIDTH="224.0" />
+            <String CONTENT="IS" HEIGHT="304.0" HPOS="3920.0" ID="TB.0239a.8_0_1" STYLEREFS="TS_27.0_B" VPOS="4736.0" WC="0.325" WIDTH="368.0" />
+            <SP HPOS="4288.0" VPOS="4720.0" WIDTH="200.0" />
+            <String CONTENT="CHEAP-" HEIGHT="320.0" HPOS="4488.0" ID="TB.0239a.8_0_2" STYLEREFS="TS_27.0_B" VPOS="4736.0" WC="0.402" WIDTH="1496.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.8_0_0" End="TB.0239a.8_0_2">
+        <Alt lang="ar">
+        كلام رخيص-
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns9="http://www.w3.org/1999/xlink" HEIGHT="1132" HPOS="5360" ID="TB.0239a.9" VPOS="5144" WIDTH="3664" language="en" ns9:type="simple">
+          <TextLine HEIGHT="204.0" HPOS="5904.0" ID="TB.0239a.9_0" VPOS="5144.0" WIDTH="2756.0">
+            <String CONTENT="When" HEIGHT="168.0" HPOS="5904.0" ID="TB.0239a.9_0_0" STYLEREFS="TS_16.0" VPOS="5144.0" WC="0.735" WIDTH="884.0" />
+            <SP HPOS="6788.0" VPOS="5144.0" WIDTH="120.0" />
+            <String CONTENT="You" HEIGHT="156.0" HPOS="6908.0" ID="TB.0239a.9_0_1" STYLEREFS="TS_16.0" VPOS="5152.0" WC="0.193" WIDTH="564.0" />
+            <SP HPOS="7472.0" VPOS="5144.0" WIDTH="128.0" />
+            <String CONTENT="Buy" HEIGHT="188.0" HPOS="7600.0" ID="TB.0239a.9_0_2" STYLEREFS="TS_16.0" VPOS="5160.0" WC="0.173" WIDTH="584.0" />
+            <SP HPOS="8184.0" VPOS="5144.0" WIDTH="112.0" />
+            <String CONTENT="an" HEIGHT="108.0" HPOS="8296.0" ID="TB.0239a.9_0_3" STYLEREFS="TS_16.0" VPOS="5204.0" WC="0.145" WIDTH="364.0" />
+          </TextLine>
+          <TextLine HEIGHT="212.0" HPOS="5920.0" ID="TB.0239a.9_1" VPOS="5436.0" WIDTH="2908.0">
+            <String CONTENT="Edison" HEIGHT="168.0" HPOS="5920.0" ID="TB.0239a.9_1_0" STYLEREFS="TS_16.0" VPOS="5436.0" WC="0.343" WIDTH="992.0" />
+            <SP HPOS="6912.0" VPOS="5436.0" WIDTH="168.0" />
+            <String CONTENT="Phonograph" HEIGHT="204.0" HPOS="7080.0" ID="TB.0239a.9_1_1" STYLEREFS="TS_16.0" VPOS="5444.0" WC="0.29" WIDTH="1748.0" />
+          </TextLine>
+          <TextLine HEIGHT="168.0" HPOS="5900.0" ID="TB.0239a.9_2" VPOS="5744.0" WIDTH="3124.0">
+            <String CONTENT="and" HEIGHT="160.0" HPOS="5900.0" ID="TB.0239a.9_2_0" STYLEREFS="TS_16.0" VPOS="5744.0" WC="0.143" WIDTH="540.0" />
+            <SP HPOS="6440.0" VPOS="5744.0" WIDTH="128.0" />
+            <String CONTENT="Records" HEIGHT="156.0" HPOS="6568.0" ID="TB.0239a.9_2_1" STYLEREFS="TS_16.0" VPOS="5748.0" WC="0.387" WIDTH="1132.0" />
+            <SP HPOS="7700.0" VPOS="5744.0" WIDTH="120.0" />
+            <String CONTENT="from" HEIGHT="152.0" HPOS="7820.0" ID="TB.0239a.9_2_2" STYLEREFS="TS_16.0" VPOS="5752.0" WC="0.962" WIDTH="676.0" />
+            <SP HPOS="8496.0" VPOS="5744.0" WIDTH="92.0" />
+            <String CONTENT="the" HEIGHT="156.0" HPOS="8588.0" ID="TB.0239a.9_2_3" STYLEREFS="TS_16.0" VPOS="5756.0" WC="0.38" WIDTH="436.0" />
+          </TextLine>
+          <TextLine HEIGHT="284.0" HPOS="5360.0" ID="TB.0239a.9_3" VPOS="5992.0" WIDTH="2296.0">
+            <String CONTENT="News" HEIGHT="240.0" HPOS="5360.0" ID="TB.0239a.9_3_0" STYLEREFS="TS_19.0_B" VPOS="5992.0" WC="0.613" WIDTH="776.0" />
+            <SP HPOS="6136.0" VPOS="5992.0" WIDTH="208.0" />
+            <String CONTENT="Co.," HEIGHT="268.0" HPOS="6344.0" ID="TB.0239a.9_3_1" STYLEREFS="TS_19.0_B" VPOS="6008.0" WC="0.39" WIDTH="504.0" />
+            <SP HPOS="6848.0" VPOS="5992.0" WIDTH="240.0" />
+            <String CONTENT="Ltd." HEIGHT="236.0" HPOS="7088.0" ID="TB.0239a.9_3_2" STYLEREFS="TS_19.0_B" VPOS="6008.0" WC="0.298" WIDTH="568.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.9_0_0" End="TB.0239a.9_3_2">
+        <Alt lang="ar">
+        عندما تشتري أنيديسون فونوجرافاند السجلات من تينوس المحدودة
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns10="http://www.w3.org/1999/xlink" HEIGHT="448" HPOS="3112" ID="TB.0239a.10" VPOS="6500" WIDTH="5448" language="en" ns10:type="simple">
+          <TextLine HEIGHT="324.0" HPOS="3112.0" ID="TB.0239a.10_0" VPOS="6500.0" WIDTH="5448.0">
+            <String CONTENT="H." HEIGHT="248.0" HPOS="3112.0" ID="TB.0239a.10_0_0" STYLEREFS="TS_23.0_B" VPOS="6504.0" WC="0.505" WIDTH="340.0" />
+            <SP HPOS="3452.0" VPOS="6500.0" WIDTH="304.0" />
+            <String CONTENT="HACKFELD" HEIGHT="260.0" HPOS="3756.0" ID="TB.0239a.10_0_1" STYLEREFS="TS_23.0_B" VPOS="6500.0" WC="0.849" WIDTH="2144.0" />
+            <SP HPOS="5900.0" VPOS="6500.0" WIDTH="288.0" />
+            <String CONTENT="&amp;" HEIGHT="260.0" HPOS="6188.0" ID="TB.0239a.10_0_2" STYLEREFS="TS_23.0_B" VPOS="6520.0" WC="1.0" WIDTH="280.0" />
+            <SP HPOS="6468.0" VPOS="6500.0" WIDTH="292.0" />
+            <String CONTENT="CO.," HEIGHT="296.0" HPOS="6760.0" ID="TB.0239a.10_0_3" STYLEREFS="TS_23.0_B" VPOS="6528.0" WC="0.773" WIDTH="652.0" />
+            <SP HPOS="7412.0" VPOS="6500.0" WIDTH="312.0" />
+            <String CONTENT="LTD." HEIGHT="256.0" HPOS="7724.0" ID="TB.0239a.10_0_4" STYLEREFS="TS_23.0_B" VPOS="6532.0" WC="0.815" WIDTH="836.0" />
+          </TextLine>
+          <TextLine HEIGHT="124.0" HPOS="5120.0" ID="TB.0239a.10_1" VPOS="6824.0" WIDTH="1384.0">
+            <String CONTENT="HONOLULU." HEIGHT="112.0" HPOS="5120.0" ID="TB.0239a.10_1_0" STYLEREFS="TS_8.0_BIA" VPOS="6824.0" WC="0.459" WIDTH="924.0" />
+            <SP HPOS="6044.0" VPOS="6824.0" WIDTH="108.0" />
+            <String CONTENT="H." HEIGHT="108.0" HPOS="6152.0" ID="TB.0239a.10_1_1" STYLEREFS="TS_8.0_BIA" VPOS="6840.0" WC="0.445" WIDTH="160.0" />
+            <SP HPOS="6312.0" VPOS="6824.0" WIDTH="104.0" />
+            <String CONTENT="I." HEIGHT="100.0" HPOS="6416.0" ID="TB.0239a.10_1_2" STYLEREFS="TS_8.0_BIA" VPOS="6844.0" WC="0.41" WIDTH="88.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.10_0_0" End="TB.0239a.10_0_4">
+        <Alt lang="ar">
+        حاء – هاكفيلد &amp; CO., LTD.
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.10_1_0" End="TB.0239a.10_1_0">
+        <Alt lang="ar">
+        هونولولو. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.10_1_1" End="TB.0239a.10_1_2">
+        <Alt lang="ar">
+        حاء – أنا.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns11="http://www.w3.org/1999/xlink" HEIGHT="212" HPOS="4316" ID="TB.0239a.11" VPOS="6988" WIDTH="2992" language="en" ns11:type="simple">
+          <TextLine HEIGHT="212.0" HPOS="4316.0" ID="TB.0239a.11_0" VPOS="6988.0" WIDTH="2992.0">
+            <String CONTENT="Importers," HEIGHT="200.0" HPOS="4316.0" ID="TB.0239a.11_0_0" STYLEREFS="TS_14.0_BI" VPOS="6988.0" WC="0.477" WIDTH="892.0" />
+            <SP HPOS="5208.0" VPOS="6988.0" WIDTH="204.0" />
+            <String CONTENT="Sugar" HEIGHT="204.0" HPOS="5412.0" ID="TB.0239a.11_0_1" STYLEREFS="TS_14.0_BI" VPOS="6996.0" WC="0.57" WIDTH="532.0" />
+            <SP HPOS="5944.0" VPOS="6988.0" WIDTH="192.0" />
+            <String CONTENT="Factors" HEIGHT="172.0" HPOS="6136.0" ID="TB.0239a.11_0_2" STYLEREFS="TS_14.0_BI" VPOS="7004.0" WC="0.454" WIDTH="648.0" />
+            <SP HPOS="6784.0" VPOS="6988.0" WIDTH="200.0" />
+            <String CONTENT="and" HEIGHT="152.0" HPOS="6984.0" ID="TB.0239a.11_0_3" STYLEREFS="TS_14.0_BI" VPOS="7024.0" WC="0.313" WIDTH="324.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.11_0_0" End="TB.0239a.11_0_3">
+        <Alt lang="ar">
+        المستوردين، وعوامل السكر و
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns12="http://www.w3.org/1999/xlink" HEIGHT="176" HPOS="4316" ID="TB.0239a.12" VPOS="7240" WIDTH="2844" language="en" ns12:type="simple">
+          <TextLine HEIGHT="176.0" HPOS="4316.0" ID="TB.0239a.12_0" VPOS="7240.0" WIDTH="2844.0">
+            <String CONTENT="general" HEIGHT="108.0" HPOS="4316.0" ID="TB.0239a.12_0_0" STYLEREFS="TS_14.0_BI" VPOS="7240.0" WC="0.405" WIDTH="692.0" />
+            <SP HPOS="5008.0" VPOS="7240.0" WIDTH="204.0" />
+            <String CONTENT="commission" HEIGHT="124.0" HPOS="5212.0" ID="TB.0239a.12_0_1" STYLEREFS="TS_14.0_BI" VPOS="7240.0" WC="0.589" WIDTH="1064.0" />
+            <SP HPOS="6276.0" VPOS="7240.0" WIDTH="196.0" />
+            <String CONTENT="Agents'" HEIGHT="176.0" HPOS="6472.0" ID="TB.0239a.12_0_2" STYLEREFS="TS_14.0_BI" VPOS="7240.0" WC="0.407" WIDTH="688.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.12_0_0" End="TB.0239a.12_0_2">
+        <Alt lang="ar">
+        للجنة العامة وكلاء
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns13="http://www.w3.org/1999/xlink" HEIGHT="548" HPOS="2560" ID="TB.0239a.13" VPOS="7544" WIDTH="6484" language="en" ns13:type="simple">
+          <TextLine HEIGHT="164.0" HPOS="2560.0" ID="TB.0239a.13_0" VPOS="7544.0" WIDTH="6484.0">
+            <String CONTENT="Agents" HEIGHT="104.0" HPOS="2560.0" ID="TB.0239a.13_0_0" STYLEREFS="TS_8.0_M" VPOS="7552.0" WC="0.325" WIDTH="472.0" />
+            <SP HPOS="3032.0" VPOS="7544.0" WIDTH="80.0" />
+            <String CONTENT="for" HEIGHT="80.0" HPOS="3112.0" ID="TB.0239a.13_0_1" STYLEREFS="TS_8.0_M" VPOS="7572.0" WC="0.23" WIDTH="212.0" />
+            <SP HPOS="3324.0" VPOS="7544.0" WIDTH="68.0" />
+            <String CONTENT="the" HEIGHT="76.0" HPOS="3392.0" ID="TB.0239a.13_0_2" STYLEREFS="TS_8.0_M" VPOS="7576.0" WC="0.343" WIDTH="228.0" />
+            <SP HPOS="3620.0" VPOS="7544.0" WIDTH="76.0" />
+            <String CONTENT="Pacific" HEIGHT="108.0" HPOS="3696.0" ID="TB.0239a.13_0_3" STYLEREFS="TS_8.0" VPOS="7544.0" WC="0.564" WIDTH="376.0" />
+            <SP HPOS="4072.0" VPOS="7544.0" WIDTH="76.0" />
+            <String CONTENT="Mail" HEIGHT="104.0" HPOS="4148.0" ID="TB.0239a.13_0_4" STYLEREFS="TS_8.0" VPOS="7548.0" WC="0.5" WIDTH="256.0" />
+            <SP HPOS="4404.0" VPOS="7544.0" WIDTH="68.0" />
+            <String CONTENT="Steamship" HEIGHT="136.0" HPOS="4472.0" ID="TB.0239a.13_0_5" STYLEREFS="TS_8.0" VPOS="7544.0" WC="0.503" WIDTH="592.0" />
+            <SP HPOS="5064.0" VPOS="7544.0" WIDTH="68.0" />
+            <String CONTENT="Co." HEIGHT="104.0" HPOS="5132.0" ID="TB.0239a.13_0_6" STYLEREFS="TS_8.0" VPOS="7552.0" WC="0.733" WIDTH="188.0" />
+            <SP HPOS="5320.0" VPOS="7544.0" WIDTH="144.0" />
+            <String CONTENT="Occidental" HEIGHT="112.0" HPOS="5464.0" ID="TB.0239a.13_0_7" STYLEREFS="TS_8.0" VPOS="7552.0" WC="0.504" WIDTH="612.0" />
+            <SP HPOS="6076.0" VPOS="7544.0" WIDTH="76.0" />
+            <String CONTENT="and" HEIGHT="108.0" HPOS="6152.0" ID="TB.0239a.13_0_8" STYLEREFS="TS_8.0" VPOS="7568.0" WC="0.357" WIDTH="208.0" />
+            <SP HPOS="6360.0" VPOS="7544.0" WIDTH="72.0" />
+            <String CONTENT="Oriental" HEIGHT="108.0" HPOS="6432.0" ID="TB.0239a.13_0_9" STYLEREFS="TS_8.0" VPOS="7568.0" WC="0.549" WIDTH="460.0" />
+            <SP HPOS="6892.0" VPOS="7544.0" WIDTH="72.0" />
+            <String CONTENT="Steamship" HEIGHT="136.0" HPOS="6964.0" ID="TB.0239a.13_0_10" STYLEREFS="TS_8.0" VPOS="7572.0" WC="0.418" WIDTH="592.0" />
+            <SP HPOS="7556.0" VPOS="7544.0" WIDTH="88.0" />
+            <String CONTENT="Co." HEIGHT="100.0" HPOS="7644.0" ID="TB.0239a.13_0_11" STYLEREFS="TS_8.0" VPOS="7584.0" WC="0.763" WIDTH="192.0" />
+            <SP HPOS="7836.0" VPOS="7544.0" WIDTH="140.0" />
+            <String CONTENT="Hawaiian" HEIGHT="108.0" HPOS="7976.0" ID="TB.0239a.13_0_12" STYLEREFS="TS_8.0" VPOS="7576.0" WC="0.472" WIDTH="540.0" />
+            <SP HPOS="8516.0" VPOS="7544.0" WIDTH="80.0" />
+            <String CONTENT="Line" HEIGHT="104.0" HPOS="8596.0" ID="TB.0239a.13_0_13" STYLEREFS="TS_8.0" VPOS="7580.0" WC="0.512" WIDTH="256.0" />
+            <SP HPOS="8852.0" VPOS="7544.0" WIDTH="88.0" />
+            <String CONTENT="ot" HEIGHT="92.0" HPOS="8940.0" ID="TB.0239a.13_0_14" STYLEREFS="TS_8.0" VPOS="7592.0" WC="0.3" WIDTH="104.0" />
+          </TextLine>
+          <TextLine HEIGHT="144.0" HPOS="3088.0" ID="TB.0239a.13_1" VPOS="7676.0" WIDTH="5436.0">
+            <String CONTENT="Packets" HEIGHT="100.0" HPOS="3088.0" ID="TB.0239a.13_1_0" STYLEREFS="TS_8.0" VPOS="7680.0" WC="0.337" WIDTH="436.0" />
+            <SP HPOS="3524.0" VPOS="7676.0" WIDTH="88.0" />
+            <String CONTENT="to" HEIGHT="84.0" HPOS="3612.0" ID="TB.0239a.13_1_1" STYLEREFS="TS_8.0" VPOS="7696.0" WC="0.405" WIDTH="112.0" />
+            <SP HPOS="3724.0" VPOS="7676.0" WIDTH="88.0" />
+            <String CONTENT="San" HEIGHT="104.0" HPOS="3812.0" ID="TB.0239a.13_1_2" STYLEREFS="TS_8.0" VPOS="7680.0" WC="0.583" WIDTH="216.0" />
+            <SP HPOS="4028.0" VPOS="7676.0" WIDTH="96.0" />
+            <String CONTENT="Francisco." HEIGHT="108.0" HPOS="4124.0" ID="TB.0239a.13_1_3" STYLEREFS="TS_8.0" VPOS="7676.0" WC="0.551" WIDTH="584.0" />
+            <SP HPOS="4708.0" VPOS="7676.0" WIDTH="216.0" />
+            <String CONTENT="Bremen" HEIGHT="104.0" HPOS="4924.0" ID="TB.0239a.13_1_4" STYLEREFS="TS_8.0" VPOS="7680.0" WC="0.49" WIDTH="432.0" />
+            <SP HPOS="5356.0" VPOS="7676.0" WIDTH="48.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="5404.0" ID="TB.0239a.13_1_5" STYLEREFS="TS_8.0" VPOS="7680.0" WC="0.47" WIDTH="204.0" />
+            <SP HPOS="5608.0" VPOS="7676.0" WIDTH="96.0" />
+            <String CONTENT="Liverpool" HEIGHT="136.0" HPOS="5704.0" ID="TB.0239a.13_1_6" STYLEREFS="TS_8.0" VPOS="7684.0" WC="0.711" WIDTH="552.0" />
+            <SP HPOS="6256.0" VPOS="7676.0" WIDTH="132.0" />
+            <String CONTENT="Line" HEIGHT="116.0" HPOS="6388.0" ID="TB.0239a.13_1_7" STYLEREFS="TS_8.0" VPOS="7696.0" WC="0.423" WIDTH="260.0" />
+            <SP HPOS="6648.0" VPOS="7676.0" WIDTH="112.0" />
+            <String CONTENT="of" HEIGHT="100.0" HPOS="6760.0" ID="TB.0239a.13_1_8" STYLEREFS="TS_8.0" VPOS="7704.0" WC="0.23" WIDTH="128.0" />
+            <SP HPOS="6888.0" VPOS="7676.0" WIDTH="104.0" />
+            <String CONTENT="Packets." HEIGHT="108.0" HPOS="6992.0" ID="TB.0239a.13_1_9" STYLEREFS="TS_8.0" VPOS="7704.0" WC="0.506" WIDTH="464.0" />
+            <SP HPOS="7456.0" VPOS="7676.0" WIDTH="216.0" />
+            <String CONTENT="Transatlantic" HEIGHT="108.0" HPOS="7672.0" ID="TB.0239a.13_1_10" STYLEREFS="TS_8.0" VPOS="7708.0" WC="0.576" WIDTH="852.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="3608.0" ID="TB.0239a.13_2" VPOS="7808.0" WIDTH="4384.0">
+            <String CONTENT="Fire" HEIGHT="104.0" HPOS="3608.0" ID="TB.0239a.13_2_0" STYLEREFS="TS_8.0" VPOS="7808.0" WC="0.34" WIDTH="228.0" />
+            <SP HPOS="3836.0" VPOS="7808.0" WIDTH="108.0" />
+            <String CONTENT="Insurance" HEIGHT="104.0" HPOS="3944.0" ID="TB.0239a.13_2_1" STYLEREFS="TS_8.0" VPOS="7808.0" WC="0.488" WIDTH="560.0" />
+            <SP HPOS="4504.0" VPOS="7808.0" WIDTH="136.0" />
+            <String CONTENT="Co." HEIGHT="100.0" HPOS="4640.0" ID="TB.0239a.13_2_2" STYLEREFS="TS_8.0" VPOS="7812.0" WC="0.747" WIDTH="188.0" />
+            <SP HPOS="4828.0" VPOS="7808.0" WIDTH="156.0" />
+            <String CONTENT="North" HEIGHT="108.0" HPOS="4984.0" ID="TB.0239a.13_2_3" STYLEREFS="TS_8.0" VPOS="7808.0" WC="0.55" WIDTH="332.0" />
+            <SP HPOS="5316.0" VPOS="7808.0" WIDTH="120.0" />
+            <String CONTENT="German" HEIGHT="112.0" HPOS="5436.0" ID="TB.0239a.13_2_4" STYLEREFS="TS_8.0" VPOS="7812.0" WC="0.58" WIDTH="452.0" />
+            <SP HPOS="5888.0" VPOS="7808.0" WIDTH="124.0" />
+            <String CONTENT="Fire" HEIGHT="112.0" HPOS="6012.0" ID="TB.0239a.13_2_5" STYLEREFS="TS_8.0" VPOS="7816.0" WC="0.395" WIDTH="232.0" />
+            <SP HPOS="6244.0" VPOS="7808.0" WIDTH="116.0" />
+            <String CONTENT="Insurance" HEIGHT="108.0" HPOS="6360.0" ID="TB.0239a.13_2_6" STYLEREFS="TS_8.0" VPOS="7828.0" WC="0.374" WIDTH="556.0" />
+            <SP HPOS="6916.0" VPOS="7808.0" WIDTH="116.0" />
+            <String CONTENT="Co." HEIGHT="100.0" HPOS="7032.0" ID="TB.0239a.13_2_7" STYLEREFS="TS_8.0" VPOS="7836.0" WC="0.773" WIDTH="188.0" />
+            <SP HPOS="7220.0" VPOS="7808.0" WIDTH="148.0" />
+            <String CONTENT="A." HEIGHT="104.0" HPOS="7368.0" ID="TB.0239a.13_2_8" STYLEREFS="TS_8.0" VPOS="7836.0" WC="1.0" WIDTH="132.0" />
+            <SP HPOS="7500.0" VPOS="7808.0" WIDTH="116.0" />
+            <String CONTENT="&amp;" HEIGHT="100.0" HPOS="7616.0" ID="TB.0239a.13_2_9" STYLEREFS="TS_8.0" VPOS="7836.0" WC="0.46" WIDTH="88.0" />
+            <SP HPOS="7704.0" VPOS="7808.0" WIDTH="124.0" />
+            <String CONTENT="W." HEIGHT="108.0" HPOS="7828.0" ID="TB.0239a.13_2_10" STYLEREFS="TS_8.0" VPOS="7836.0" WC="0.415" WIDTH="164.0" />
+          </TextLine>
+          <TextLine HEIGHT="156.0" HPOS="4136.0" ID="TB.0239a.13_3" VPOS="7936.0" WIDTH="3528.0">
+            <String CONTENT="Smith" HEIGHT="104.0" HPOS="4136.0" ID="TB.0239a.13_3_0" STYLEREFS="TS_8.0" VPOS="7936.0" WC="0.626" WIDTH="336.0" />
+            <SP HPOS="4472.0" VPOS="7936.0" WIDTH="116.0" />
+            <String CONTENT="&amp;" HEIGHT="104.0" HPOS="4588.0" ID="TB.0239a.13_3_1" STYLEREFS="TS_8.0" VPOS="7936.0" WC="0.41" WIDTH="92.0" />
+            <SP HPOS="4680.0" VPOS="7936.0" WIDTH="112.0" />
+            <String CONTENT="Co.," HEIGHT="116.0" HPOS="4792.0" ID="TB.0239a.13_3_2" STYLEREFS="TS_8.0" VPOS="7940.0" WC="0.792" WIDTH="236.0" />
+            <SP HPOS="5028.0" VPOS="7936.0" WIDTH="132.0" />
+            <String CONTENT="Engineers," HEIGHT="132.0" HPOS="5160.0" ID="TB.0239a.13_3_3" STYLEREFS="TS_8.0" VPOS="7936.0" WC="0.593" WIDTH="604.0" />
+            <SP HPOS="5764.0" VPOS="7936.0" WIDTH="128.0" />
+            <String CONTENT="Glasgow," HEIGHT="136.0" HPOS="5892.0" ID="TB.0239a.13_3_4" STYLEREFS="TS_8.0" VPOS="7948.0" WC="0.46" WIDTH="520.0" />
+            <SP HPOS="6412.0" VPOS="7936.0" WIDTH="76.0" />
+            <String CONTENT="Toyo" HEIGHT="136.0" HPOS="6488.0" ID="TB.0239a.13_3_5" STYLEREFS="TS_8.0" VPOS="7956.0" WC="0.395" WIDTH="300.0" />
+            <SP HPOS="6788.0" VPOS="7936.0" WIDTH="52.0" />
+            <String CONTENT="Kisen" HEIGHT="108.0" HPOS="6840.0" ID="TB.0239a.13_3_6" STYLEREFS="TS_8.0" VPOS="7956.0" WC="0.46" WIDTH="316.0" />
+            <SP HPOS="7156.0" VPOS="7936.0" WIDTH="80.0" />
+            <String CONTENT="Kaisha." HEIGHT="108.0" HPOS="7236.0" ID="TB.0239a.13_3_7" STYLEREFS="TS_8.0" VPOS="7960.0" WC="0.479" WIDTH="428.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.13_0_0" End="TB.0239a.13_1_3">
+        <Alt lang="ar">
+        عوامل أوتباكيتس المحيط الهادئ البريد الباخرة شركة أوكسيدنتال والشرقية الباخرة شركة هاواي الخط إلى سان فرانسيسكو. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.13_1_4" End="TB.0239a.13_1_9">
+        <Alt lang="ar">
+        بريمن وخط ليفربول الحزم. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.13_1_10" End="TB.0239a.13_3_7">
+        <Alt lang="ar">
+        ترانساتلانتيكفيري شركة الشمال الألماني الحريق التأمين شركة أ &amp; W.Smith &amp; للتأمين، المهندسين، غلاسكو، تويو كايسن كايشا.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns14="http://www.w3.org/1999/xlink" HEIGHT="1712" HPOS="2552" ID="TB.0239a.14" VPOS="8260" WIDTH="3216" language="en" ns14:type="simple">
+          <TextLine HEIGHT="112.0" HPOS="3252.0" ID="TB.0239a.14_0" VPOS="8260.0" WIDTH="1836.0">
+            <String CONTENT="A" HEIGHT="108.0" HPOS="3252.0" ID="TB.0239a.14_0_0" STYLEREFS="TS_11.0" VPOS="8260.0" WC="0.39" WIDTH="104.0" />
+            <SP HPOS="3356.0" VPOS="8260.0" WIDTH="72.0" />
+            <String CONTENT="Valuable" HEIGHT="108.0" HPOS="3428.0" ID="TB.0239a.14_0_1" STYLEREFS="TS_11.0" VPOS="8260.0" WC="0.594" WIDTH="604.0" />
+            <SP HPOS="4032.0" VPOS="8260.0" WIDTH="76.0" />
+            <String CONTENT="Endorsement." HEIGHT="112.0" HPOS="4108.0" ID="TB.0239a.14_0_2" STYLEREFS="TS_11.0" VPOS="8260.0" WC="0.675" WIDTH="980.0" />
+          </TextLine>
+          <TextLine HEIGHT="120.0" HPOS="2688.0" ID="TB.0239a.14_1" VPOS="8464.0" WIDTH="1108.0">
+            <String CONTENT="Mr." HEIGHT="104.0" HPOS="2688.0" ID="TB.0239a.14_1_0" STYLEREFS="TS_8.0_M" VPOS="8468.0" WC="0.68" WIDTH="224.0" />
+            <SP HPOS="2912.0" VPOS="8464.0" WIDTH="84.0" />
+            <String CONTENT="I." HEIGHT="104.0" HPOS="2996.0" ID="TB.0239a.14_1_1" STYLEREFS="TS_8.0" VPOS="8464.0" WC="0.95" WIDTH="84.0" />
+            <SP HPOS="3080.0" VPOS="8464.0" WIDTH="88.0" />
+            <String CONTENT="R." HEIGHT="104.0" HPOS="3168.0" ID="TB.0239a.14_1_2" STYLEREFS="TS_8.0" VPOS="8464.0" WC="0.46" WIDTH="120.0" />
+            <SP HPOS="3288.0" VPOS="8464.0" WIDTH="80.0" />
+            <String CONTENT="Burns," HEIGHT="120.0" HPOS="3368.0" ID="TB.0239a.14_1_3" STYLEREFS="TS_8.0_M" VPOS="8464.0" WC="0.52" WIDTH="428.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="3276.0" ID="TB.0239a.14_2" VPOS="8588.0" WIDTH="2288.0">
+            <String CONTENT="Bishop's" HEIGHT="140.0" HPOS="3276.0" ID="TB.0239a.14_2_0" STYLEREFS="TS_8.0" VPOS="8588.0" WC="0.596" WIDTH="476.0" />
+            <SP HPOS="3752.0" VPOS="8588.0" WIDTH="72.0" />
+            <String CONTENT="Bank," HEIGHT="132.0" HPOS="3824.0" ID="TB.0239a.14_2_1" STYLEREFS="TS_8.0" VPOS="8588.0" WC="0.636" WIDTH="324.0" />            
+<SP HPOS="4148.0" VPOS="8588.0" WIDTH="1396.0" />
+            <String CONTENT="'" HEIGHT="40.0" HPOS="5544.0" ID="TB.0239a.14_2_2" STYLEREFS="TS_8.0" VPOS="8604.0" WC="0.6" WIDTH="20.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="2556.0" ID="TB.0239a.14_3" VPOS="8752.0" WIDTH="3204.0">
+            <String CONTENT="Manager" HEIGHT="132.0" HPOS="2556.0" ID="TB.0239a.14_3_0" STYLEREFS="TS_8.0" VPOS="8756.0" WC="0.577" WIDTH="500.0" />
+            <SP HPOS="3056.0" VPOS="8752.0" WIDTH="44.0" />
+            <String CONTENT="of" HEIGHT="100.0" HPOS="3100.0" ID="TB.0239a.14_3_1" STYLEREFS="TS_8.0" VPOS="8756.0" WC="0.84" WIDTH="124.0" />
+            <SP HPOS="3224.0" VPOS="8752.0" WIDTH="48.0" />
+            <String CONTENT="the" HEIGHT="100.0" HPOS="3272.0" ID="TB.0239a.14_3_2" STYLEREFS="TS_8.0" VPOS="8756.0" WC="0.67" WIDTH="184.0" />
+            <SP HPOS="3456.0" VPOS="8752.0" WIDTH="44.0" />
+            <String CONTENT="Provident" HEIGHT="108.0" HPOS="3500.0" ID="TB.0239a.14_3_3" STYLEREFS="TS_8.0" VPOS="8752.0" WC="0.766" WIDTH="556.0" />
+            <SP HPOS="4056.0" VPOS="8752.0" WIDTH="68.0" />
+            <String CONTENT="Savings" HEIGHT="136.0" HPOS="4124.0" ID="TB.0239a.14_3_4" STYLEREFS="TS_8.0" VPOS="8752.0" WC="0.684" WIDTH="448.0" />
+            <SP HPOS="4572.0" VPOS="8752.0" WIDTH="72.0" />
+            <String CONTENT="Life" HEIGHT="108.0" HPOS="4644.0" ID="TB.0239a.14_3_5" STYLEREFS="TS_8.0" VPOS="8752.0" WC="0.668" WIDTH="224.0" />
+            <SP HPOS="4868.0" VPOS="8752.0" WIDTH="44.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="4912.0" ID="TB.0239a.14_3_6" STYLEREFS="TS_8.0" VPOS="8752.0" WC="0.48" WIDTH="208.0" />
+            <SP HPOS="5120.0" VPOS="8752.0" WIDTH="76.0" />
+            <String CONTENT="Insurance" HEIGHT="104.0" HPOS="5196.0" ID="TB.0239a.14_3_7" STYLEREFS="TS_8.0" VPOS="8756.0" WC="0.676" WIDTH="564.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="3468.0" ID="TB.0239a.14_4" VPOS="8880.0" WIDTH="1368.0">
+            <String CONTENT="Company" HEIGHT="128.0" HPOS="3468.0" ID="TB.0239a.14_4_0" STYLEREFS="TS_8.0" VPOS="8888.0" WC="0.666" WIDTH="548.0" />
+            <SP HPOS="4016.0" VPOS="8880.0" WIDTH="40.0" />
+            <String CONTENT="of" HEIGHT="104.0" HPOS="4056.0" ID="TB.0239a.14_4_1" STYLEREFS="TS_8.0" VPOS="8884.0" WC="0.355" WIDTH="128.0" />
+            <SP HPOS="4184.0" VPOS="8880.0" WIDTH="28.0" />
+            <String CONTENT="New" HEIGHT="108.0" HPOS="4212.0" ID="TB.0239a.14_4_2" STYLEREFS="TS_8.0" VPOS="8880.0" WC="0.313" WIDTH="268.0" />
+            <SP HPOS="4480.0" VPOS="8880.0" WIDTH="40.0" />
+            <String CONTENT="York." HEIGHT="112.0" HPOS="4520.0" ID="TB.0239a.14_4_3" STYLEREFS="TS_8.0" VPOS="8880.0" WC="0.414" WIDTH="316.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="2684.0" ID="TB.0239a.14_5" VPOS="9032.0" WIDTH="3080.0">
+            <String CONTENT="Dear" HEIGHT="104.0" HPOS="2684.0" ID="TB.0239a.14_5_0" STYLEREFS="TS_8.0_M" VPOS="9040.0" WC="0.353" WIDTH="324.0" />
+            <SP HPOS="3008.0" VPOS="9032.0" WIDTH="92.0" />
+            <String CONTENT="Sir," HEIGHT="124.0" HPOS="3100.0" ID="TB.0239a.14_5_1" STYLEREFS="TS_8.0_M" VPOS="9040.0" WC="0.808" WIDTH="236.0" />
+            <SP HPOS="3336.0" VPOS="9032.0" WIDTH="148.0" />
+            <String CONTENT="The" HEIGHT="104.0" HPOS="3484.0" ID="TB.0239a.14_5_2" STYLEREFS="TS_8.0" VPOS="9036.0" WC="0.493" WIDTH="232.0" />
+            <SP HPOS="3716.0" VPOS="9032.0" WIDTH="76.0" />
+            <String CONTENT="ten" HEIGHT="84.0" HPOS="3792.0" ID="TB.0239a.14_5_3" STYLEREFS="TS_8.0" VPOS="9056.0" WC="0.56" WIDTH="180.0" />
+            <SP HPOS="3972.0" VPOS="9032.0" WIDTH="88.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="4060.0" ID="TB.0239a.14_5_4" STYLEREFS="TS_8.0" VPOS="9036.0" WC="0.957" WIDTH="212.0" />
+            <SP HPOS="4272.0" VPOS="9032.0" WIDTH="68.0" />
+            <String CONTENT="fifteen" HEIGHT="108.0" HPOS="4340.0" ID="TB.0239a.14_5_5" STYLEREFS="TS_8.0" VPOS="9032.0" WC="0.613" WIDTH="356.0" />
+            <SP HPOS="4696.0" VPOS="9032.0" WIDTH="68.0" />
+            <String CONTENT="year" HEIGHT="104.0" HPOS="4764.0" ID="TB.0239a.14_5_6" STYLEREFS="TS_8.0" VPOS="9064.0" WC="0.455" WIDTH="248.0" />
+            <SP HPOS="5012.0" VPOS="9032.0" WIDTH="88.0" />
+            <String CONTENT="endowment" HEIGHT="104.0" HPOS="5100.0" ID="TB.0239a.14_5_7" STYLEREFS="TS_8.0" VPOS="9032.0" WC="0.7" WIDTH="664.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="2556.0" ID="TB.0239a.14_6" VPOS="9160.0" WIDTH="3208.0">
+            <String CONTENT="policies" HEIGHT="136.0" HPOS="2556.0" ID="TB.0239a.14_6_0" STYLEREFS="TS_8.0" VPOS="9164.0" WC="0.688" WIDTH="428.0" />
+            <SP HPOS="2984.0" VPOS="9160.0" WIDTH="88.0" />
+            <String CONTENT="for" HEIGHT="104.0" HPOS="3072.0" ID="TB.0239a.14_6_1" STYLEREFS="TS_8.0" VPOS="9168.0" WC="0.617" WIDTH="152.0" />
+            <SP HPOS="3224.0" VPOS="9160.0" WIDTH="88.0" />
+            <String CONTENT="my" HEIGHT="100.0" HPOS="3312.0" ID="TB.0239a.14_6_2" STYLEREFS="TS_8.0" VPOS="9200.0" WC="0.345" WIDTH="180.0" />
+            <SP HPOS="3492.0" VPOS="9160.0" WIDTH="108.0" />
+            <String CONTENT="three" HEIGHT="104.0" HPOS="3600.0" ID="TB.0239a.14_6_3" STYLEREFS="TS_8.0" VPOS="9164.0" WC="0.544" WIDTH="292.0" />
+            <SP HPOS="3892.0" VPOS="9160.0" WIDTH="112.0" />
+            <String CONTENT="sons," HEIGHT="88.0" HPOS="4004.0" ID="TB.0239a.14_6_4" STYLEREFS="TS_8.0" VPOS="9196.0" WC="0.55" WIDTH="284.0" />
+            <SP HPOS="4288.0" VPOS="9160.0" WIDTH="88.0" />
+            <String CONTENT="for" HEIGHT="104.0" HPOS="4376.0" ID="TB.0239a.14_6_5" STYLEREFS="TS_8.0" VPOS="9164.0" WC="0.66" WIDTH="156.0" />
+            <SP HPOS="4532.0" VPOS="9160.0" WIDTH="88.0" />
+            <String CONTENT="forty-five" HEIGHT="136.0" HPOS="4620.0" ID="TB.0239a.14_6_6" STYLEREFS="TS_8.0" VPOS="9160.0" WC="0.562" WIDTH="520.0" />
+            <SP HPOS="5140.0" VPOS="9160.0" WIDTH="108.0" />
+            <String CONTENT="thousand" HEIGHT="108.0" HPOS="5248.0" ID="TB.0239a.14_6_7" STYLEREFS="TS_8.0" VPOS="9160.0" WC="0.59" WIDTH="516.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="2552.0" ID="TB.0239a.14_7" VPOS="9288.0" WIDTH="3212.0">
+            <String CONTENT="dollars" HEIGHT="108.0" HPOS="2552.0" ID="TB.0239a.14_7_0" STYLEREFS="TS_8.0" VPOS="9296.0" WC="0.453" WIDTH="380.0" />
+            <SP HPOS="2932.0" VPOS="9288.0" WIDTH="64.0" />
+            <String CONTENT="from" HEIGHT="104.0" HPOS="2996.0" ID="TB.0239a.14_7_1" STYLEREFS="TS_8.0" VPOS="9296.0" WC="0.567" WIDTH="260.0" />
+            <SP HPOS="3256.0" VPOS="9288.0" WIDTH="92.0" />
+            <String CONTENT="your" HEIGHT="104.0" HPOS="3348.0" ID="TB.0239a.14_7_2" STYLEREFS="TS_8.0" VPOS="9324.0" WC="0.582" WIDTH="260.0" />
+            <SP HPOS="3608.0" VPOS="9288.0" WIDTH="112.0" />
+            <String CONTENT="Company," HEIGHT="124.0" HPOS="3720.0" ID="TB.0239a.14_7_3" STYLEREFS="TS_8.0" VPOS="9300.0" WC="0.629" WIDTH="580.0" />
+            <SP HPOS="4300.0" VPOS="9288.0" WIDTH="68.0" />
+            <String CONTENT=".delivered" HEIGHT="112.0" HPOS="4368.0" ID="TB.0239a.14_7_4" STYLEREFS="TS_8.0" VPOS="9292.0" WC="0.599" WIDTH="548.0" />
+            <SP HPOS="4916.0" VPOS="9288.0" WIDTH="112.0" />
+            <String CONTENT="by" HEIGHT="136.0" HPOS="5028.0" ID="TB.0239a.14_7_5" STYLEREFS="TS_8.0" VPOS="9288.0" WC="0.61" WIDTH="140.0" />
+            <SP HPOS="5168.0" VPOS="9288.0" WIDTH="84.0" />
+            <String CONTENT="you," HEIGHT="104.0" HPOS="5252.0" ID="TB.0239a.14_7_6" STYLEREFS="TS_8.0" VPOS="9320.0" WC="0.505" WIDTH="244.0" />
+            <SP HPOS="5496.0" VPOS="9288.0" WIDTH="96.0" />
+            <String CONTENT="are" HEIGHT="80.0" HPOS="5592.0" ID="TB.0239a.14_7_7" STYLEREFS="TS_8.0" VPOS="9320.0" WC="0.307" WIDTH="172.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="2552.0" ID="TB.0239a.14_8" VPOS="9420.0" WIDTH="3216.0">
+            <String CONTENT="eminently" HEIGHT="136.0" HPOS="2552.0" ID="TB.0239a.14_8_0" STYLEREFS="TS_8.0" VPOS="9424.0" WC="0.572" WIDTH="576.0" />
+            <SP HPOS="3128.0" VPOS="9420.0" WIDTH="84.0" />
+            <String CONTENT="satisfactory," HEIGHT="132.0" HPOS="3212.0" ID="TB.0239a.14_8_1" STYLEREFS="TS_8.0" VPOS="9424.0" WC="0.578" WIDTH="688.0" />
+            <SP HPOS="3900.0" VPOS="9420.0" WIDTH="104.0" />
+            <String CONTENT="and" HEIGHT="108.0" HPOS="4004.0" ID="TB.0239a.14_8_2" STYLEREFS="TS_8.0" VPOS="9420.0" WC="0.43" WIDTH="220.0" />
+            <SP HPOS="4224.0" VPOS="9420.0" WIDTH="112.0" />
+            <String CONTENT="1" HEIGHT="104.0" HPOS="4336.0" ID="TB.0239a.14_8_3" STYLEREFS="TS_8.0" VPOS="9424.0" WC="1.0" WIDTH="44.0" />
+            <SP HPOS="4380.0" VPOS="9420.0" WIDTH="120.0" />
+            <String CONTENT="commend" HEIGHT="112.0" HPOS="4500.0" ID="TB.0239a.14_8_4" STYLEREFS="TS_8.0" VPOS="9420.0" WC="0.69" WIDTH="556.0" />
+            <SP HPOS="5056.0" VPOS="9420.0" WIDTH="100.0" />
+            <String CONTENT="the" HEIGHT="104.0" HPOS="5156.0" ID="TB.0239a.14_8_5" STYLEREFS="TS_8.0" VPOS="9420.0" WC="0.657" WIDTH="180.0" />
+            <SP HPOS="5336.0" VPOS="9420.0" WIDTH="112.0" />
+            <String CONTENT="forms" HEIGHT="104.0" HPOS="5448.0" ID="TB.0239a.14_8_6" STYLEREFS="TS_8.0" VPOS="9420.0" WC="0.56" WIDTH="320.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="2552.0" ID="TB.0239a.14_9" VPOS="9552.0" WIDTH="2504.0">
+            <String CONTENT="issued" HEIGHT="108.0" HPOS="2552.0" ID="TB.0239a.14_9_0" STYLEREFS="TS_8.0" VPOS="9556.0" WC="0.392" WIDTH="348.0" />
+            <SP HPOS="2900.0" VPOS="9552.0" WIDTH="64.0" />
+            <String CONTENT="by" HEIGHT="132.0" HPOS="2964.0" ID="TB.0239a.14_9_1" STYLEREFS="TS_8.0" VPOS="9556.0" WC="0.475" WIDTH="140.0" />
+            <SP HPOS="3104.0" VPOS="9552.0" WIDTH="40.0" />
+            <String CONTENT="your" HEIGHT="104.0" HPOS="3144.0" ID="TB.0239a.14_9_2" STYLEREFS="TS_8.0" VPOS="9584.0" WC="0.758" WIDTH="260.0" />
+            <SP HPOS="3404.0" VPOS="9552.0" WIDTH="44.0" />
+            <String CONTENT="Company" HEIGHT="132.0" HPOS="3448.0" ID="TB.0239a.14_9_3" STYLEREFS="TS_8.0" VPOS="9556.0" WC="0.651" WIDTH="552.0" />
+            <SP HPOS="4000.0" VPOS="9552.0" WIDTH="44.0" />
+            <String CONTENT="to" HEIGHT="84.0" HPOS="4044.0" ID="TB.0239a.14_9_4" STYLEREFS="TS_8.0" VPOS="9572.0" WC="0.79" WIDTH="116.0" />
+            <SP HPOS="4160.0" VPOS="9552.0" WIDTH="36.0" />
+            <String CONTENT="all" HEIGHT="104.0" HPOS="4196.0" ID="TB.0239a.14_9_5" STYLEREFS="TS_8.0" VPOS="9552.0" WC="0.82" WIDTH="144.0" />
+            <SP HPOS="4340.0" VPOS="9552.0" WIDTH="40.0" />
+            <String CONTENT="young" HEIGHT="104.0" HPOS="4380.0" ID="TB.0239a.14_9_6" STYLEREFS="TS_8.0" VPOS="9584.0" WC="0.556" WIDTH="360.0" />
+            <SP HPOS="4740.0" VPOS="9552.0" WIDTH="40.0" />
+            <String CONTENT="men." HEIGHT="76.0" HPOS="4780.0" ID="TB.0239a.14_9_7" STYLEREFS="TS_8.0" VPOS="9584.0" WC="0.663" WIDTH="276.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="3764.0" ID="TB.0239a.14_10" VPOS="9700.0" WIDTH="1220.0">
+            <String CONTENT="Yours" HEIGHT="104.0" HPOS="3764.0" ID="TB.0239a.14_10_0" STYLEREFS="TS_8.0" VPOS="9704.0" WC="0.662" WIDTH="344.0" />
+            <SP HPOS="4108.0" VPOS="9700.0" WIDTH="40.0" />
+            <String CONTENT="very" HEIGHT="108.0" HPOS="4148.0" ID="TB.0239a.14_10_1" STYLEREFS="TS_8.0" VPOS="9732.0" WC="0.553" WIDTH="248.0" />
+            <SP HPOS="4396.0" VPOS="9700.0" WIDTH="44.0" />
+            <String CONTENT="sincerely," HEIGHT="136.0" HPOS="4440.0" ID="TB.0239a.14_10_2" STYLEREFS="TS_8.0" VPOS="9700.0" WC="0.626" WIDTH="544.0" />
+          </TextLine>
+          <TextLine HEIGHT="104.0" HPOS="4388.0" ID="TB.0239a.14_11" VPOS="9868.0" WIDTH="1244.0">
+            <String CONTENT="Mark" HEIGHT="104.0" HPOS="4388.0" ID="TB.0239a.14_11_0" STYLEREFS="TS_8.0_M" VPOS="9868.0" WC="0.525" WIDTH="360.0" />
+            <SP HPOS="4748.0" VPOS="9868.0" WIDTH="76.0" />
+            <String CONTENT="P." HEIGHT="104.0" HPOS="4824.0" ID="TB.0239a.14_11_1" STYLEREFS="TS_8.0" VPOS="9868.0" WC="0.715" WIDTH="120.0" />
+            <SP HPOS="4944.0" VPOS="9868.0" WIDTH="76.0" />
+            <String CONTENT="Robinson." HEIGHT="104.0" HPOS="5020.0" ID="TB.0239a.14_11_2" STYLEREFS="TS_8.0_M" VPOS="9868.0" WC="0.579" WIDTH="612.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.14_0_0" End="TB.0239a.14_1_0">
+        <Alt lang="ar">
+        Endorsement.Mr قيمة. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.14_1_1" End="TB.0239a.14_9_7">
+        <Alt lang="ar">
+        أولاً – ر. بيرنز، والأسقف مصرف ' إدارة "الحياة مدخرات الادخار" وإينسورانسيكومباني من جديد York.Dear سيدي، اندوومينتبوليسيس سنة عشر وخمسة عشر لابنائي الثلاثة لخمسة وأربعين ثوساندولارس من الشركة الخاصة بك،.delivered من قبلك، أريمينينتلي مرضيا، و 1 نشيد فورمسيسويد من الشركة الخاصة بك لجميع الشبان.
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.14_10_0" End="TB.0239a.14_11_2">
+        <Alt lang="ar">
+        تفضلوا بقبول الخالص، مارك ص روبنسون.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns15="http://www.w3.org/1999/xlink" HEIGHT="1284" HPOS="2564" ID="TB.0239a.15" VPOS="10084" WIDTH="3200" language="en" ns15:type="simple">
+          <TextLine HEIGHT="96.0" HPOS="2972.0" ID="TB.0239a.15_0" VPOS="10084.0" WIDTH="2372.0">
+            <String CONTENT="A" HEIGHT="88.0" HPOS="2972.0" ID="TB.0239a.15_0_0" STYLEREFS="TS_8.0" VPOS="10092.0" WC="0.2" WIDTH="160.0" />
+            <SP HPOS="3132.0" VPOS="10084.0" WIDTH="160.0" />
+            <String CONTENT="Amerloan" HEIGHT="96.0" HPOS="3292.0" ID="TB.0239a.15_0_1" STYLEREFS="TS_8.0" VPOS="10084.0" WC="0.319" WIDTH="1180.0" />
+            <SP HPOS="4472.0" VPOS="10084.0" WIDTH="88.0" />
+            <String CONTENT="Prloea," HEIGHT="96.0" HPOS="4560.0" ID="TB.0239a.15_0_2" STYLEREFS="TS_8.0_B" VPOS="10084.0" WC="0.294" WIDTH="784.0" />
+          </TextLine>
+          <TextLine HEIGHT="168.0" HPOS="2564.0" ID="TB.0239a.15_1" VPOS="10220.0" WIDTH="3188.0">
+            <String CONTENT="Vaults," HEIGHT="160.0" HPOS="2564.0" ID="TB.0239a.15_1_0" STYLEREFS="TS_11.0" VPOS="10224.0" WC="0.68" WIDTH="564.0" />
+            <SP HPOS="3128.0" VPOS="10220.0" WIDTH="148.0" />
+            <String CONTENT="Tombs," HEIGHT="160.0" HPOS="3276.0" ID="TB.0239a.15_1_1" STYLEREFS="TS_11.0" VPOS="10224.0" WC="0.762" WIDTH="604.0" />
+            <SP HPOS="3880.0" VPOS="10220.0" WIDTH="140.0" />
+            <String CONTENT="Monuments," HEIGHT="156.0" HPOS="4020.0" ID="TB.0239a.15_1_2" STYLEREFS="TS_11.0" VPOS="10224.0" WC="0.9" WIDTH="980.0" />
+            <SP HPOS="5000.0" VPOS="10220.0" WIDTH="156.0" />
+            <String CONTENT="Scotch," HEIGHT="168.0" HPOS="5156.0" ID="TB.0239a.15_1_3" STYLEREFS="TS_11.0" VPOS="10220.0" WC="0.896" WIDTH="596.0" />
+          </TextLine>
+          <TextLine HEIGHT="160.0" HPOS="2848.0" ID="TB.0239a.15_2" VPOS="10384.0" WIDTH="2624.0">
+            <String CONTENT="Swedish" HEIGHT="140.0" HPOS="2848.0" ID="TB.0239a.15_2_0" STYLEREFS="TS_11.0" VPOS="10388.0" WC="0.919" WIDTH="656.0" />
+            <SP HPOS="3504.0" VPOS="10384.0" WIDTH="60.0" />
+            <String CONTENT="and" HEIGHT="136.0" HPOS="3564.0" ID="TB.0239a.15_2_1" STYLEREFS="TS_11.0" VPOS="10388.0" WC="0.923" WIDTH="284.0" />
+            <SP HPOS="3848.0" VPOS="10384.0" WIDTH="72.0" />
+            <String CONTENT="American" HEIGHT="140.0" HPOS="3920.0" ID="TB.0239a.15_2_2" STYLEREFS="TS_11.0" VPOS="10384.0" WC="0.689" WIDTH="760.0" />
+            <SP HPOS="4680.0" VPOS="10384.0" WIDTH="68.0" />
+            <String CONTENT="Granites," HEIGHT="160.0" HPOS="4748.0" ID="TB.0239a.15_2_3" STYLEREFS="TS_11.0" VPOS="10384.0" WC="0.772" WIDTH="724.0" />
+          </TextLine>
+          <TextLine HEIGHT="176.0" HPOS="3020.0" ID="TB.0239a.15_3" VPOS="10548.0" WIDTH="2300.0">
+            <String CONTENT="Georgian" HEIGHT="172.0" HPOS="3020.0" ID="TB.0239a.15_3_0" STYLEREFS="TS_11.0" VPOS="10552.0" WC="0.622" WIDTH="732.0" />
+            <SP HPOS="3752.0" VPOS="10548.0" WIDTH="48.0" />
+            <String CONTENT="and" HEIGHT="132.0" HPOS="3800.0" ID="TB.0239a.15_3_1" STYLEREFS="TS_11.0" VPOS="10556.0" WC="0.927" WIDTH="288.0" />
+            <SP HPOS="4088.0" VPOS="10548.0" WIDTH="56.0" />
+            <String CONTENT="Italian" HEIGHT="140.0" HPOS="4144.0" ID="TB.0239a.15_3_2" STYLEREFS="TS_11.0" VPOS="10548.0" WC="0.616" WIDTH="492.0" />
+            <SP HPOS="4636.0" VPOS="10548.0" WIDTH="64.0" />
+            <String CONTENT="Marble," HEIGHT="160.0" HPOS="4700.0" ID="TB.0239a.15_3_3" STYLEREFS="TS_11.0" VPOS="10552.0" WC="0.784" WIDTH="620.0" />
+          </TextLine>
+          <TextLine HEIGHT="164.0" HPOS="3292.0" ID="TB.0239a.15_4" VPOS="10712.0" WIDTH="1736.0">
+            <String CONTENT="Hawaiian" HEIGHT="144.0" HPOS="3292.0" ID="TB.0239a.15_4_0" STYLEREFS="TS_11.0" VPOS="10712.0" WC="0.788" WIDTH="740.0" />
+            <SP HPOS="4032.0" VPOS="10712.0" WIDTH="64.0" />
+            <String CONTENT="Blue" HEIGHT="140.0" HPOS="4096.0" ID="TB.0239a.15_4_1" STYLEREFS="TS_11.0" VPOS="10716.0" WC="0.938" WIDTH="360.0" />
+            <SP HPOS="4456.0" VPOS="10712.0" WIDTH="64.0" />
+            <String CONTENT="Stone," HEIGHT="160.0" HPOS="4520.0" ID="TB.0239a.15_4_2" STYLEREFS="TS_11.0" VPOS="10716.0" WC="0.863" WIDTH="508.0" />
+          </TextLine>
+          <TextLine HEIGHT="180.0" HPOS="2732.0" ID="TB.0239a.15_5" VPOS="10876.0" WIDTH="2940.0">
+            <String CONTENT="iCoping" HEIGHT="172.0" HPOS="2732.0" ID="TB.0239a.15_5_0" STYLEREFS="TS_11.0" VPOS="10884.0" WC="0.663" WIDTH="608.0" />
+            <SP HPOS="3340.0" VPOS="10876.0" WIDTH="84.0" />
+            <String CONTENT="for" HEIGHT="132.0" HPOS="3424.0" ID="TB.0239a.15_5_1" STYLEREFS="TS_11.0" VPOS="10884.0" WC="0.75" WIDTH="240.0" />
+            <SP HPOS="3664.0" VPOS="10876.0" WIDTH="88.0" />
+            <String CONTENT="lawns,," HEIGHT="160.0" HPOS="3752.0" ID="TB.0239a.15_5_2" STYLEREFS="TS_11.0" VPOS="10880.0" WC="0.673" WIDTH="476.0" />
+            <SP HPOS="4228.0" VPOS="10876.0" WIDTH="56.0" />
+            <String CONTENT="and" HEIGHT="132.0" HPOS="4284.0" ID="TB.0239a.15_5_3" STYLEREFS="TS_11.0" VPOS="10884.0" WC="0.927" WIDTH="284.0" />
+            <SP HPOS="4568.0" VPOS="10876.0" WIDTH="92.0" />
+            <String CONTENT="cemeteries." HEIGHT="144.0" HPOS="4660.0" ID="TB.0239a.15_5_4" STYLEREFS="TS_11.0" VPOS="10876.0" WC="0.764" WIDTH="884.0" />
+            <SP HPOS="5544.0" VPOS="10876.0" WIDTH="92.0" />
+            <String CONTENT="." HEIGHT="24.0" HPOS="5636.0" ID="TB.0239a.15_5_5" STYLEREFS="TS_11.0" VPOS="10984.0" WC="0.27" WIDTH="36.0" />
+          </TextLine>
+          <TextLine HEIGHT="168.0" HPOS="2572.0" ID="TB.0239a.15_6" VPOS="11200.0" WIDTH="3192.0">
+            <String CONTENT="Estimates" HEIGHT="124.0" HPOS="2572.0" ID="TB.0239a.15_6_0" STYLEREFS="TS_11.0_I" VPOS="11208.0" WC="0.384" WIDTH="676.0" />
+            <SP HPOS="3248.0" VPOS="11200.0" WIDTH="60.0" />
+            <String CONTENT="will" HEIGHT="124.0" HPOS="3308.0" ID="TB.0239a.15_6_1" STYLEREFS="TS_11.0_I" VPOS="11204.0" WC="0.885" WIDTH="276.0" />
+            <SP HPOS="3584.0" VPOS="11200.0" WIDTH="56.0" />
+            <String CONTENT="be" HEIGHT="124.0" HPOS="3640.0" ID="TB.0239a.15_6_2" STYLEREFS="TS_11.0_I" VPOS="11204.0" WC="0.59" WIDTH="136.0" />
+            <SP HPOS="3776.0" VPOS="11200.0" WIDTH="48.0" />
+            <String CONTENT="given" HEIGHT="160.0" HPOS="3824.0" ID="TB.0239a.15_6_3" STYLEREFS="TS_11.0_I" VPOS="11204.0" WC="0.672" WIDTH="376.0" />
+            <SP HPOS="4200.0" VPOS="11200.0" WIDTH="28.0" />
+            <String CONTENT="free" HEIGHT="156.0" HPOS="4228.0" ID="TB.0239a.15_6_4" STYLEREFS="TS_11.0_I" VPOS="11204.0" WC="0.523" WIDTH="284.0" />
+            <SP HPOS="4512.0" VPOS="11200.0" WIDTH="24.0" />
+            <String CONTENT="for" HEIGHT="156.0" HPOS="4536.0" ID="TB.0239a.15_6_5" STYLEREFS="TS_11.0_I" VPOS="11204.0" WC="1.0" WIDTH="240.0" />
+            <SP HPOS="4776.0" VPOS="11200.0" WIDTH="48.0" />
+            <String CONTENT="special" HEIGHT="164.0" HPOS="4824.0" ID="TB.0239a.15_6_6" STYLEREFS="TS_11.0_I" VPOS="11204.0" WC="0.503" WIDTH="464.0" />
+            <SP HPOS="5288.0" VPOS="11200.0" WIDTH="88.0" />
+            <String CONTENT="work." HEIGHT="132.0" HPOS="5376.0" ID="TB.0239a.15_6_7" STYLEREFS="TS_11.0_I" VPOS="11200.0" WC="0.684" WIDTH="388.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.15_0_0" End="TB.0239a.15_5_4">
+        <Alt lang="ar">
+        برلوا أميرلوان خزائن، مقابر، والنصب التذكارية، سكوتش، السويدية و Granites الأمريكية، والجورجيين الرخام الإيطالي، الحجر الأزرق هاواي، إيكوبينج للمروج, والمقابر. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.15_5_5" End="TB.0239a.15_5_5">
+        <Alt lang="ar">
+        .
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.15_6_0" End="TB.0239a.15_6_7">
+        <Alt lang="ar">
+        تقديرات تعطي مجاناً لعمل خاصة.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns16="http://www.w3.org/1999/xlink" HEIGHT="1440" HPOS="2592" ID="TB.0239a.16" VPOS="11520" WIDTH="3176" language="en" ns16:type="simple">
+          <TextLine HEIGHT="208.0" HPOS="3200.0" ID="TB.0239a.16_0" VPOS="11520.0" WIDTH="1952.0">
+            <String CONTENT="Stones" HEIGHT="168.0" HPOS="3200.0" ID="TB.0239a.16_0_0" STYLEREFS="TS_14.0" VPOS="11524.0" WC="0.777" WIDTH="640.0" />
+            <SP HPOS="3840.0" VPOS="11520.0" WIDTH="56.0" />
+            <String CONTENT="from" HEIGHT="168.0" HPOS="3896.0" ID="TB.0239a.16_0_1" STYLEREFS="TS_14.0" VPOS="11520.0" WC="0.77" WIDTH="468.0" />
+            <SP HPOS="4364.0" VPOS="11520.0" WIDTH="60.0" />
+            <String CONTENT="$35" HEIGHT="188.0" HPOS="4424.0" ID="TB.0239a.16_0_2" STYLEREFS="TS_14.0" VPOS="11520.0" WC="0.727" WIDTH="364.0" />
+            <SP HPOS="4788.0" VPOS="11520.0" WIDTH="64.0" />
+            <String CONTENT="up." HEIGHT="164.0" HPOS="4852.0" ID="TB.0239a.16_0_3" STYLEREFS="TS_14.0" VPOS="11564.0" WC="0.757" WIDTH="300.0" />
+          </TextLine>
+          <TextLine HEIGHT="172.0" HPOS="2592.0" ID="TB.0239a.16_1" VPOS="11920.0" WIDTH="2268.0">
+            <String CONTENT="Hawaiian" HEIGHT="164.0" HPOS="2592.0" ID="TB.0239a.16_1_0" STYLEREFS="TS_14.0" VPOS="11928.0" WC="0.6" WIDTH="824.0" />
+            <SP HPOS="3416.0" VPOS="11920.0" WIDTH="76.0" />
+            <String CONTENT="Iron" HEIGHT="160.0" HPOS="3492.0" ID="TB.0239a.16_1_1" STYLEREFS="TS_14.0" VPOS="11924.0" WC="0.715" WIDTH="360.0" />
+            <SP HPOS="3852.0" VPOS="11920.0" WIDTH="84.0" />
+            <String CONTENT="Fence" HEIGHT="164.0" HPOS="3936.0" ID="TB.0239a.16_1_2" STYLEREFS="TS_14.0" VPOS="11920.0" WC="0.604" WIDTH="528.0" />
+            <SP HPOS="4464.0" VPOS="11920.0" WIDTH="72.0" />
+            <String CONTENT="and" HEIGHT="156.0" HPOS="4536.0" ID="TB.0239a.16_1_3" STYLEREFS="TS_14.0" VPOS="11928.0" WC="0.683" WIDTH="324.0" />
+          </TextLine>
+          <TextLine HEIGHT="168.0" HPOS="4280.0" ID="TB.0239a.16_2" VPOS="12120.0" WIDTH="1488.0">
+            <String CONTENT="Monumental" HEIGHT="164.0" HPOS="4280.0" ID="TB.0239a.16_2_0" STYLEREFS="TS_14.0" VPOS="12120.0" WC="0.527" WIDTH="1108.0" />
+            <SP HPOS="5388.0" VPOS="12120.0" WIDTH="120.0" />
+            <String CONTENT="Go." HEIGHT="168.0" HPOS="5508.0" ID="TB.0239a.16_2_1" STYLEREFS="TS_14.0" VPOS="12120.0" WC="0.617" WIDTH="260.0" />
+          </TextLine>
+          <TextLine HEIGHT="160.0" HPOS="3700.0" ID="TB.0239a.16_3" VPOS="12392.0" WIDTH="1400.0">
+            <String CONTENT="H." HEIGHT="136.0" HPOS="3700.0" ID="TB.0239a.16_3_0" STYLEREFS="TS_11.0" VPOS="12396.0" WC="0.705" WIDTH="196.0" />
+            <SP HPOS="3896.0" VPOS="12392.0" WIDTH="72.0" />
+            <String CONTENT="E." HEIGHT="136.0" HPOS="3968.0" ID="TB.0239a.16_3_1" STYLEREFS="TS_11.0" VPOS="12392.0" WC="0.84" WIDTH="176.0" />
+            <SP HPOS="4144.0" VPOS="12392.0" WIDTH="76.0" />
+            <String CONTENT="Hendrick," HEIGHT="160.0" HPOS="4220.0" ID="TB.0239a.16_3_2" STYLEREFS="TS_11.0_M" VPOS="12392.0" WC="0.709" WIDTH="880.0" />
+          </TextLine>
+          <TextLine HEIGHT="172.0" HPOS="4724.0" ID="TB.0239a.16_4" VPOS="12592.0" WIDTH="872.0">
+            <String CONTENT="Proprietor." HEIGHT="172.0" HPOS="4724.0" ID="TB.0239a.16_4_0" STYLEREFS="TS_11.0" VPOS="12592.0" WC="0.699" WIDTH="872.0" />
+          </TextLine>
+          <TextLine HEIGHT="180.0" HPOS="2596.0" ID="TB.0239a.16_5" VPOS="12780.0" WIDTH="3172.0">
+            <String CONTENT="641" HEIGHT="168.0" HPOS="2596.0" ID="TB.0239a.16_5_0" STYLEREFS="TS_14.0" VPOS="12792.0" WC="0.673" WIDTH="320.0" />
+            <SP HPOS="2916.0" VPOS="12780.0" WIDTH="76.0" />
+            <String CONTENT="Fort" HEIGHT="168.0" HPOS="2992.0" ID="TB.0239a.16_5_1" STYLEREFS="TS_14.0" VPOS="12788.0" WC="0.572" WIDTH="420.0" />
+            <SP HPOS="3412.0" VPOS="12780.0" WIDTH="72.0" />
+            <String CONTENT="St." HEIGHT="172.0" HPOS="3484.0" ID="TB.0239a.16_5_2" STYLEREFS="TS_14.0" VPOS="12784.0" WC="0.95" WIDTH="252.0" />
+            <SP HPOS="3736.0" VPOS="12780.0" WIDTH="612.0" />
+            <String CONTENT="P." HEIGHT="164.0" HPOS="4348.0" ID="TB.0239a.16_5_3" STYLEREFS="TS_14.0" VPOS="12784.0" WC="0.91" WIDTH="164.0" />
+            <SP HPOS="4512.0" VPOS="12780.0" WIDTH="88.0" />
+            <String CONTENT="0." HEIGHT="168.0" HPOS="4600.0" ID="TB.0239a.16_5_4" STYLEREFS="TS_14.0" VPOS="12784.0" WC="0.725" WIDTH="184.0" />
+            <SP HPOS="4784.0" VPOS="12780.0" WIDTH="80.0" />
+            <String CONTENT="Box" HEIGHT="168.0" HPOS="4864.0" ID="TB.0239a.16_5_5" STYLEREFS="TS_14.0_B" VPOS="12784.0" WC="0.653" WIDTH="372.0" />
+            <SP HPOS="5236.0" VPOS="12780.0" WIDTH="112.0" />
+            <String CONTENT="502." HEIGHT="176.0" HPOS="5348.0" ID="TB.0239a.16_5_6" STYLEREFS="TS_14.0_B" VPOS="12780.0" WC="0.678" WIDTH="420.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.16_0_0" End="TB.0239a.16_0_3">
+        <Alt lang="ar">
+        الحجارة من 35 دولاراً حتى.
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.16_1_0" End="TB.0239a.16_3_0">
+        <Alt lang="ar">
+        أندمونومينتال "هاواي الجدار الحديد" Go.H. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.16_3_1" End="TB.0239a.16_5_4">
+        <Alt lang="ar">
+        هاء Hendrick,Proprietor.641 فورت سانت ص 0. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.16_5_5" End="TB.0239a.16_5_6">
+        <Alt lang="ar">
+        502 مربع.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns17="http://www.w3.org/1999/xlink" HEIGHT="472" HPOS="2604" ID="TB.0239a.17" VPOS="13040" WIDTH="3172" language="en" ns17:type="simple">
+          <TextLine HEIGHT="128.0" HPOS="2760.0" ID="TB.0239a.17_0" VPOS="13040.0" WIDTH="896.0">
+            <String CONTENT="Subscribe" HEIGHT="124.0" HPOS="2760.0" ID="TB.0239a.17_0_0" STYLEREFS="TS_11.0" VPOS="13044.0" WC="0.843" WIDTH="664.0" />
+            <SP HPOS="3424.0" VPOS="13040.0" WIDTH="44.0" />
+            <String CONTENT="for" HEIGHT="124.0" HPOS="3468.0" ID="TB.0239a.17_0_1" STYLEREFS="TS_11.0" VPOS="13040.0" WC="0.89" WIDTH="188.0" />
+          </TextLine>
+          <TextLine HEIGHT="288.0" HPOS="2604.0" ID="TB.0239a.17_1" VPOS="13224.0" WIDTH="3172.0">
+            <String CONTENT="Austin's" HEIGHT="252.0" HPOS="2604.0" ID="TB.0239a.17_1_0" STYLEREFS="TS_20.0_B" VPOS="13224.0" WC="0.449" WIDTH="912.0" />
+            <SP HPOS="3516.0" VPOS="13224.0" WIDTH="220.0" />
+            <String CONTENT="Hawaiian" HEIGHT="252.0" HPOS="3736.0" ID="TB.0239a.17_1_1" STYLEREFS="TS_20.0_B" VPOS="13224.0" WC="0.461" WIDTH="1060.0" />
+            <SP HPOS="4796.0" VPOS="13224.0" WIDTH="208.0" />
+            <String CONTENT="Weekly" HEIGHT="288.0" HPOS="5004.0" ID="TB.0239a.17_1_2" STYLEREFS="TS_20.0_B" VPOS="13224.0" WC="0.25" WIDTH="772.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.17_0_0" End="TB.0239a.17_1_2">
+        <Alt lang="ar">
+        الاشتراك في فوروستين "هاواي التنزيلات"
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns18="http://www.w3.org/1999/xlink" HEIGHT="196" HPOS="6064" ID="TB.0239a.18" VPOS="8252" WIDTH="2780" language="en" ns18:type="simple">
+          <TextLine HEIGHT="196.0" HPOS="6064.0" ID="TB.0239a.18_0" VPOS="8252.0" WIDTH="2780.0">
+            <String CONTENT="BRUCE" HEIGHT="188.0" HPOS="6064.0" ID="TB.0239a.18_0_0" STYLEREFS="TS_15.0_B" VPOS="8252.0" WC="0.754" WIDTH="820.0" />
+            <SP HPOS="6884.0" VPOS="8252.0" WIDTH="140.0" />
+            <String CONTENT="WARING" HEIGHT="188.0" HPOS="7024.0" ID="TB.0239a.18_0_1" STYLEREFS="TS_15.0_B" VPOS="8260.0" WC="0.393" WIDTH="1104.0" />
+            <SP HPOS="8128.0" VPOS="8252.0" WIDTH="108.0" />
+            <String CONTENT="&amp;" HEIGHT="184.0" HPOS="8236.0" ID="TB.0239a.18_0_2" STYLEREFS="TS_15.0_B" VPOS="8264.0" WC="0.73" WIDTH="160.0" />
+            <SP HPOS="8396.0" VPOS="8252.0" WIDTH="112.0" />
+            <String CONTENT="CO." HEIGHT="184.0" HPOS="8508.0" ID="TB.0239a.18_0_3" STYLEREFS="TS_15.0_B" VPOS="8264.0" WC="1.0" WIDTH="336.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.18_0_0" End="TB.0239a.18_0_3">
+        <Alt lang="ar">
+        بروس أرنج &amp; CO.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns19="http://www.w3.org/1999/xlink" HEIGHT="1448" HPOS="5864" ID="TB.0239a.19" VPOS="8700" WIDTH="3192" language="en" ns19:type="simple">
+          <TextLine HEIGHT="108.0" HPOS="6656.0" ID="TB.0239a.19_0" VPOS="8700.0" WIDTH="1596.0">
+            <String CONTENT="Promoters" HEIGHT="104.0" HPOS="6656.0" ID="TB.0239a.19_0_0" STYLEREFS="TS_8.0" VPOS="8704.0" WC="0.468" WIDTH="572.0" />
+            <SP HPOS="7228.0" VPOS="8700.0" WIDTH="88.0" />
+            <String CONTENT="and" HEIGHT="108.0" HPOS="7316.0" ID="TB.0239a.19_0_1" STYLEREFS="TS_8.0" VPOS="8700.0" WC="0.517" WIDTH="208.0" />
+            <SP HPOS="7524.0" VPOS="8700.0" WIDTH="96.0" />
+            <String CONTENT="Dealers" HEIGHT="100.0" HPOS="7620.0" ID="TB.0239a.19_0_2" STYLEREFS="TS_8.0" VPOS="8708.0" WC="0.36" WIDTH="436.0" />
+            <SP HPOS="8056.0" VPOS="8700.0" WIDTH="96.0" />
+            <String CONTENT="in" HEIGHT="100.0" HPOS="8152.0" ID="TB.0239a.19_0_3" STYLEREFS="TS_8.0" VPOS="8708.0" WC="0.48" WIDTH="100.0" />
+          </TextLine>
+          <TextLine HEIGHT="264.0" HPOS="5864.0" ID="TB.0239a.19_1" VPOS="8936.0" WIDTH="3192.0">
+            <String CONTENT="REAL" HEIGHT="256.0" HPOS="5864.0" ID="TB.0239a.19_1_0" STYLEREFS="TS_23.0_B" VPOS="8936.0" WC="0.472" WIDTH="952.0" />
+            <SP HPOS="6816.0" VPOS="8936.0" WIDTH="248.0" />
+            <String CONTENT="-:-" HEIGHT="160.0" HPOS="7064.0" ID="TB.0239a.19_1_1" STYLEREFS="TS_23.0_B" VPOS="9016.0" WC="0.81" WIDTH="312.0" />
+            <SP HPOS="7376.0" VPOS="8936.0" WIDTH="224.0" />
+            <String CONTENT="ESTATE." HEIGHT="264.0" HPOS="7600.0" ID="TB.0239a.19_1_2" STYLEREFS="TS_23.0_B" VPOS="8936.0" WC="0.917" WIDTH="1456.0" />
+          </TextLine>
+          <TextLine HEIGHT="80.0" HPOS="7004.0" ID="TB.0239a.19_2" VPOS="9288.0" WIDTH="864.0">
+            <String CONTENT="PROMOTERS" HEIGHT="80.0" HPOS="7004.0" ID="TB.0239a.19_2_0" STYLEREFS="TS_6.0_B" VPOS="9288.0" WC="0.557" WIDTH="656.0" />
+            <SP HPOS="7660.0" VPOS="9288.0" WIDTH="68.0" />
+            <String CONTENT="OP" HEIGHT="72.0" HPOS="7728.0" ID="TB.0239a.19_2_1" STYLEREFS="TS_6.0_B" VPOS="9292.0" WC="0.515" WIDTH="140.0" />
+          </TextLine>
+          <TextLine HEIGHT="156.0" HPOS="6596.0" ID="TB.0239a.19_3" VPOS="9520.0" WIDTH="1796.0">
+            <String CONTENT="PACIFIC" HEIGHT="156.0" HPOS="6596.0" ID="TB.0239a.19_3_0" STYLEREFS="TS_14.0" VPOS="9520.0" WC="0.647" WIDTH="740.0" />
+            <SP HPOS="7336.0" VPOS="9520.0" WIDTH="152.0" />
+            <String CONTENT="HEIGHTS." HEIGHT="156.0" HPOS="7488.0" ID="TB.0239a.19_3_1" STYLEREFS="TS_14.0" VPOS="9520.0" WC="0.795" WIDTH="904.0" />
+          </TextLine>
+          <TextLine HEIGHT="128.0" HPOS="6576.0" ID="TB.0239a.19_4" VPOS="9880.0" WIDTH="1832.0">
+            <String CONTENT="Rooms" HEIGHT="100.0" HPOS="6576.0" ID="TB.0239a.19_4_0" STYLEREFS="TS_8.0" VPOS="9884.0" WC="0.308" WIDTH="388.0" />
+            <SP HPOS="6964.0" VPOS="9880.0" WIDTH="40.0" />
+            <String CONTENT="6" HEIGHT="104.0" HPOS="7004.0" ID="TB.0239a.19_4_1" STYLEREFS="TS_8.0" VPOS="9880.0" WC="0.75" WIDTH="68.0" />
+            <SP HPOS="7072.0" VPOS="9880.0" WIDTH="48.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="7120.0" ID="TB.0239a.19_4_2" STYLEREFS="TS_8.0" VPOS="9880.0" WC="0.683" WIDTH="208.0" />
+            <SP HPOS="7328.0" VPOS="9880.0" WIDTH="48.0" />
+            <String CONTENT="7" HEIGHT="104.0" HPOS="7376.0" ID="TB.0239a.19_4_3" STYLEREFS="TS_8.0" VPOS="9904.0" WC="0.21" WIDTH="56.0" />
+            <SP HPOS="7432.0" VPOS="9880.0" WIDTH="60.0" />
+            <String CONTENT="Progress" HEIGHT="124.0" HPOS="7492.0" ID="TB.0239a.19_4_4" STYLEREFS="TS_8.0" VPOS="9884.0" WC="0.386" WIDTH="484.0" />         
+   <SP HPOS="7976.0" VPOS="9880.0" WIDTH="76.0" />
+            <String CONTENT="Block." HEIGHT="112.0" HPOS="8052.0" ID="TB.0239a.19_4_5" STYLEREFS="TS_8.0" VPOS="9880.0" WC="0.773" WIDTH="356.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="7060.0" ID="TB.0239a.19_5" VPOS="10008.0" WIDTH="884.0">
+            <String CONTENT="Telephone" HEIGHT="136.0" HPOS="7060.0" ID="TB.0239a.19_5_0" STYLEREFS="TS_8.0" VPOS="10012.0" WC="0.472" WIDTH="604.0" />
+            <SP HPOS="7664.0" VPOS="10008.0" WIDTH="44.0" />
+            <String CONTENT="678." HEIGHT="132.0" HPOS="7708.0" ID="TB.0239a.19_5_1" STYLEREFS="TS_8.0" VPOS="10008.0" WC="0.66" WIDTH="236.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.19_0_0" End="TB.0239a.19_1_2">
+        <Alt lang="ar">
+        مروجي وتجار إينريل-:-الحوزة.
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.19_2_0" End="TB.0239a.19_3_1">
+        <Alt lang="ar">
+        مرتفعات أوباسيفيك المروجين.
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.19_4_0" End="TB.0239a.19_5_1">
+        <Alt lang="ar">
+        غرف 6 و 7 التقدم Block.Telephone 678.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns20="http://www.w3.org/1999/xlink" HEIGHT="56" HPOS="8132" ID="TB.0239a.20" VPOS="10216" WIDTH="88" language="en" ns20:type="simple">
+          <TextLine HEIGHT="56.0" HPOS="8132.0" ID="TB.0239a.20_0" VPOS="10216.0" WIDTH="88.0">
+            <String CONTENT="-1" HEIGHT="56.0" HPOS="8132.0" ID="TB.0239a.20_0_0" STYLEREFS="TS_5.0_BA" VPOS="10216.0" WC="0.255" WIDTH="88.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.20_0_0" End="TB.0239a.20_0_0">
+        <Alt lang="ar">
+        -1
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns21="http://www.w3.org/1999/xlink" HEIGHT="832" HPOS="6036" ID="TB.0239a.21" VPOS="10304" WIDTH="2860" language="en" ns21:type="simple">
+          <TextLine HEIGHT="268.0" HPOS="6172.0" ID="TB.0239a.21_0" VPOS="10304.0" WIDTH="2584.0">
+            <String CONTENT="G," HEIGHT="268.0" HPOS="6172.0" ID="TB.0239a.21_0_0" STYLEREFS="TS_17.0_B" VPOS="10304.0" WC="0.2" WIDTH="156.0" />
+            <SP HPOS="6328.0" VPOS="10304.0" WIDTH="216.0" />
+            <String CONTENT="BREWER" HEIGHT="224.0" HPOS="6544.0" ID="TB.0239a.21_0_1" STYLEREFS="TS_17.0_B" VPOS="10308.0" WC="0.298" WIDTH="824.0" />
+            <SP HPOS="7368.0" VPOS="10304.0" WIDTH="204.0" />
+            <String CONTENT="&amp;" HEIGHT="224.0" HPOS="7572.0" ID="TB.0239a.21_0_2" STYLEREFS="TS_17.0_B" VPOS="10308.0" WC="0.45" WIDTH="132.0" />
+            <SP HPOS="7704.0" VPOS="10304.0" WIDTH="212.0" />
+            <String CONTENT="GO.," HEIGHT="260.0" HPOS="7916.0" ID="TB.0239a.21_0_3" STYLEREFS="TS_17.0_B" VPOS="10304.0" WC="0.615" WIDTH="324.0" />
+            <SP HPOS="8240.0" VPOS="10304.0" WIDTH="188.0" />
+            <String CONTENT="Ltd." HEIGHT="224.0" HPOS="8428.0" ID="TB.0239a.21_0_4" STYLEREFS="TS_17.0_B" VPOS="10308.0" WC="0.528" WIDTH="328.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="6036.0" ID="TB.0239a.21_1" VPOS="10688.0" WIDTH="2120.0">
+            <String CONTENT="GENERAL" HEIGHT="140.0" HPOS="6036.0" ID="TB.0239a.21_1_0" STYLEREFS="TS_11.0" VPOS="10688.0" WC="0.423" WIDTH="852.0" />
+            <SP HPOS="6888.0" VPOS="10688.0" WIDTH="92.0" />
+            <String CONTENT="MERCANTILE" HEIGHT="132.0" HPOS="6980.0" ID="TB.0239a.21_1_1" STYLEREFS="TS_11.0" VPOS="10688.0" WC="0.809" WIDTH="1176.0" />
+          </TextLine>
+          <TextLine HEIGHT="88.0" HPOS="7328.0" ID="TB.0239a.21_2" VPOS="10884.0" WIDTH="264.0">
+            <String CONTENT="AND" HEIGHT="88.0" HPOS="7328.0" ID="TB.0239a.21_2_0" STYLEREFS="TS_8.0" VPOS="10884.0" WC="0.48" WIDTH="264.0" />
+          </TextLine>
+          <TextLine HEIGHT="128.0" HPOS="6916.0" ID="TB.0239a.21_3" VPOS="11008.0" WIDTH="1980.0">
+            <String CONTENT="COMMISSION" HEIGHT="128.0" HPOS="6916.0" ID="TB.0239a.21_3_0" STYLEREFS="TS_11.0" VPOS="11008.0" WC="0.829" WIDTH="1124.0" />
+            <SP HPOS="8040.0" VPOS="11008.0" WIDTH="100.0" />
+            <String CONTENT="AGENTS." HEIGHT="128.0" HPOS="8140.0" ID="TB.0239a.21_3_1" STYLEREFS="TS_11.0" VPOS="11008.0" WC="0.803" WIDTH="756.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.21_0_0" End="TB.0239a.21_3_1">
+        <Alt lang="ar">
+        ميركانتيليندكوميشن Ltd.GENERAL ز، بريور &amp; GO.، وكلاء.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns22="http://www.w3.org/1999/xlink" HEIGHT="640" HPOS="6272" ID="TB.0239a.22" VPOS="11360" WIDTH="2616" language="en" ns22:type="simple">
+          <TextLine HEIGHT="112.0" HPOS="6756.0" ID="TB.0239a.22_0" VPOS="11360.0" WIDTH="1448.0">
+            <String CONTENT="LIST" HEIGHT="112.0" HPOS="6756.0" ID="TB.0239a.22_0_0" STYLEREFS="TS_8.0" VPOS="11360.0" WC="0.518" WIDTH="336.0" />
+            <SP HPOS="7092.0" VPOS="11360.0" WIDTH="72.0" />
+            <String CONTENT="OF" HEIGHT="104.0" HPOS="7164.0" ID="TB.0239a.22_0_1" STYLEREFS="TS_8.0" VPOS="11364.0" WC="0.555" WIDTH="192.0" />
+            <SP HPOS="7356.0" VPOS="11360.0" WIDTH="72.0" />
+            <String CONTENT="OFFICERS" HEIGHT="108.0" HPOS="7428.0" ID="TB.0239a.22_0_2" STYLEREFS="TS_8.0" VPOS="11360.0" WC="0.767" WIDTH="708.0" />
+            <SP HPOS="8136.0" VPOS="11360.0" WIDTH="44.0" />
+            <String CONTENT=":" HEIGHT="72.0" HPOS="8180.0" ID="TB.0239a.22_0_3" STYLEREFS="TS_8.0" VPOS="11400.0" WC="0.42" WIDTH="24.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="6276.0" ID="TB.0239a.22_1" VPOS="11488.0" WIDTH="1384.0">
+            <String CONTENT="P." HEIGHT="112.0" HPOS="6276.0" ID="TB.0239a.22_1_0" STYLEREFS="TS_8.0" VPOS="11496.0" WC="0.745" WIDTH="112.0" />
+            <SP HPOS="6388.0" VPOS="11488.0" WIDTH="60.0" />
+            <String CONTENT="C." HEIGHT="104.0" HPOS="6448.0" ID="TB.0239a.22_1_1" STYLEREFS="TS_8.0" VPOS="11500.0" WC="0.925" WIDTH="124.0" />
+            <SP HPOS="6572.0" VPOS="11488.0" WIDTH="76.0" />
+            <String CONTENT="Jones," HEIGHT="132.0" HPOS="6648.0" ID="TB.0239a.22_1_2" STYLEREFS="TS_8.0_M" VPOS="11496.0" WC="0.423" WIDTH="384.0" />
+            <SP HPOS="7032.0" VPOS="11488.0" WIDTH="60.0" />
+            <String CONTENT="President." HEIGHT="108.0" HPOS="7092.0" ID="TB.0239a.22_1_3" STYLEREFS="TS_8.0" VPOS="11488.0" WC="0.552" WIDTH="568.0" />
+          </TextLine>
+          <TextLine HEIGHT="132.0" HPOS="6272.0" ID="TB.0239a.22_2" VPOS="11620.0" WIDTH="2616.0">
+            <String CONTENT="Geo." HEIGHT="104.0" HPOS="6272.0" ID="TB.0239a.22_2_0" STYLEREFS="TS_8.0_M" VPOS="11628.0" WC="0.65" WIDTH="280.0" />
+            <SP HPOS="6552.0" VPOS="11620.0" WIDTH="68.0" />
+            <String CONTENT="H," HEIGHT="116.0" HPOS="6620.0" ID="TB.0239a.22_2_1" STYLEREFS="TS_8.0" VPOS="11624.0" WC="0.655" WIDTH="140.0" />
+            <SP HPOS="6760.0" VPOS="11620.0" WIDTH="64.0" />
+            <String CONTENT="Robertson," HEIGHT="120.0" HPOS="6824.0" ID="TB.0239a.22_2_2" STYLEREFS="TS_8.0_M" VPOS="11624.0" WC="0.487" WIDTH="716.0" />
+            <SP HPOS="7540.0" VPOS="11620.0" WIDTH="52.0" />
+            <String CONTENT="Vice-Pres." HEIGHT="108.0" HPOS="7592.0" ID="TB.0239a.22_2_3" STYLEREFS="TS_8.0" VPOS="11620.0" WC="0.609" WIDTH="584.0" />
+            <SP HPOS="8176.0" VPOS="11620.0" WIDTH="56.0" />
+            <String CONTENT="und" HEIGHT="100.0" HPOS="8232.0" ID="TB.0239a.22_2_4" STYLEREFS="TS_8.0" VPOS="11624.0" WC="0.34" WIDTH="196.0" />
+            <SP HPOS="8428.0" VPOS="11620.0" WIDTH="60.0" />
+            <String CONTENT="Mangr." HEIGHT="128.0" HPOS="8488.0" ID="TB.0239a.22_2_5" STYLEREFS="TS_8.0" VPOS="11624.0" WC="0.8" WIDTH="400.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="6284.0" ID="TB.0239a.22_3" VPOS="11748.0" WIDTH="2280.0">
+            <String CONTENT="E." HEIGHT="108.0" HPOS="6284.0" ID="TB.0239a.22_3_0" STYLEREFS="TS_8.0" VPOS="11756.0" WC="0.525" WIDTH="120.0" />
+            <SP HPOS="6404.0" VPOS="11748.0" WIDTH="64.0" />
+            <String CONTENT="F." HEIGHT="104.0" HPOS="6468.0" ID="TB.0239a.22_3_1" STYLEREFS="TS_8.0" VPOS="11756.0" WC="0.52" WIDTH="120.0" />
+            <SP HPOS="6588.0" VPOS="11748.0" WIDTH="52.0" />
+            <String CONTENT="Bishop," HEIGHT="120.0" HPOS="6640.0" ID="TB.0239a.22_3_2" STYLEREFS="TS_8.0_M" VPOS="11756.0" WC="0.499" WIDTH="452.0" />
+            <SP HPOS="7092.0" VPOS="11748.0" WIDTH="56.0" />
+            <String CONTENT="Treasurer" HEIGHT="108.0" HPOS="7148.0" ID="TB.0239a.22_3_3" STYLEREFS="TS_8.0" VPOS="11748.0" WC="0.494" WIDTH="556.0" />
+            <SP HPOS="7704.0" VPOS="11748.0" WIDTH="40.0" />
+            <String CONTENT="and" HEIGHT="100.0" HPOS="7744.0" ID="TB.0239a.22_3_4" STYLEREFS="TS_8.0" VPOS="11752.0" WC="0.88" WIDTH="204.0" />
+            <SP HPOS="7948.0" VPOS="11748.0" WIDTH="52.0" />
+            <String CONTENT="Secretary." HEIGHT="132.0" HPOS="8000.0" ID="TB.0239a.22_3_5" STYLEREFS="TS_8.0" VPOS="11752.0" WC="0.654" WIDTH="564.0" />
+          </TextLine>
+          <TextLine HEIGHT="124.0" HPOS="6276.0" ID="TB.0239a.22_4" VPOS="11876.0" WIDTH="1708.0">
+            <String CONTENT="Cot.." HEIGHT="104.0" HPOS="6276.0" ID="TB.0239a.22_4_0" STYLEREFS="TS_8.0" VPOS="11888.0" WC="0.592" WIDTH="268.0" />
+            <SP HPOS="6544.0" VPOS="11876.0" WIDTH="60.0" />
+            <String CONTENT="W." HEIGHT="112.0" HPOS="6604.0" ID="TB.0239a.22_4_1" STYLEREFS="TS_8.0" VPOS="11880.0" WC="0.715" WIDTH="176.0" />
+            <SP HPOS="6780.0" VPOS="11876.0" WIDTH="68.0" />
+            <String CONTENT="F." HEIGHT="108.0" HPOS="6848.0" ID="TB.0239a.22_4_2" STYLEREFS="TS_8.0" VPOS="11884.0" WC="0.59" WIDTH="112.0" />
+            <SP HPOS="6960.0" VPOS="11876.0" WIDTH="68.0" />
+            <String CONTENT="Allen," HEIGHT="116.0" HPOS="7028.0" ID="TB.0239a.22_4_3" STYLEREFS="TS_8.0_M" VPOS="11884.0" WC="0.375" WIDTH="436.0" />
+            <SP HPOS="7464.0" VPOS="11876.0" WIDTH="52.0" />
+            <String CONTENT="Auditor." HEIGHT="112.0" HPOS="7516.0" ID="TB.0239a.22_4_4" STYLEREFS="TS_8.0" VPOS="11876.0" WC="0.736" WIDTH="468.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.22_0_0" End="TB.0239a.22_2_0">
+        <Alt lang="ar">
+        قائمة بأعضاء المكتب: P. جيم جونز، President.Geo. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.22_2_1" End="TB.0239a.22_3_0">
+        <Alt lang="ar">
+        ح روبرتسون، نائب الرئيس und Mangr.E. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.22_3_1" End="TB.0239a.22_4_0">
+        <Alt lang="ar">
+        واو الأسقف وأمين الخزانة و Secretary.Cot... 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.22_4_1" End="TB.0239a.22_4_4">
+        <Alt lang="ar">
+        جورج واو الين، مراجع الحسابات.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns23="http://www.w3.org/1999/xlink" HEIGHT="124" HPOS="6016" ID="TB.0239a.23" VPOS="12372" WIDTH="800" language="en" ns23:type="simple">
+          <TextLine HEIGHT="124.0" HPOS="6016.0" ID="TB.0239a.23_0" VPOS="12372.0" WIDTH="800.0">
+            <String CONTENT="C." HEIGHT="112.0" HPOS="6016.0" ID="TB.0239a.23_0_0" STYLEREFS="TS_8.0" VPOS="12376.0" WC="0.965" WIDTH="120.0" />
+            <SP HPOS="6136.0" VPOS="12372.0" WIDTH="64.0" />
+            <String CONTENT="M." HEIGHT="108.0" HPOS="6200.0" ID="TB.0239a.23_0_1" STYLEREFS="TS_8.0" VPOS="12372.0" WC="0.925" WIDTH="148.0" />
+            <SP HPOS="6348.0" VPOS="12372.0" WIDTH="52.0" />
+            <String CONTENT="Cooke," HEIGHT="124.0" HPOS="6400.0" ID="TB.0239a.23_0_2" STYLEREFS="TS_8.0_M" VPOS="12372.0" WC="0.595" WIDTH="416.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.23_0_0" End="TB.0239a.23_0_2">
+        <Alt lang="ar">
+        جيم م. كوك
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns24="http://www.w3.org/1999/xlink" HEIGHT="392" HPOS="7040" ID="TB.0239a.24" VPOS="12208" WIDTH="1908" language="en" ns24:type="simple">
+          <TextLine HEIGHT="108.0" HPOS="7076.0" ID="TB.0239a.24_0" VPOS="12208.0" WIDTH="892.0">
+            <String CONTENT="DIRECTORS" HEIGHT="108.0" HPOS="7076.0" ID="TB.0239a.24_0_0" STYLEREFS="TS_8.0" VPOS="12208.0" WC="0.717" WIDTH="832.0" />
+            <SP HPOS="7908.0" VPOS="12208.0" WIDTH="36.0" />
+            <String CONTENT=":" HEIGHT="72.0" HPOS="7944.0" ID="TB.0239a.24_0_1" STYLEREFS="TS_8.0" VPOS="12236.0" WC="0.38" WIDTH="24.0" />
+          </TextLine>
+          <TextLine HEIGHT="116.0" HPOS="7860.0" ID="TB.0239a.24_1" VPOS="12352.0" WIDTH="1088.0">
+            <String CONTENT="H." HEIGHT="108.0" HPOS="7860.0" ID="TB.0239a.24_1_0" STYLEREFS="TS_8.0" VPOS="12360.0" WC="0.965" WIDTH="140.0" />
+            <SP HPOS="8000.0" VPOS="12352.0" WIDTH="84.0" />
+            <String CONTENT="Waterhouse." HEIGHT="116.0" HPOS="8084.0" ID="TB.0239a.24_1_1" STYLEREFS="TS_8.0_M" VPOS="12352.0" WC="0.35" WIDTH="864.0" />
+          </TextLine>
+          <TextLine HEIGHT="104.0" HPOS="7040.0" ID="TB.0239a.24_2" VPOS="12496.0" WIDTH="876.0">
+            <String CONTENT="G." HEIGHT="100.0" HPOS="7040.0" ID="TB.0239a.24_2_0" STYLEREFS="TS_8.0" VPOS="12496.0" WC="0.64" WIDTH="136.0" />
+            <SP HPOS="7176.0" VPOS="12496.0" WIDTH="56.0" />     
+       <String CONTENT="R." HEIGHT="104.0" HPOS="7232.0" ID="TB.0239a.24_2_1" STYLEREFS="TS_8.0" VPOS="12496.0" WC="0.775" WIDTH="120.0" />
+            <SP HPOS="7352.0" VPOS="12496.0" WIDTH="60.0" />
+            <String CONTENT="Carter." HEIGHT="104.0" HPOS="7412.0" ID="TB.0239a.24_2_2" STYLEREFS="TS_8.0_M" VPOS="12496.0" WC="0.541" WIDTH="504.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.24_0_0" End="TB.0239a.24_2_0">
+        <Alt lang="ar">
+        مدراء: Waterhouse.G حاء. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.24_2_1" End="TB.0239a.24_2_2">
+        <Alt lang="ar">
+        ر. كارتر.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns25="http://www.w3.org/1999/xlink" HEIGHT="196" HPOS="5900" ID="TB.0239a.25" VPOS="12900" WIDTH="3100" language="en" ns25:type="simple">
+          <TextLine HEIGHT="196.0" HPOS="5900.0" ID="TB.0239a.25_0" VPOS="12900.0" WIDTH="3100.0">
+            <String CONTENT="U" HEIGHT="160.0" HPOS="5900.0" ID="TB.0239a.25_0_0" STYLEREFS="TS_14.0" VPOS="12920.0" WC="0.29" WIDTH="132.0" />
+            <SP HPOS="6032.0" VPOS="12900.0" WIDTH="40.0" />
+            <String CONTENT="N" HEIGHT="176.0" HPOS="6072.0" ID="TB.0239a.25_0_1" STYLEREFS="TS_14.0" VPOS="12920.0" WC="0.22" WIDTH="140.0" />
+            <SP HPOS="6212.0" VPOS="12900.0" WIDTH="48.0" />
+            <String CONTENT="ION" HEIGHT="160.0" HPOS="6260.0" ID="TB.0239a.25_0_2" STYLEREFS="TS_14.0" VPOS="12920.0" WC="0.367" WIDTH="388.0" />
+            <SP HPOS="6648.0" VPOS="12900.0" WIDTH="104.0" />
+            <String CONTENT="FEED" HEIGHT="156.0" HPOS="6752.0" ID="TB.0239a.25_0_3" STYLEREFS="TS_14.0" VPOS="12912.0" WC="0.742" WIDTH="616.0" />
+            <SP HPOS="7368.0" VPOS="12900.0" WIDTH="80.0" />
+            <String CONTENT="CO." HEIGHT="152.0" HPOS="7448.0" ID="TB.0239a.25_0_4" STYLEREFS="TS_14.0" VPOS="12908.0" WC="0.973" WIDTH="328.0" />
+            <SP HPOS="7776.0" VPOS="12900.0" WIDTH="428.0" />
+            <String CONTENT="&amp;$&amp;?" HEIGHT="192.0" HPOS="8204.0" ID="TB.0239a.25_0_5" STYLEREFS="TS_14.0_I" VPOS="12900.0" WC="0.215" WIDTH="796.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.25_0_0" End="TB.0239a.25_0_5">
+        <Alt lang="ar">
+        ش ن أيون تغذية CO. &amp;$ &amp;؟
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns26="http://www.w3.org/1999/xlink" HEIGHT="108" HPOS="6564" ID="TB.0239a.26" VPOS="13168" WIDTH="1884" language="en" ns26:type="simple">
+          <TextLine HEIGHT="108.0" HPOS="6564.0" ID="TB.0239a.26_0" VPOS="13168.0" WIDTH="1884.0">
+            <String CONTENT="I" HEIGHT="84.0" HPOS="6564.0" ID="TB.0239a.26_0_0" STYLEREFS="TS_8.0" VPOS="13188.0" WC="1.0" WIDTH="36.0" />
+            <SP HPOS="6600.0" VPOS="13168.0" WIDTH="68.0" />
+            <String CONTENT="M" HEIGHT="88.0" HPOS="6668.0" ID="TB.0239a.26_0_1" STYLEREFS="TS_8.0" VPOS="13188.0" WC="0.4" WIDTH="96.0" />
+            <SP HPOS="6764.0" VPOS="13168.0" WIDTH="20.0" />
+            <String CONTENT="PORTE" HEIGHT="88.0" HPOS="6784.0" ID="TB.0239a.26_0_2" STYLEREFS="TS_8.0" VPOS="13184.0" WC="0.298" WIDTH="404.0" />
+            <SP HPOS="7188.0" VPOS="13168.0" WIDTH="20.0" />
+            <String CONTENT="KS" HEIGHT="84.0" HPOS="7208.0" ID="TB.0239a.26_0_3" STYLEREFS="TS_8.0" VPOS="13180.0" WC="0.73" WIDTH="140.0" />
+            <SP HPOS="7348.0" VPOS="13168.0" WIDTH="72.0" />
+            <String CONTENT="AND" HEIGHT="88.0" HPOS="7420.0" ID="TB.0239a.26_0_4" STYLEREFS="TS_8.0" VPOS="13176.0" WC="0.427" WIDTH="292.0" />
+            <SP HPOS="7712.0" VPOS="13168.0" WIDTH="84.0" />
+            <String CONTENT="DEALERS" HEIGHT="92.0" HPOS="7796.0" ID="TB.0239a.26_0_5" STYLEREFS="TS_8.0" VPOS="13168.0" WC="0.441" WIDTH="572.0" />
+            <SP HPOS="8368.0" VPOS="13168.0" WIDTH="40.0" />
+            <String CONTENT="I" HEIGHT="84.0" HPOS="8408.0" ID="TB.0239a.26_0_6" STYLEREFS="TS_8.0" VPOS="13172.0" WC="1.0" WIDTH="40.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.26_0_0" End="TB.0239a.26_0_6">
+        <Alt lang="ar">
+        أنا م كانساس بورت والتجار وأنا
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns27="http://www.w3.org/1999/xlink" HEIGHT="224" HPOS="5880" ID="TB.0239a.27" VPOS="13372" WIDTH="728" language="en" ns27:type="simple">
+          <TextLine HEIGHT="108.0" HPOS="5900.0" ID="TB.0239a.27_0" VPOS="13372.0" WIDTH="696.0">
+            <String CONTENT="P" HEIGHT="88.0" HPOS="5900.0" ID="TB.0239a.27_0_0" STYLEREFS="TS_8.0" VPOS="13372.0" WC="0.21" WIDTH="72.0" />
+            <SP HPOS="5972.0" VPOS="13372.0" WIDTH="72.0" />
+            <String CONTENT="0." HEIGHT="96.0" HPOS="6044.0" ID="TB.0239a.27_0_1" STYLEREFS="TS_8.0" VPOS="13376.0" WC="0.317" WIDTH="116.0" />
+            <SP HPOS="6160.0" VPOS="13372.0" WIDTH="40.0" />
+            <String CONTENT="Box" HEIGHT="92.0" HPOS="6200.0" ID="TB.0239a.27_0_2" STYLEREFS="TS_8.0" VPOS="13376.0" WC="0.26" WIDTH="184.0" />
+            <SP HPOS="6384.0" VPOS="13372.0" WIDTH="44.0" />
+            <String CONTENT="&quot;7." HEIGHT="80.0" HPOS="6428.0" ID="TB.0239a.27_0_3" STYLEREFS="TS_8.0" VPOS="13400.0" WC="0.223" WIDTH="168.0" />
+          </TextLine>
+          <TextLine HEIGHT="120.0" HPOS="5880.0" ID="TB.0239a.27_1" VPOS="13476.0" WIDTH="728.0">
+            <String CONTENT="Telephone" HEIGHT="120.0" HPOS="5880.0" ID="TB.0239a.27_1_0" STYLEREFS="TS_8.0" VPOS="13476.0" WC="0.276" WIDTH="500.0" />
+            <SP HPOS="6380.0" VPOS="13476.0" WIDTH="84.0" />
+            <String CONTENT="7S" HEIGHT="84.0" HPOS="6464.0" ID="TB.0239a.27_1_1" STYLEREFS="TS_8.0" VPOS="13496.0" WC="0.388" WIDTH="144.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.27_0_0" End="TB.0239a.27_0_1">
+        <Alt lang="ar">
+        ف 0. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.27_0_2" End="TB.0239a.27_1_1">
+        <Alt lang="ar">
+        مربع "طراز 7.Telephone
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns28="http://www.w3.org/1999/xlink" HEIGHT="168" HPOS="6944" ID="TB.0239a.28" VPOS="13356" WIDTH="2128" language="en" ns28:type="simple">
+          <TextLine HEIGHT="168.0" HPOS="6944.0" ID="TB.0239a.28_0" VPOS="13356.0" WIDTH="2128.0">
+            <String CONTENT="m" HEIGHT="112.0" HPOS="6944.0" ID="TB.0239a.28_0_0" STYLEREFS="TS_14.0_I" VPOS="13412.0" WC="0.23" WIDTH="112.0" />
+            <SP HPOS="7056.0" VPOS="13356.0" WIDTH="220.0" />
+            <String CONTENT="HAY" HEIGHT="156.0" HPOS="7276.0" ID="TB.0239a.28_0_1" STYLEREFS="TS_14.0" VPOS="13360.0" WC="0.46" WIDTH="480.0" />
+            <SP HPOS="7756.0" VPOS="13356.0" WIDTH="128.0" />
+            <String CONTENT="and" HEIGHT="108.0" HPOS="7884.0" ID="TB.0239a.28_0_2" STYLEREFS="TS_14.0_M" VPOS="13404.0" WC="0.283" WIDTH="332.0" />
+            <SP HPOS="8216.0" VPOS="13356.0" WIDTH="144.0" />
+            <String CONTENT="GRAIN" HEIGHT="152.0" HPOS="8360.0" ID="TB.0239a.28_0_3" STYLEREFS="TS_14.0" VPOS="13356.0" WC="0.776" WIDTH="712.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.28_0_0" End="TB.0239a.28_0_3">
+        <Alt lang="ar">
+        م حي والحبوب
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns29="http://www.w3.org/1999/xlink" HEIGHT="328" HPOS="9144" ID="TB.0239a.29" VPOS="2640" WIDTH="3192" language="en" ns29:type="simple">
+          <TextLine HEIGHT="328.0" HPOS="9144.0" ID="TB.0239a.29_0" VPOS="2640.0" WIDTH="3192.0">
+            <String CONTENT="GRAND" HEIGHT="320.0" HPOS="9144.0" ID="TB.0239a.29_0_0" STYLEREFS="TS_24.0_B" VPOS="2640.0" WC="0.386" WIDTH="824.0" />
+            <SP HPOS="9968.0" VPOS="2640.0" WIDTH="136.0" />
+            <String CONTENT="i" HEIGHT="288.0" HPOS="10104.0" ID="TB.0239a.29_0_1" STYLEREFS="TS_24.0_BI" VPOS="2664.0" WC="0.16" WIDTH="216.0" />
+            <SP HPOS="10320.0" VPOS="2640.0" WIDTH="160.0" />
+            <String CONTENT="ENTETAINHENT" HEIGHT="328.0" HPOS="10480.0" ID="TB.0239a.29_0_2" STYLEREFS="TS_24.0_B" VPOS="2640.0" WC="0.416" WIDTH="1856.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.29_0_0" End="TB.0239a.29_0_2">
+        <Alt lang="ar">
+        غراند انتيتينهينت أنا
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns30="http://www.w3.org/1999/xlink" HEIGHT="568" HPOS="9244" ID="TB.0239a.30" VPOS="3080" WIDTH="2964" language="en" ns30:type="simple">
+          <TextLine HEIGHT="88.0" HPOS="10660.0" ID="TB.0239a.30_0" VPOS="3080.0" WIDTH="156.0">
+            <String CONTENT="OF" HEIGHT="88.0" HPOS="10660.0" ID="TB.0239a.30_0_0" STYLEREFS="TS_8.0" VPOS="3080.0" WC="0.295" WIDTH="156.0" />
+          </TextLine>
+          <TextLine HEIGHT="196.0" HPOS="9244.0" ID="TB.0239a.30_1" VPOS="3276.0" WIDTH="2964.0">
+            <String CONTENT="Novel" HEIGHT="168.0" HPOS="9244.0" ID="TB.0239a.30_1_0" STYLEREFS="TS_16.0_B" VPOS="3284.0" WC="0.49" WIDTH="1056.0" />
+            <SP HPOS="10300.0" VPOS="3276.0" WIDTH="236.0" />
+            <String CONTENT="Varieties" HEIGHT="196.0" HPOS="10536.0" ID="TB.0239a.30_1_1" STYLEREFS="TS_16.0_B" VPOS="3276.0" WC="0.511" WIDTH="1672.0" />
+          </TextLine>
+          <TextLine HEIGHT="108.0" HPOS="10452.0" ID="TB.0239a.30_2" VPOS="3540.0" WIDTH="592.0">
+            <String CONTENT="AT" HEIGHT="104.0" HPOS="10452.0" ID="TB.0239a.30_2_0" STYLEREFS="TS_8.0" VPOS="3540.0" WC="0.53" WIDTH="188.0" />
+            <SP HPOS="10640.0" VPOS="3540.0" WIDTH="92.0" />
+            <String CONTENT="THE" HEIGHT="108.0" HPOS="10732.0" ID="TB.0239a.30_2_1" STYLEREFS="TS_8.0" VPOS="3540.0" WC="0.6" WIDTH="312.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.30_0_0" End="TB.0239a.30_2_1">
+        <Alt lang="ar">
+        فاريتيسات أوفنوفيل
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns31="http://www.w3.org/1999/xlink" HEIGHT="220" HPOS="9144" ID="TB.0239a.31" VPOS="3724" WIDTH="3176" language="en" ns31:type="simple">
+          <TextLine HEIGHT="220.0" HPOS="9144.0" ID="TB.0239a.31_0" VPOS="3724.0" WIDTH="3176.0">
+            <String CONTENT="Hawaiian" HEIGHT="180.0" HPOS="9144.0" ID="TB.0239a.31_0_0" STYLEREFS="TS_16.0_B" VPOS="3724.0" WC="0.56" WIDTH="1276.0" />
+            <SP HPOS="10420.0" VPOS="3724.0" WIDTH="136.0" />
+            <String CONTENT="Opera" HEIGHT="212.0" HPOS="10556.0" ID="TB.0239a.31_0_1" STYLEREFS="TS_16.0_B" VPOS="3732.0" WC="0.574" WIDTH="788.0" />
+            <SP HPOS="11344.0" VPOS="3724.0" WIDTH="120.0" />
+            <String CONTENT="House," HEIGHT="200.0" HPOS="11464.0" ID="TB.0239a.31_0_2" STYLEREFS="TS_16.0_B" VPOS="3732.0" WC="0.442" WIDTH="856.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.31_0_0" End="TB.0239a.31_0_2">
+        <Alt lang="ar">
+        دار الأوبرا في هاواي،
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns32="http://www.w3.org/1999/xlink" HEIGHT="156" HPOS="9312" ID="TB.0239a.32" VPOS="4028" WIDTH="2860" language="en" ns32:type="simple">
+          <TextLine HEIGHT="156.0" HPOS="9312.0" ID="TB.0239a.32_0" VPOS="4028.0" WIDTH="2860.0">
+            <String CONTENT="SATURDAY" HEIGHT="128.0" HPOS="9312.0" ID="TB.0239a.32_0_0" STYLEREFS="TS_11.0" VPOS="4028.0" WC="0.824" WIDTH="964.0" />
+            <SP HPOS="10276.0" VPOS="4028.0" WIDTH="88.0" />
+            <String CONTENT="EVENING," HEIGHT="152.0" HPOS="10364.0" ID="TB.0239a.32_0_1" STYLEREFS="TS_11.0" VPOS="4032.0" WC="0.79" WIDTH="856.0" />
+            <SP HPOS="11220.0" VPOS="4028.0" WIDTH="96.0" />
+            <String CONTENT="MAY" HEIGHT="128.0" HPOS="11316.0" ID="TB.0239a.32_0_2" STYLEREFS="TS_11.0" VPOS="4032.0" WC="0.91" WIDTH="380.0" />
+            <SP HPOS="11696.0" VPOS="4028.0" WIDTH="96.0" />
+            <String CONTENT="19th." HEIGHT="120.0" HPOS="11792.0" ID="TB.0239a.32_0_3" STYLEREFS="TS_11.0_M" VPOS="4036.0" WC="0.61" WIDTH="380.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.32_0_0" End="TB.0239a.32_0_3">
+        <Alt lang="ar">
+        مساء اليوم السبت، 19 أيار/مايو.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns33="http://www.w3.org/1999/xlink" HEIGHT="168" HPOS="9148" ID="TB.0239a.33" VPOS="4384" WIDTH="3188" language="en" ns33:type="simple">
+          <TextLine HEIGHT="168.0" HPOS="9148.0" ID="TB.0239a.33_0" VPOS="4384.0" WIDTH="3188.0">
+            <String CONTENT="Popular" HEIGHT="152.0" HPOS="9148.0" ID="TB.0239a.33_0_0" STYLEREFS="TS_11.0_B" VPOS="4384.0" WC="0.833" WIDTH="624.0" />
+            <SP HPOS="9772.0" VPOS="4384.0" WIDTH="120.0" />
+            <String CONTENT="prices" HEIGHT="152.0" HPOS="9892.0" ID="TB.0239a.33_0_1" STYLEREFS="TS_11.0_B" VPOS="4388.0" WC="0.593" WIDTH="464.0" />
+            <SP HPOS="10356.0" VPOS="4384.0" WIDTH="96.0" />
+            <String CONTENT="-" HEIGHT="40.0" HPOS="10452.0" ID="TB.0239a.33_0_2" STYLEREFS="TS_11.0" VPOS="4448.0" WC="0.5" WIDTH="64.0" />
+            <SP HPOS="10516.0" VPOS="4384.0" WIDTH="116.0" />
+            <String CONTENT="25," HEIGHT="144.0" HPOS="10632.0" ID="TB.0239a.33_0_3" STYLEREFS="TS_11.0" VPOS="4384.0" WC="0.52" WIDTH="228.0" />
+            <SP HPOS="10860.0" VPOS="4384.0" WIDTH="96.0" />
+            <String CONTENT="50," HEIGHT="168.0" HPOS="10956.0" ID="TB.0239a.33_0_4" STYLEREFS="TS_11.0" VPOS="4384.0" WC="0.637" WIDTH="232.0" />
+            <SP HPOS="11188.0" VPOS="4384.0" WIDTH="100.0" />
+            <String CONTENT="75" HEIGHT="124.0" HPOS="11288.0" ID="TB.0239a.33_0_5" STYLEREFS="TS_11.0" VPOS="4388.0" WC="0.465" WIDTH="168.0" />
+            <SP HPOS="11456.0" VPOS="4384.0" WIDTH="92.0" />
+            <String CONTENT="and" HEIGHT="128.0" HPOS="11548.0" ID="TB.0239a.33_0_6" STYLEREFS="TS_11.0_B" VPOS="4384.0" WC="0.64" WIDTH="288.0" />
+            <SP HPOS="11836.0" VPOS="4384.0" WIDTH="80.0" />
+            <String CONTENT="$1.00" HEIGHT="136.0" HPOS="11916.0" ID="TB.0239a.33_0_7" STYLEREFS="TS_11.0_B" VPOS="4384.0" WC="0.522" WIDTH="420.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.33_0_0" End="TB.0239a.33_0_7">
+        <Alt lang="ar">
+        أسعار شعبية-25، 50 و 75 و 1.00 دولار
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns34="http://www.w3.org/1999/xlink" HEIGHT="424" HPOS="9136" ID="TB.0239a.34" VPOS="4744" WIDTH="3192" language="en" ns34:type="simple">
+          <TextLine HEIGHT="424.0" HPOS="9136.0" ID="TB.0239a.34_0" VPOS="4744.0" WIDTH="3192.0">
+            <String CONTENT="Ed.Hoffscblaeger&amp;Co.," HEIGHT="424.0" HPOS="9136.0" ID="TB.0239a.34_0_0" STYLEREFS="TS_24.0_B" VPOS="4744.0" WC="0.66" WIDTH="3192.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.34_0_0" End="TB.0239a.34_0_0">
+        <Alt lang="ar">
+        Ed.Hoffscblaeger&amp;Co.،
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns35="http://www.w3.org/1999/xlink" HEIGHT="288" HPOS="9280" ID="TB.0239a.35" VPOS="5168" WIDTH="3048" language="en" ns35:type="simple">
+          <TextLine HEIGHT="112.0" HPOS="9816.0" ID="TB.0239a.35_0" VPOS="5168.0" WIDTH="1860.0">
+            <String CONTENT="Corner" HEIGHT="84.0" HPOS="9816.0" ID="TB.0239a.35_0_0" STYLEREFS="TS_8.0" VPOS="5168.0" WC="0.627" WIDTH="392.0" />
+            <SP HPOS="10208.0" VPOS="5168.0" WIDTH="52.0" />
+            <String CONTENT="King" HEIGHT="112.0" HPOS="10260.0" ID="TB.0239a.35_0_1" STYLEREFS="TS_8.0" VPOS="5168.0" WC="0.702" WIDTH="276.0" />
+            <SP HPOS="10536.0" VPOS="5168.0" WIDTH="44.0" />
+            <String CONTENT="and" HEIGHT="84.0" HPOS="10580.0" ID="TB.0239a.35_0_2" STYLEREFS="TS_8.0" VPOS="5168.0" WC="0.36" WIDTH="208.0" />
+            <SP HPOS="10788.0" VPOS="5168.0" WIDTH="48.0" />
+            <String CONTENT="Bethel" HEIGHT="84.0" HPOS="10836.0" ID="TB.0239a.35_0_3" STYLEREFS="TS_8.0" VPOS="5168.0" WC="0.43" WIDTH="368.0" />
+            <SP HPOS="11204.0" VPOS="5168.0" WIDTH="48.0" />
+            <String CONTENT="streets." HEIGHT="88.0" HPOS="11252.0" ID="TB.0239a.35_0_4" STYLEREFS="TS_8.0" VPOS="5168.0" WC="0.346" WIDTH="424.0" />
+          </TextLine>
+          <TextLine HEIGHT="116.0" HPOS="9280.0" ID="TB.0239a.35_1" VPOS="5340.0" WIDTH="3048.0">
+            <String CONTENT="Dry" HEIGHT="112.0" HPOS="9280.0" ID="TB.0239a.35_1_0" STYLEREFS="TS_8.0" VPOS="5344.0" WC="0.503" WIDTH="216.0" />
+            <SP HPOS="9496.0" VPOS="5340.0" WIDTH="88.0" />
+            <String CONTENT="and" HEIGHT="108.0" HPOS="9584.0" ID="TB.0239a.35_1_1" STYLEREFS="TS_8.0" VPOS="5340.0" WC="0.617" WIDTH="204.0" />
+            <SP HPOS="9788.0" VPOS="5340.0" WIDTH="116.0" />
+            <String CONTENT="Fancy" HEIGHT="112.0" HPOS="9904.0" ID="TB.0239a.35_1_2" STYLEREFS="TS_8.0" VPOS="5344.0" WC="0.614" WIDTH="356.0" />
+            <SP HPOS="10260.0" VPOS="5340.0" WIDTH="100.0" />
+            <String CONTENT="Goods," HEIGHT="116.0" HPOS="10360.0" ID="TB.0239a.35_1_3" STYLEREFS="TS_8.0" VPOS="5340.0" WC="0.547" WIDTH="396.0" />
+            <SP HPOS="10756.0" VPOS="5340.0" WIDTH="128.0" />
+            <String CONTENT="Haberdashery," HEIGHT="116.0" HPOS="10884.0" ID="TB.0239a.35_1_4" STYLEREFS="TS_8.0" VPOS="5340.0" WC="0.481" WIDTH="832.0" />
+            <SP HPOS="11716.0" VPOS="5340.0" WIDTH="128.0" />
+            <String CONTENT="Hosiery," HEIGHT="116.0" HPOS="11844.0" ID="TB.0239a.35_1_5" STYLEREFS="TS_8.0" VPOS="5340.0" WC="0.452" WIDTH="484.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.35_0_0" End="TB.0239a.35_0_4">
+        <Alt lang="ar">
+        شارعي الملك الزاوية وبيثيل.
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.35_1_0" End="TB.0239a.35_1_5">
+        <Alt lang="ar">
+        الجاف، ويتوهم السلع، هابيرداشيري، الجوارب،
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns36="http://www.w3.org/1999/xlink" HEIGHT="116" HPOS="9156" ID="TB.0239a.36" VPOS="5468" WIDTH="3176" language="en" ns36:type="simple">
+          <TextLine HEIGHT="116.0" HPOS="9156.0" ID="TB.0239a.36_0" VPOS="5468.0" WIDTH="3176.0">
+            <String CONTENT="Millinery," HEIGHT="116.0" HPOS="9156.0" ID="TB.0239a.36_0_0" STYLEREFS="TS_8.0" VPOS="5468.0" WC="0.617" WIDTH="552.0" />
+            <SP HPOS="9708.0" VPOS="5468.0" WIDTH="48.0" />
+            <String CONTENT="Tailors'" HEIGHT="104.0" HPOS="9756.0" ID="TB.0239a.36_0_1" STYLEREFS="TS_8.0" VPOS="5472.0" WC="0.678" WIDTH="440.0" />
+            <SP HPOS="10196.0" VPOS="5468.0" WIDTH="48.0" />
+            <String CONTENT="Goods." HEIGHT="112.0" HPOS="10244.0" ID="TB.0239a.36_0_2" STYLEREFS="TS_8.0" VPOS="5472.0" WC="0.633" WIDTH="392.0" />
+            <SP HPOS="10636.0" VPOS="5468.0" WIDTH="56.0" />
+            <String CONTENT="Ladies'" HEIGHT="108.0" HPOS="10692.0" ID="TB.0239a.36_0_3" STYLEREFS="TS_8.0" VPOS="5472.0" WC="0.413" WIDTH="412.0" />
+            <SP HPOS="11104.0" VPOS="5468.0" WIDTH="48.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="11152.0" ID="TB.0239a.36_0_4" STYLEREFS="TS_8.0" VPOS="5472.0" WC="0.683" WIDTH="208.0" />
+            <SP HPOS="11360.0" VPOS="5468.0" WIDTH="72.0" />
+            <String CONTENT="Gents'" HEIGHT="108.0" HPOS="11432.0" ID="TB.0239a.36_0_5" STYLEREFS="TS_8.0" VPOS="5468.0" WC="0.613" WIDTH="364.0" />
+            <SP HPOS="11796.0" VPOS="5468.0" WIDTH="52.0" />
+            <String CONTENT="Furnish." HEIGHT="108.0" HPOS="11848.0" ID="TB.0239a.36_0_6" STYLEREFS="TS_8.0" VPOS="5468.0" WC="0.537" WIDTH="484.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.36_0_0" End="TB.0239a.36_0_2">
+        <Alt lang="ar">
+        كان السلع عمال الخياطة. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.36_0_3" End="TB.0239a.36_0_6">
+        <Alt lang="ar">
+        تقدم للسيدات والرجال.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns37="http://www.w3.org/1999/xlink" HEIGHT="268" HPOS="9140" ID="TB.0239a.37" VPOS="5596" WIDTH="3188" language="en" ns37:type="simple">
+          <TextLine HEIGHT="252.0" HPOS="9140.0" ID="TB.0239a.37_0" VPOS="5596.0" WIDTH="3148.0">
+            <String CONTENT="ing" HEIGHT="136.0" HPOS="9140.0" ID="TB.0239a.37_0_0" STYLEREFS="TS_8.0" VPOS="5596.0" WC="0.813" WIDTH="184.0" />
+            <SP HPOS="9324.0" VPOS="5596.0" WIDTH="44.0" />
+            <String CONTENT="uoods," HEIGHT="128.0" HPOS="9368.0" ID="TB.0239a.37_0_1" STYLEREFS="TS_8.0" VPOS="5596.0" WC="0.445" WIDTH="396.0" />
+            <SP HPOS="9764.0" VPOS="5596.0" WIDTH="76.0" />
+            <String CONTENT="Clothing," HEIGHT="132.0" HPOS="9840.0" ID="TB.0239a.37_0_2" STYLEREFS="TS_8.0" VPOS="5600.0" WC="0.828" WIDTH="536.0" />
+            <SP HPOS="10376.0" VPOS="5596.0" WIDTH="92.0" />
+            <String CONTENT="Boots" HEIGHT="104.0" HPOS="10468.0" ID="TB.0239a.37_0_3" STYLEREFS="TS_8.0" VPOS="5600.0" WC="0.502" WIDTH="324.0" />
+            <SP HPOS="10792.0" VPOS="5596.0" WIDTH="80.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="10872.0" ID="TB.0239a.37_0_4" STYLEREFS="TS_8.0" VPOS="5600.0" WC="0.627" WIDTH="204.0" />
+            <SP HPOS="11076.0" VPOS="5596.0" WIDTH="72.0" />
+            <String CONTENT="Shoes," HEIGHT="120.0" HPOS="11148.0" ID="TB.0239a.37_0_5" STYLEREFS="TS_8.0" VPOS="5600.0" WC="0.658" WIDTH="364.0" />
+            <SP HPOS="11512.0" VPOS="5596.0" WIDTH="88.0" />
+            <String CONTENT="Hats," HEIGHT="116.0" HPOS="11600.0" ID="TB.0239a.37_0_6" STYLEREFS="TS_8.0" VPOS="5600.0" WC="0.434" WIDTH="308.0" />
+            <SP HPOS="11908.0" VPOS="5596.0" WIDTH="96.0" />
+            <String CONTENT="Hard" HEIGHT="104.0" HPOS="12004.0" ID="TB.0239a.37_0_7" STYLEREFS="TS_8.0" SUBS_CONTENT="Hardware," SUBS_TYPE="HypPart1" VPOS="5600.0" WC="0.641" WIDTH="284.0" />
+            <HYP CONTENT="-" HPOS="12300.0" VPOS="5652.0" WIDTH="32.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="9496.0" ID="TB.0239a.37_1" VPOS="5724.0" WIDTH="2832.0">
+            <String CONTENT="ware," HEIGHT="88.0" HPOS="9140.0" ID="TB.0239a.37_1_0" STYLEREFS="TS_8.0" SUBS_CONTENT="Hardware," SUBS_TYPE="HypPart2" VPOS="5760.0" WC="0.641" WIDTH="308.0" />
+            <SP HPOS="9448.0" VPOS="5724.0" WIDTH="48.0" />
+            <String CONTENT="Cutlery," HEIGHT="136.0" HPOS="9496.0" ID="TB.0239a.37_1_1" STYLEREFS="TS_8.0" VPOS="5728.0" WC="0.567" WIDTH="460.0" />
+            <SP HPOS="9956.0" VPOS="5724.0" WIDTH="52.0" />
+            <String CONTENT="Stationary," HEIGHT="136.0" HPOS="10008.0" ID="TB.0239a.37_1_2" STYLEREFS="TS_8.0" VPOS="5728.0" WC="0.544" WIDTH="624.0" />
+            <SP HPOS="10632.0" VPOS="5724.0" WIDTH="56.0" />
+            <String CONTENT="Clocks," HEIGHT="120.0" HPOS="10688.0" ID="TB.0239a.37_1_3" STYLEREFS="TS_8.0" VPOS="5728.0" WC="0.413" WIDTH="420.0" />
+            <SP HPOS="11108.0" VPOS="5724.0" WIDTH="80.0" />
+            <String CONTENT="Perfumery," HEIGHT="132.0" HPOS="11188.0" ID="TB.0239a.37_1_4" STYLEREFS="TS_8.0" VPOS="5728.0" WC="0.593" WIDTH="620.0" />
+            <SP HPOS="11808.0" VPOS="5724.0" WIDTH="80.0" />
+            <String CONTENT="Musical" HEIGHT="108.0" HPOS="11888.0" ID="TB.0239a.37_1_5" STYLEREFS="TS_8.0" VPOS="5724.0" WC="0.594" WIDTH="440.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.37_0_0" End="TB.0239a.37_1_5">
+        <Alt lang="ar">
+        جي أووودس، الملابس والأحذية والأحذية والقبعات، السكاكين، القرطاسية، الموسيقية الساعات، التوابل،
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns38="http://www.w3.org/1999/xlink" HEIGHT="216" HPOS="9148" ID="TB.0239a.38" VPOS="5880" WIDTH="3176" language="en" ns38:type="simple">
+          <TextLine HEIGHT="112.0" HPOS="9148.0" ID="TB.0239a.38_0" VPOS="5880.0" WIDTH="3176.0">
+            <String CONTENT="instruments," HEIGHT="96.0" HPOS="9148.0" ID="TB.0239a.38_0_0" STYLEREFS="TS_8.0" VPOS="5880.0" WC="0.571" WIDTH="720.0" />
+            <SP HPOS="9868.0" VPOS="5880.0" WIDTH="80.0" />
+            <String CONTENT="Urocerles," HEIGHT="96.0" HPOS="9948.0" ID="TB.0239a.38_0_1" STYLEREFS="TS_8.0" VPOS="5880.0" WC="0.471" WIDTH="576.0" />
+            <SP HPOS="10524.0" VPOS="5880.0" WIDTH="80.0" />
+            <String CONTENT="Crockery," HEIGHT="112.0" HPOS="10604.0" ID="TB.0239a.38_0_2" STYLEREFS="TS_8.0" VPOS="5880.0" WC="0.589" WIDTH="552.0" />
+            <SP HPOS="11156.0" VPOS="5880.0" WIDTH="80.0" />
+            <String CONTENT="Ulassware," HEIGHT="100.0" HPOS="11236.0" ID="TB.0239a.38_0_3" STYLEREFS="TS_8.0" VPOS="5880.0" WC="0.431" WIDTH="608.0" />
+            <SP HPOS="11844.0" VPOS="5880.0" WIDTH="100.0" />
+            <String CONTENT="Wines," HEIGHT="104.0" HPOS="11944.0" ID="TB.0239a.38_0_4" STYLEREFS="TS_8.0" VPOS="5880.0" WC="0.677" WIDTH="380.0" />
+          </TextLine>
+          <TextLine HEIGHT="112.0" HPOS="9148.0" ID="TB.0239a.38_1" VPOS="5984.0" WIDTH="3172.0">
+            <String CONTENT="Beer" HEIGHT="104.0" HPOS="9148.0" ID="TB.0239a.38_1_0" STYLEREFS="TS_8.0" VPOS="5988.0" WC="0.45" WIDTH="256.0" />
+            <SP HPOS="9404.0" VPOS="5984.0" WIDTH="48.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="9452.0" ID="TB.0239a.38_1_1" STYLEREFS="TS_8.0" VPOS="5988.0" WC="0.637" WIDTH="204.0" />
+            <SP HPOS="9656.0" VPOS="5984.0" WIDTH="52.0" />
+            <String CONTENT="Liquors:" HEIGHT="108.0" HPOS="9708.0" ID="TB.0239a.38_1_2" STYLEREFS="TS_8.0" VPOS="5988.0" WC="0.594" WIDTH="472.0" />
+            <SP HPOS="10180.0" VPOS="5984.0" WIDTH="48.0" />
+            <String CONTENT="California" HEIGHT="108.0" HPOS="10228.0" ID="TB.0239a.38_1_3" STYLEREFS="TS_8.0" VPOS="5984.0" WC="0.595" WIDTH="564.0" />
+            <SP HPOS="10792.0" VPOS="5984.0" WIDTH="52.0" />
+            <String CONTENT="Wines" HEIGHT="104.0" HPOS="10844.0" ID="TB.0239a.38_1_4" STYLEREFS="TS_8.0" VPOS="5984.0" WC="0.64" WIDTH="352.0" />
+            <SP HPOS="11196.0" VPOS="5984.0" WIDTH="44.0" />
+            <String CONTENT="of" HEIGHT="100.0" HPOS="11240.0" ID="TB.0239a.38_1_5" STYLEREFS="TS_8.0" VPOS="5988.0" WC="0.885" WIDTH="124.0" />
+            <SP HPOS="11364.0" VPOS="5984.0" WIDTH="52.0" />
+            <String CONTENT="Kohler" HEIGHT="108.0" HPOS="11416.0" ID="TB.0239a.38_1_6" STYLEREFS="TS_8.0" VPOS="5984.0" WC="0.437" WIDTH="376.0" />
+            <SP HPOS="11792.0" VPOS="5984.0" WIDTH="48.0" />
+            <String CONTENT="&amp;" HEIGHT="104.0" HPOS="11840.0" ID="TB.0239a.38_1_7" STYLEREFS="TS_8.0" VPOS="5984.0" WC="0.73" WIDTH="88.0" />
+            <SP HPOS="11928.0" VPOS="5984.0" WIDTH="52.0" />
+            <String CONTENT="Front." HEIGHT="112.0" HPOS="11980.0" ID="TB.0239a.38_1_8" STYLEREFS="TS_8.0" VPOS="5984.0" WC="0.397" WIDTH="340.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.38_0_0" End="TB.0239a.38_1_8">
+        <Alt lang="ar">
+        الصكوك، أوروسيرليس، الأواني الفخارية، والسوري، والنبيذ، والبيرة ومحاليل: "كاليفورنيا الخمور لكوهلر &amp; الجبهة".
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns39="http://www.w3.org/1999/xlink" HEIGHT="112" HPOS="9140" ID="TB.0239a.39" VPOS="6112" WIDTH="3148" language="en" ns39:type="simple">
+          <TextLine HEIGHT="112.0" HPOS="9140.0" ID="TB.0239a.39_0" VPOS="6112.0" WIDTH="3148.0">
+            <String CONTENT="ine." HEIGHT="112.0" HPOS="9140.0" ID="TB.0239a.39_0_0" STYLEREFS="TS_8.0" VPOS="6112.0" WC="0.452" WIDTH="208.0" />
+            <SP HPOS="9348.0" VPOS="6112.0" WIDTH="64.0" />
+            <String CONTENT="San" HEIGHT="96.0" HPOS="9412.0" ID="TB.0239a.39_0_1" STYLEREFS="TS_8.0" VPOS="6120.0" WC="0.787" WIDTH="208.0" />
+            <SP HPOS="9620.0" VPOS="6112.0" WIDTH="56.0" />
+            <String CONTENT="Francisco." HEIGHT="108.0" HPOS="9676.0" ID="TB.0239a.39_0_2" STYLEREFS="TS_8.0" VPOS="6116.0" WC="0.679" WIDTH="596.0" />
+            <SP HPOS="10272.0" VPOS="6112.0" WIDTH="136.0" />
+            <String CONTENT="Aeencv" HEIGHT="100.0" HPOS="10408.0" ID="TB.0239a.39_0_3" STYLEREFS="TS_8.0" VPOS="6124.0" WC="0.475" WIDTH="436.0" />
+            <SP HPOS="10844.0" VPOS="6112.0" WIDTH="56.0" />
+            <String CONTENT="North" HEIGHT="104.0" HPOS="10900.0" ID="TB.0239a.39_0_4" STYLEREFS="TS_8.0" VPOS="6112.0" WC="0.728" WIDTH="332.0" />
+            <SP HPOS="11232.0" VPOS="6112.0" WIDTH="56.0" />
+            <String CONTENT="British" HEIGHT="108.0" HPOS="11288.0" ID="TB.0239a.39_0_5" STYLEREFS="TS_8.0" VPOS="6112.0" WC="0.619" WIDTH="380.0" />
+            <SP HPOS="11668.0" VPOS="6112.0" WIDTH="52.0" />
+            <String CONTENT="&amp;" HEIGHT="104.0" HPOS="11720.0" ID="TB.0239a.39_0_6" STYLEREFS="TS_8.0" VPOS="6116.0" WC="0.43" WIDTH="88.0" />
+            <SP HPOS="11808.0" VPOS="6112.0" WIDTH="56.0" />
+            <String CONTENT="Mercan" HEIGHT="100.0" HPOS="11864.0" ID="TB.0239a.39_0_7" STYLEREFS="TS_8.0" VPOS="6116.0" WC="0.752" WIDTH="424.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.39_0_0" End="TB.0239a.39_0_0">
+        <Alt lang="ar">
+        المعهد الوطني للإحصاء. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.39_0_1" End="TB.0239a.39_0_2">
+        <Alt lang="ar">
+        سان فرانسيسكو. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.39_0_3" End="TB.0239a.39_0_7">
+        <Alt lang="ar">
+        البريطانية الشمالية أينكف &amp; ميركان
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns40="http://www.w3.org/1999/xlink" HEIGHT="140" HPOS="9136" ID="TB.0239a.40" VPOS="6240" WIDTH="2968" language="en" ns40:type="simple">
+          <TextLine HEIGHT="140.0" HPOS="9136.0" ID="TB.0239a.40_0" VPOS="6240.0" WIDTH="2968.0">
+            <String CONTENT="tile" HEIGHT="104.0" HPOS="9136.0" ID="TB.0239a.40_0_0" STYLEREFS="TS_8.0" VPOS="6244.0" WC="0.402" WIDTH="180.0" />
+            <SP HPOS="9316.0" VPOS="6240.0" WIDTH="116.0" />
+            <String CONTENT="Fire" HEIGHT="104.0" HPOS="9432.0" ID="TB.0239a.40_0_1" STYLEREFS="TS_8.0" VPOS="6244.0" WC="0.638" WIDTH="232.0" />
+            <SP HPOS="9664.0" VPOS="6240.0" WIDTH="112.0" />
+            <String CONTENT="Insurance" HEIGHT="104.0" HPOS="9776.0" ID="TB.0239a.40_0_2" STYLEREFS="TS_8.0" VPOS="6248.0" WC="0.64" WIDTH="564.0" />
+            <SP HPOS="10340.0" VPOS="6240.0" WIDTH="44.0" />
+            <String CONTENT="Companies" HEIGHT="136.0" HPOS="10384.0" ID="TB.0239a.40_0_3" STYLEREFS="TS_8.0" VPOS="6244.0" WC="0.608" WIDTH="628.0" />
+            <SP HPOS="11012.0" VPOS="6240.0" WIDTH="108.0" />
+            <String CONTENT="of" HEIGHT="100.0" HPOS="11120.0" ID="TB.0239a.40_0_4" STYLEREFS="TS_8.0" VPOS="6244.0" WC="0.88" WIDTH="124.0" />
+            <SP HPOS="11244.0" VPOS="6240.0" WIDTH="96.0" />
+            <String CONTENT="London;'" HEIGHT="120.0" HPOS="11340.0" ID="TB.0239a.40_0_5" STYLEREFS="TS_8.0" VPOS="6240.0" WC="0.674" WIDTH="500.0" />
+            <SP HPOS="11840.0" VPOS="6240.0" WIDTH="76.0" />
+            <String CONTENT="We" HEIGHT="100.0" HPOS="11916.0" ID="TB.0239a.40_0_6" STYLEREFS="TS_8.0" VPOS="6244.0" WC="0.61" WIDTH="188.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.40_0_0" End="TB.0239a.40_0_5">
+        <Alt lang="ar">
+        تجانب النار شركات التأمين في لندن؛ ' 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.40_0_6" End="TB.0239a.40_0_6">
+        <Alt lang="ar">
+        ونحن
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns41="http://www.w3.org/1999/xlink" HEIGHT="104" HPOS="9144" ID="TB.0239a.41" VPOS="6400" WIDTH="896" language="en" ns41:type="simple">
+          <TextLine HEIGHT="104.0" HPOS="9144.0" ID="TB.0239a.41_0" VPOS="6400.0" WIDTH="896.0">
+            <String CONTENT="mayer" HEIGHT="100.0" HPOS="9144.0" ID="TB.0239a.41_0_0" STYLEREFS="TS_8.0" VPOS="6404.0" WC="0.514" WIDTH="344.0" />
+            <SP HPOS="9488.0" VPOS="6400.0" WIDTH="44.0" />
+            <String CONTENT="s" HEIGHT="68.0" HPOS="9532.0" ID="TB.0239a.41_0_1" STYLEREFS="TS_8.0" VPOS="6404.0" WC="0.17" WIDTH="52.0" />
+            <SP HPOS="9584.0" VPOS="6400.0" WIDTH="56.0" />
+            <String CONTENT="nanos." HEIGHT="80.0" HPOS="9640.0" ID="TB.0239a.41_0_2" STYLEREFS="TS_8.0" VPOS="6400.0" WC="0.578" WIDTH="400.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.41_0_0" End="TB.0239a.41_0_2">
+        <Alt lang="ar">
+        nanos s ماير.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns42="http://www.w3.org/1999/xlink" HEIGHT="896" HPOS="9156" ID="TB.0239a.42" VPOS="6592" WIDTH="3184" language="en" ns42:type="simple">
+          <TextLine HEIGHT="280.0" HPOS="9156.0" ID="TB.0239a.42_0" VPOS="6592.0" WIDTH="3172.0">
+            <String CONTENT="B.RGHLjES&amp;O." HEIGHT="280.0" HPOS="9156.0" ID="TB.0239a.42_0_0" STYLEREFS="TS_20.0_BM" VPOS="6592.0" WC="0.466" WIDTH="3172.0" />
+          </TextLine>
+          <TextLine HEIGHT="164.0" HPOS="10284.0" ID="TB.0239a.42_1" VPOS="7000.0" WIDTH="940.0">
+            <String CONTENT="Importers" HEIGHT="164.0" HPOS="10284.0" ID="TB.0239a.42_1_0" STYLEREFS="TS_11.0" VPOS="7000.0" WC="0.624" WIDTH="688.0" />
+            <SP HPOS="10972.0" VPOS="7000.0" WIDTH="104.0" />
+            <String CONTENT="of" HEIGHT="124.0" HPOS="11076.0" ID="TB.0239a.42_1_1" STYLEREFS="TS_11.0" VPOS="7000.0" WC="0.53" WIDTH="148.0" />
+          </TextLine>
+          <TextLine HEIGHT="296.0" HPOS="9156.0" ID="TB.0239a.42_2" VPOS="7192.0" WIDTH="3184.0">
+            <String CONTENT="Dry" HEIGHT="284.0" HPOS="9156.0" ID="TB.0239a.42_2_0" STYLEREFS="TS_17.0_B" VPOS="7200.0" WC="0.78" WIDTH="440.0" />
+            <SP HPOS="9596.0" VPOS="7192.0" WIDTH="100.0" />
+            <String CONTENT=":" HEIGHT="152.0" HPOS="9696.0" ID="TB.0239a.42_2_1" STYLEREFS="TS_17.0_B" VPOS="7272.0" WC="1.0" WIDTH="56.0" />
+            <SP HPOS="9752.0" VPOS="7192.0" WIDTH="116.0" />
+            <String CONTENT="and" HEIGHT="232.0" HPOS="9868.0" ID="TB.0239a.42_2_2" STYLEREFS="TS_17.0_B" VPOS="7196.0" WC="0.923" WIDTH="440.0" />
+            <SP HPOS="10308.0" VPOS="7192.0" WIDTH="124.0" />
+            <String CONTENT=":" HEIGHT="152.0" HPOS="10432.0" ID="TB.0239a.42_2_3" STYLEREFS="TS_17.0_B" VPOS="7272.0" WC="1.0" WIDTH="56.0" />
+            <SP HPOS="10488.0" VPOS="7192.0" WIDTH="112.0" />
+            <String CONTENT="Fancy" HEIGHT="288.0" HPOS="10600.0" ID="TB.0239a.42_2_4" STYLEREFS="TS_17.0_B" VPOS="7200.0" WC="0.824" WIDTH="728.0" />
+            <SP HPOS="11328.0" VPOS="7192.0" WIDTH="120.0" />
+            <String CONTENT=":" HEIGHT="152.0" HPOS="11448.0" ID="TB.0239a.42_2_5" STYLEREFS="TS_17.0_B" VPOS="7272.0" WC="1.0" WIDTH="56.0" />
+            <SP HPOS="11504.0" VPOS="7192.0" WIDTH="116.0" />
+            <String CONTENT="Goods" HEIGHT="236.0" HPOS="11620.0" ID="TB.0239a.42_2_6" STYLEREFS="TS_17.0_B" VPOS="7192.0" WC="0.918" WIDTH="720.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.42_0_0" End="TB.0239a.42_2_6">
+        <Alt lang="ar">
+        أوفدري B.RGHLjES&amp;O.Importers: و: يتوهم: السلع
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns43="http://www.w3.org/1999/xlink" HEIGHT="244" HPOS="9728" ID="TB.0239a.43" VPOS="7744" WIDTH="2052" language="en" ns43:type="simple">
+          <TextLine HEIGHT="244.0" HPOS="9728.0" ID="TB.0239a.43_0" VPOS="7744.0" WIDTH="2052.0">
+            <String CONTENT="Dressmaking" HEIGHT="244.0" HPOS="9728.0" ID="TB.0239a.43_0_0" STYLEREFS="TS_17.0_B" VPOS="7744.0" WC="0.412" WIDTH="1184.0" />
+            <SP HPOS="10912.0" VPOS="7744.0" WIDTH="168.0" />
+            <String CONTENT="Parlors." HEIGHT="192.0" HPOS="11080.0" ID="TB.0239a.43_0_1" STYLEREFS="TS_17.0_B" VPOS="7748.0" WC="0.487" WIDTH="700.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.43_0_0" End="TB.0239a.43_0_1">
+        <Alt lang="ar">
+        صالات الاستقبال والخياطة.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns44="http://www.w3.org/1999/xlink" HEIGHT="136" HPOS="9332" ID="TB.0239a.44" VPOS="8048" WIDTH="832" language="en" ns44:type="simple">
+          <TextLine HEIGHT="136.0" HPOS="9332.0" ID="TB.0239a.44_0" VPOS="8048.0" WIDTH="832.0">
+            <String CONTENT="Fort" HEIGHT="124.0" HPOS="9332.0" ID="TB.0239a.44_0_0" STYLEREFS="TS_8.0" VPOS="8048.0" WC="0.405" WIDTH="288.0" />
+            <SP HPOS="9620.0" VPOS="8048.0" WIDTH="100.0" />
+            <String CONTENT="Street," HEIGHT="132.0" HPOS="9720.0" ID="TB.0239a.44_0_1" STYLEREFS="TS_8.0" VPOS="8052.0" WC="0.357" WIDTH="444.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.44_0_0" End="TB.0239a.44_0_1">
+        <Alt lang="ar">
+        فورت الشارع،
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns45="http://www.w3.org/1999/xlink" HEIGHT="128" HPOS="11484" ID="TB.0239a.45" VPOS="8048" WIDTH="696" language="en" ns45:type="simple">
+          <TextLine HEIGHT="128.0" HPOS="11484.0" ID="TB.0239a.45_0" VPOS="8048.0" WIDTH="696.0">
+            <String CONTENT="Honolulu." HEIGHT="128.0" HPOS="11484.0" ID="TB.0239a.45_0_0" STYLEREFS="TS_11.0" VPOS="8048.0" WC="0.793" WIDTH="696.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.45_0_0" End="TB.0239a.45_0_0">
+        <Alt lang="ar">
+        هونولولو.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns46="http://www.w3.org/1999/xlink" HEIGHT="1248" HPOS="9168" ID="TB.0239a.46" VPOS="8328" WIDTH="3180" language="en" ns46:type="simple">
+          <TextLine HEIGHT="308.0" HPOS="9168.0" ID="TB.0239a.46_0" VPOS="8328.0" WIDTH="3172.0">
+            <String CONTENT="ffllS." HEIGHT="308.0" HPOS="9168.0" ID="TB.0239a.46_0_0" STYLEREFS="TS_19.0_B" VPOS="8328.0" WC="0.407" WIDTH="800.0" />
+            <SP HPOS="9968.0" VPOS="8328.0" WIDTH="80.0" />
+            <String CONTENT="IOBEJP" HEIGHT="276.0" HPOS="10048.0" ID="TB.0239a.46_0_1" STYLEREFS="TS_19.0_B" VPOS="8332.0" WC="0.418" WIDTH="1328.0" />
+            <SP HPOS="11376.0" VPOS="8328.0" WIDTH="64.0" />
+            <String CONTENT="LtOYE" HEIGHT="276.0" HPOS="11440.0" ID="TB.0239a.46_0_2" STYLEREFS="TS_19.0_B" VPOS="8336.0" WC="0.416" WIDTH="900.0" />
+          </TextLine>
+          <TextLine HEIGHT="192.0" HPOS="9676.0" ID="TB.0239a.46_1" VPOS="8720.0" WIDTH="2168.0">
+            <String CONTENT="Steam" HEIGHT="156.0" HPOS="9676.0" ID="TB.0239a.46_1_0" STYLEREFS="TS_16.0" VPOS="8720.0" WC="0.924" WIDTH="896.0" />
+            <SP HPOS="10572.0" VPOS="8720.0" WIDTH="188.0" />
+            <String CONTENT="Ba" HEIGHT="152.0" HPOS="10760.0" ID="TB.0239a.46_1_1" STYLEREFS="TS_16.0" VPOS="8720.0" WC="0.805" WIDTH="364.0" />
+            <SP HPOS="11124.0" VPOS="8720.0" WIDTH="32.0" />
+            <String CONTENT="leery." HEIGHT="192.0" HPOS="11156.0" ID="TB.0239a.46_1_2" STYLEREFS="TS_16.0" VPOS="8720.0" WC="0.38" WIDTH="688.0" />
+          </TextLine>
+          <TextLine HEIGHT="156.0" HPOS="9176.0" ID="TB.0239a.46_2" VPOS="8968.0" WIDTH="3172.0">
+            <String CONTENT="Milk" HEIGHT="120.0" HPOS="9176.0" ID="TB.0239a.46_2_0" STYLEREFS="TS_11.0" VPOS="8972.0" WC="0.775" WIDTH="308.0" />
+            <SP HPOS="9484.0" VPOS="8968.0" WIDTH="68.0" />
+            <String CONTENT="Bread." HEIGHT="124.0" HPOS="9552.0" ID="TB.0239a.46_2_1" STYLEREFS="TS_11.0" VPOS="8972.0" WC="0.498" WIDTH="440.0" />
+            <SP HPOS="9992.0" VPOS="8968.0" WIDTH="148.0" />
+            <String CONTENT="Orders" HEIGHT="124.0" HPOS="10140.0" ID="TB.0239a.46_2_2" STYLEREFS="TS_11.0" VPOS="8968.0" WC="0.557" WIDTH="460.0" />
+            <SP HPOS="10600.0" VPOS="8968.0" WIDTH="64.0" />
+            <String CONTENT="for" HEIGHT="124.0" HPOS="10664.0" ID="TB.0239a.46_2_3" STYLEREFS="TS_11.0" VPOS="8968.0" WC="0.6" WIDTH="188.0" />
+            <SP HPOS="10852.0" VPOS="8968.0" WIDTH="60.0" />
+            <String CONTENT="Ship" HEIGHT="156.0" HPOS="10912.0" ID="TB.0239a.46_2_4" STYLEREFS="TS_11.0" VPOS="8968.0" WC="0.817" WIDTH="312.0" />
+            <SP HPOS="11224.0" VPOS="8968.0" WIDTH="64.0" />
+            <String CONTENT="Bread" HEIGHT="124.0" HPOS="11288.0" ID="TB.0239a.46_2_5" STYLEREFS="TS_11.0" VPOS="8968.0" WC="0.798" WIDTH="400.0" />
+            <SP HPOS="11688.0" VPOS="8968.0" WIDTH="68.0" />
+            <String CONTENT="executed" HEIGHT="124.0" HPOS="11756.0" ID="TB.0239a.46_2_6" STYLEREFS="TS_11.0" VPOS="8968.0" WC="0.82" WIDTH="592.0" />
+          </TextLine>
+          <TextLine HEIGHT="128.0" HPOS="9168.0" ID="TB.0239a.46_3" VPOS="9128.0" WIDTH="3180.0">
+            <String CONTENT="on" HEIGHT="80.0" HPOS="9168.0" ID="TB.0239a.46_3_0" STYLEREFS="TS_11.0" VPOS="9172.0" WC="0.875" WIDTH="160.0" />
+            <SP HPOS="9328.0" VPOS="9128.0" WIDTH="52.0" />
+            <String CONTENT="short" HEIGHT="116.0" HPOS="9380.0" ID="TB.0239a.46_3_1" STYLEREFS="TS_11.0" VPOS="9136.0" WC="0.44" WIDTH="344.0" />
+            <SP HPOS="9724.0" VPOS="9128.0" WIDTH="68.0" />
+            <String CONTENT="notice." HEIGHT="124.0" HPOS="9792.0" ID="TB.0239a.46_3_2" STYLEREFS="TS_11.0" VPOS="9128.0" WC="0.736" WIDTH="448.0" />
+            <SP HPOS="10240.0" VPOS="9128.0" WIDTH="152.0" />
+            <String CONTENT="Coffee" HEIGHT="124.0" HPOS="10392.0" ID="TB.0239a.46_3_3" STYLEREFS="TS_11.0" VPOS="9128.0" WC="0.377" WIDTH="424.0" />
+            <SP HPOS="10816.0" VPOS="9128.0" WIDTH="60.0" />
+            <String CONTENT="Roasted" HEIGHT="124.0" HPOS="10876.0" ID="TB.0239a.46_3_4" STYLEREFS="TS_11.0" VPOS="9128.0" WC="0.453" WIDTH="544.0" />
+            <SP HPOS="11420.0" VPOS="9128.0" WIDTH="48.0" />
+            <String CONTENT="and" HEIGHT="120.0" HPOS="11468.0" ID="TB.0239a.46_3_5" STYLEREFS="TS_11.0" VPOS="9132.0" WC="0.717" WIDTH="244.0" />
+            <SP HPOS="11712.0" VPOS="9128.0" WIDTH="68.0" />
+            <String CONTENT="Ground." HEIGHT="128.0" HPOS="11780.0" ID="TB.0239a.46_3_6" STYLEREFS="TS_11.0" VPOS="9128.0" WC="0.697" WIDTH="568.0" />
+          </TextLine>
+          <TextLine HEIGHT="160.0" HPOS="9180.0" ID="TB.0239a.46_4" VPOS="9288.0" WIDTH="3168.0">
+            <String CONTENT="Every" HEIGHT="152.0" HPOS="9180.0" ID="TB.0239a.46_4_0" STYLEREFS="TS_11.0" VPOS="9292.0" WC="0.628" WIDTH="404.0" />
+            <SP HPOS="9584.0" VPOS="9288.0" WIDTH="60.0" />
+            <String CONTENT="description" HEIGHT="156.0" HPOS="9644.0" ID="TB.0239a.46_4_1" STYLEREFS="TS_11.0" VPOS="9288.0" WC="0.691" WIDTH="752.0" />
+            <SP HPOS="10396.0" VPOS="9288.0" WIDTH="68.0" />
+            <String CONTENT="of" HEIGHT="120.0" HPOS="10464.0" ID="TB.0239a.46_4_2" STYLEREFS="TS_11.0" VPOS="9292.0" WC="0.585" WIDTH="140.0" />
+            <SP HPOS="10604.0" VPOS="9288.0" WIDTH="96.0" />
+            <String CONTENT="Plain" HEIGHT="124.0" HPOS="10700.0" ID="TB.0239a.46_4_3" STYLEREFS="TS_11.0" VPOS="9288.0" WC="0.842" WIDTH="348.0" />
+            <SP HPOS="11048.0" VPOS="9288.0" WIDTH="88.0" />
+            <String CONTENT="and" HEIGHT="120.0" HPOS="11136.0" ID="TB.0239a.46_4_4" STYLEREFS="TS_11.0" VPOS="9292.0" WC="1.0" WIDTH="240.0" />
+            <SP HPOS="11376.0" VPOS="9288.0" WIDTH="76.0" />
+            <String CONTENT="Fancy" HEIGHT="160.0" HPOS="11452.0" ID="TB.0239a.46_4_5" STYLEREFS="TS_11.0" VPOS="9288.0" WC="0.532" WIDTH="428.0" />
+            <SP HPOS="11880.0" VPOS="9288.0" WIDTH="68.0" />
+            <String CONTENT="Bread" HEIGHT="124.0" HPOS="11948.0" ID="TB.0239a.46_4_6" STYLEREFS="TS_11.0" VPOS="9288.0" WC="0.644" WIDTH="400.0" />
+          </TextLine>
+          <TextLine HEIGHT="128.0" HPOS="9172.0" ID="TB.0239a.46_5" VPOS="9448.0" WIDTH="3016.0">
+            <String CONTENT="and" HEIGHT="124.0" HPOS="9172.0" ID="TB.0239a.46_5_0" STYLEREFS="TS_11.0" VPOS="9452.0" WC="0.753" WIDTH="240.0" />
+            <SP HPOS="9412.0" VPOS="9448.0" WIDTH="76.0" />
+            <String CONTENT="Biscuits." HEIGHT="124.0" HPOS="9488.0" ID="TB.0239a.46_5_1" STYLEREFS="TS_11.0" VPOS="9448.0" WC="0.727" WIDTH="588.0" />
+            <SP HPOS="10076.0" VPOS="9448.0" WIDTH="184.0" />
+            <String CONTENT="Fresh" HEIGHT="124.0" HPOS="10260.0" ID="TB.0239a.46_5_2" STYLEREFS="TS_11.0" VPOS="9448.0" WC="0.428" WIDTH="384.0" />
+            <SP HPOS="10644.0" VPOS="9448.0" WIDTH="76.0" />
+            <String CONTENT="Butter." HEIGHT="124.0" HPOS="10720.0" ID="TB.0239a.46_5_3" STYLEREFS="TS_11.0" VPOS="9448.0" WC="0.649" WIDTH="476.0" />
+            <SP HPOS="11196.0" VPOS="9448.0" WIDTH="180.0" />
+            <String CONTENT="Nuuanu" HEIGHT="124.0" HPOS="11376.0" ID="TB.0239a.46_5_4" STYLEREFS="TS_11.0" VPOS="9448.0" WC="0.705" WIDTH="552.0" />
+            <SP HPOS="11928.0" VPOS="9448.0" WIDTH="76.0" />
+            <String CONTENT="St." HEIGHT="124.0" HPOS="12004.0" ID="TB.0239a.46_5_5" STYLEREFS="TS_11.0" VPOS="9452.0" WC="0.887" WIDTH="184.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.46_0_0" End="TB.0239a.46_0_0">
+        <Alt lang="ar">
+        فلس. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.46_0_1" End="TB.0239a.46_1_2">
+        <Alt lang="ar">
+        إيوبيجب لتوييستيم با اﻷصولي.
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.46_2_0" End="TB.0239a.46_2_1">
+        <Alt lang="ar">
+        الخبز والحليب. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.46_2_2" End="TB.0239a.46_3_2">
+        <Alt lang="ar">
+        طلبات شراء "الخبز السفينة" اكسيكوتيدون خلال مهلة قصيرة. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.46_3_3" End="TB.0239a.46_5_1">
+        <Alt lang="ar">
+        وصف شووا و Ground.Every القهوة عادي و "يتوهم بريداند البسكويت". 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.46_5_2" End="TB.0239a.46_5_3">
+        <Alt lang="ar">
+        زبدة الطازجة. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.46_5_4" End="TB.0239a.46_5_5">
+        <Alt lang="ar">
+        شارع نووانو
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns47="http://www.w3.org/1999/xlink" HEIGHT="252" HPOS="9184" ID="TB.0239a.47" VPOS="9764" WIDTH="2996" language="en" ns47:type="simple">
+          <TextLine HEIGHT="252.0" HPOS="9184.0" ID="TB.0239a.47_0" VPOS="9764.0" WIDTH="2996.0">
+            <String CONTENT="H0LL1STER" HEIGHT="232.0" HPOS="9184.0" ID="TB.0239a.47_0_0" STYLEREFS="TS_17.0_B" VPOS="9764.0" WC="0.387" WIDTH="972.0" />
+            <SP HPOS="10156.0" VPOS="9764.0" WIDTH="144.0" />
+            <String CONTENT="DRUG" HEIGHT="228.0" HPOS="10300.0" ID="TB.0239a.47_0_1" STYLEREFS="TS_17.0_B" VPOS="9764.0" WC="0.435" WIDTH="476.0" />
+            <SP HPOS="10776.0" VPOS="9764.0" WIDTH="120.0" />
+            <String CONTENT="COMPANY," HEIGHT="252.0" HPOS="10896.0" ID="TB.0239a.47_0_2" STYLEREFS="TS_17.0_B" VPOS="9764.0" WC="0.352" WIDTH="872.0" />
+            <SP HPOS="11768.0" VPOS="9764.0" WIDTH="120.0" />
+            <String CONTENT="u-y" HEIGHT="192.0" HPOS="11888.0" ID="TB.0239a.47_0_3" STYLEREFS="TS_17.0_B" VPOS="9788.0" WC="0.225" WIDTH="292.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.47_0_0" End="TB.0239a.47_0_3">
+        <Alt lang="ar">
+        شركة أدوية H0LL1STER، ش ص
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns48="http://www.w3.org/1999/xlink" HEIGHT="332" HPOS="10076" ID="TB.0239a.48" VPOS="10052" WIDTH="1384" language="en" ns48:type="simple">
+          <TextLine HEIGHT="88.0" HPOS="10076.0" ID="TB.0239a.48_0" VPOS="10052.0" WIDTH="1384.0">
+            <String CONTENT="The" HEIGHT="84.0" HPOS="10076.0" ID="TB.0239a.48_0_0" STYLEREFS="TS_8.0" VPOS="10056.0" WC="0.23" WIDTH="320.0" />
+            <SP HPOS="10396.0" VPOS="10052.0" WIDTH="72.0" />
+            <String CONTENT="Old" HEIGHT="88.0" HPOS="10468.0" ID="TB.0239a.48_0_1" STYLEREFS="TS_8.0" VPOS="10052.0" WC="0.543" WIDTH="252.0" />
+            <SP HPOS="10720.0" VPOS="10052.0" WIDTH="92.0" />
+            <String CONTENT="Reliable." HEIGHT="88.0" HPOS="10812.0" ID="TB.0239a.48_0_2" STYLEREFS="TS_8.0" VPOS="10052.0" WC="0.412" WIDTH="648.0" />
+          </TextLine>
+          <TextLine HEIGHT="80.0" HPOS="10432.0" ID="TB.0239a.48_1" VPOS="10304.0" WIDTH="688.0">
+            <String CONTENT="DEALERS" HEIGHT="80.0" HPOS="10432.0" ID="TB.0239a.48_1_0" STYLEREFS="TS_8.0" VPOS="10304.0" WC="0.367" WIDTH="492.0" />
+            <SP HPOS="10924.0" VPOS="10304.0" WIDTH="84.0" />
+            <String CONTENT="IN" HEIGHT="80.0" HPOS="11008.0" ID="TB.0239a.48_1_1" STYLEREFS="TS_8.0" VPOS="10304.0" WC="0.425" WIDTH="112.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.48_0_0" End="TB.0239a.48_1_1">
+        <Alt lang="ar">
+        في Reliable.DEALERS القديمة
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns49="http://www.w3.org/1999/xlink" HEIGHT="3016" HPOS="9180" ID="TB.0239a.49" VPOS="10448" WIDTH="3200" language="en" ns49:type="simple">
+          <TextLine HEIGHT="256.0" HPOS="9196.0" ID="TB.0239a.49_0" VPOS="10448.0" WIDTH="3168.0">
+            <String CONTENT="Drugs" HEIGHT="248.0" HPOS="9196.0" ID="TB.0239a.49_0_0" STYLEREFS="TS_19.0_BM" VPOS="10456.0" WC="0.778" WIDTH="876.0" />
+            <SP HPOS="10072.0" VPOS="10448.0" WIDTH="240.0" />
+            <String CONTENT="and" HEIGHT="108.0" HPOS="10312.0" ID="TB.0239a.49_0_1" STYLEREFS="TS_19.0_B" VPOS="10548.0" WC="0.143" WIDTH="380.0" />
+            <SP HPOS="10692.0" VPOS="10448.0" WIDTH="208.0" />
+            <String CONTENT="Chemicals" HEIGHT="252.0" HPOS="10900.0" ID="TB.0239a.49_0_2" STYLEREFS="TS_19.0_BM" VPOS="10448.0" WC="0.744" WIDTH="1464.0" />
+          </TextLine>
+          <TextLine HEIGHT="136.0" HPOS="9324.0" ID="TB.0239a.49_1" VPOS="10844.0" WIDTH="1480.0">
+            <String CONTENT="Always" HEIGHT="128.0" HPOS="9324.0" ID="TB.0239a.49_1_0" STYLEREFS="TS_8.0" VPOS="10852.0" WC="0.527" WIDTH="412.0" />
+            <SP HPOS="9736.0" VPOS="10844.0" WIDTH="44.0" />
+            <String CONTENT="carry" HEIGHT="100.0" HPOS="9780.0" ID="TB.0239a.49_1_1" STYLEREFS="TS_8.0" VPOS="10876.0" WC="0.608" WIDTH="296.0" />
+            <SP HPOS="10076.0" VPOS="10844.0" WIDTH="40.0" />
+            <String CONTENT="a" HEIGHT="68.0" HPOS="10116.0" ID="TB.0239a.49_1_2" STYLEREFS="TS_8.0" VPOS="10880.0" WC="0.32" WIDTH="60.0" />
+            <SP HPOS="10176.0" VPOS="10844.0" WIDTH="48.0" />
+            <String CONTENT="full" HEIGHT="104.0" HPOS="10224.0" ID="TB.0239a.49_1_3" STYLEREFS="TS_8.0" VPOS="10844.0" WC="0.435" WIDTH="180.0" />
+            <SP HPOS="10404.0" VPOS="10844.0" WIDTH="44.0" />
+            <String CONTENT="line" HEIGHT="100.0" HPOS="10448.0" ID="TB.0239a.49_1_4" STYLEREFS="TS_8.0" VPOS="10844.0" WC="0.645" WIDTH="208.0" />
+            <SP HPOS="10656.0" VPOS="10844.0" WIDTH="44.0" />
+            <String CONTENT="ol" HEIGHT="92.0" HPOS="10700.0" ID="TB.0239a.49_1_5" STYLEREFS="TS_8.0" VPOS="10848.0" WC="0.31" WIDTH="104.0" />
+          </TextLine>
+          <TextLine HEIGHT="208.0" HPOS="9400.0" ID="TB.0239a.49_2" VPOS="11000.0" WIDTH="2768.0">
+            <String CONTENT="PROTOGflSPEIG" HEIGHT="208.0" HPOS="9400.0" ID="TB.0239a.49_2_0" STYLEREFS="TS_17.0_B" VPOS="11000.0" WC="0.275" WIDTH="1556.0" />
+            <SP HPOS="10956.0" VPOS="11000.0" WIDTH="100.0" />
+            <String CONTENT="mATGRIAL" HEIGHT="204.0" HPOS="11056.0" ID="TB.0239a.49_2_1" STYLEREFS="TS_17.0_B" VPOS="11000.0" WC="0.271" WIDTH="1112.0" />
+          </TextLine>
+          <TextLine HEIGHT="140.0" HPOS="9316.0" ID="TB.0239a.49_3" VPOS="11232.0" WIDTH="3056.0">
+            <String CONTENT="On" HEIGHT="96.0" HPOS="9316.0" ID="TB.0239a.49_3_0" STYLEREFS="TS_8.0" VPOS="11248.0" WC="0.71" WIDTH="168.0" />
+            <SP HPOS="9484.0" VPOS="11232.0" WIDTH="92.0" />
+            <String CONTENT="hand." HEIGHT="104.0" HPOS="9576.0" ID="TB.0239a.49_3_1" STYLEREFS="TS_8.0" VPOS="11240.0" WC="0.522" WIDTH="312.0" />
+            <SP HPOS="9888.0" VPOS="11232.0" WIDTH="140.0" />
+            <String CONTENT="Films" HEIGHT="104.0" HPOS="10028.0" ID="TB.0239a.49_3_2" STYLEREFS="TS_8.0" VPOS="11236.0" WC="0.54" WIDTH="324.0" />
+            <SP HPOS="10352.0" VPOS="11232.0" WIDTH="88.0" />
+            <String CONTENT="and" HEIGHT="104.0" HPOS="10440.0" ID="TB.0239a.49_3_3" STYLEREFS="TS_8.0" VPOS="11232.0" WC="0.87" WIDTH="208.0" />
+            <SP HPOS="10648.0" VPOS="11232.0" WIDTH="96.0" />
+            <String CONTENT="Plates" HEIGHT="108.0" HPOS="10744.0" ID="TB.0239a.49_3_4" STYLEREFS="TS_8.0" VPOS="11232.0" WC="0.482" WIDTH="340.0" />
+            <SP HPOS="11084.0" VPOS="11232.0" WIDTH="108.0" />
+            <String CONTENT="carefully" HEIGHT="136.0" HPOS="11192.0" ID="TB.0239a.49_3_5" STYLEREFS="TS_8.0" VPOS="11232.0" WC="0.526" WIDTH="488.0" />
+            <SP HPOS="11680.0" VPOS="11232.0" WIDTH="96.0" />
+            <String CONTENT="Developed" HEIGHT="136.0" HPOS="11776.0" ID="TB.0239a.49_3_6" STYLEREFS="TS_8.0" VPOS="11236.0" WC="0.52" WIDTH="596.0" />
+          </TextLine>
+          <TextLine HEIGHT="108.0" HPOS="9188.0" ID="TB.0239a.49_4" VPOS="11368.0" WIDTH="704.0">
+            <String CONTENT="and" HEIGHT="104.0" HPOS="9188.0" ID="TB.0239a.49_4_0" STYLEREFS="TS_8.0" VPOS="11372.0" WC="0.673" WIDTH="204.0" />
+            <SP HPOS="9392.0" VPOS="11368.0" WIDTH="52.0" />
+            <String CONTENT="Printed." HEIGHT="108.0" HPOS="9444.0" ID="TB.0239a.49_4_1" STYLEREFS="TS_8.0" VPOS="11368.0" WC="0.697" WIDTH="448.0" />
+          </TextLine>
+          <TextLine HEIGHT="12.0" HPOS="10496.0" ID="TB.0239a.49_5" VPOS="11508.0" WIDTH="164.0">
+            <String CONTENT="-" HEIGHT="12.0" HPOS="10496.0" ID="TB.0239a.49_5_0" STYLEREFS="TS_10.0_BA" VPOS="11508.0" WC="0.22" WIDTH="32.0" />
+            <SP HPOS="10528.0" VPOS="11508.0" WIDTH="116.0" />
+            <String CONTENT="-" HEIGHT="12.0" HPOS="10644.0" ID="TB.0239a.49_5_1" STYLEREFS="TS_10.0_BA" VPOS="11508.0" WC="0.33" WIDTH="16.0" />
+          </TextLine>
+          <TextLine HEIGHT="320.0" HPOS="9184.0" ID="TB.0239a.49_6" VPOS="11568.0" WIDTH="3184.0">
+            <String CONTENT="Prescriptions" HEIGHT="312.0" HPOS="9184.0" ID="TB.0239a.49_6_0" STYLEREFS="TS_17.0_B" VPOS="11576.0" WC="0.445" WIDTH="1524.0" />
+            <SP HPOS="10708.0" VPOS="11568.0" WIDTH="204.0" />
+            <String CONTENT="a" HEIGHT="164.0" HPOS="10912.0" ID="TB.0239a.49_6_1" STYLEREFS="TS_17.0_B" VPOS="11648.0" WC="0.82" WIDTH="132.0" />
+            <SP HPOS="11044.0" VPOS="11568.0" WIDTH="224.0" />
+            <String CONTENT="Speoialty." HEIGHT="316.0" HPOS="11268.0" ID="TB.0239a.49_6_2" STYLEREFS="TS_17.0_B" VPOS="11568.0" WC="0.509" WIDTH="1100.0" />
+          </TextLine>
+          <TextLine HEIGHT="132.0" HPOS="9320.0" ID="TB.0239a.49_7" VPOS="11888.0" WIDTH="2912.0">
+            <String CONTENT="Fort" HEIGHT="100.0" HPOS="9320.0" ID="TB.0239a.49_7_0" STYLEREFS="TS_8.0" VPOS="11900.0" WC="0.475" WIDTH="248.0" />
+            <SP HPOS="9568.0" VPOS="11888.0" WIDTH="48.0" />
+            <String CONTENT="Street," HEIGHT="120.0" HPOS="9616.0" ID="TB.0239a.49_7_1" STYLEREFS="TS_8.0" VPOS="11900.0" WC="0.76" WIDTH="372.0" />
+            <SP HPOS="9988.0" VPOS="11888.0" WIDTH="440.0" />
+            <String CONTENT=":" HEIGHT="68.0" HPOS="10428.0" ID="TB.0239a.49_7_2" STYLEREFS="TS_8.0" VPOS="11932.0" WC="1.0" WIDTH="28.0" />
+            <SP HPOS="10456.0" VPOS="11888.0" WIDTH="400.0" />
+            <String CONTENT=":" HEIGHT="72.0" HPOS="10856.0" ID="TB.0239a.49_7_3" STYLEREFS="TS_8.0" VPOS="11920.0" WC="0.61" WIDTH="24.0" />
+            <SP HPOS="10880.0" VPOS="11888.0" WIDTH="440.0" />
+            <String CONTENT="Honolulu," HEIGHT="128.0" HPOS="11320.0" ID="TB.0239a.49_7_4" STYLEREFS="TS_8.0" VPOS="11888.0" WC="0.721" WIDTH="568.0" />
+            <SP HPOS="11888.0" VPOS="11888.0" WIDTH="60.0" />
+            <String CONTENT="H." HEIGHT="108.0" HPOS="11948.0" ID="TB.0239a.49_7_5" STYLEREFS="TS_8.0" VPOS="11892.0" WC="0.865" WIDTH="140.0" />
+            <SP HPOS="12088.0" VPOS="11888.0" WIDTH="60.0" />
+            <String CONTENT="I." HEIGHT="108.0" HPOS="12148.0" ID="TB.0239a.49_7_6" STYLEREFS="TS_8.0" VPOS="11892.0" WC="0.905" WIDTH="84.0" />
+          </TextLine>
+          <TextLine HEIGHT="328.0" HPOS="9192.0" ID="TB.0239a.49_8" VPOS="12208.0" WIDTH="2864.0">
+            <String CONTENT="CHAS." HEIGHT="320.0" HPOS="9192.0" ID="TB.0239a.49_8_0" STYLEREFS="TS_24.0_B" VPOS="12216.0" WC="0.416" WIDTH="864.0" />
+            <SP HPOS="10056.0" VPOS="12208.0" WIDTH="128.0" />
+            <String CONTENT="HUSTACE." HEIGHT="320.0" HPOS="10184.0" ID="TB.0239a.49_8_1" STYLEREFS="TS_24.0_B" VPOS="12208.0" WC="0.474" WIDTH="1496.0" />
+            <SP HPOS="11680.0" VPOS="12208.0" WIDTH="136.0" />
+            <String CONTENT="." HEIGHT="72.0" HPOS="11816.0" ID="TB.0239a.49_8_2" STYLEREFS="TS_24.0_B" VPOS="12448.0" WC="1.0" WIDTH="56.0" />
+            <SP HPOS="11872.0" VPOS="12208.0" WIDTH="128.0" />
+            <String CONTENT="." HEIGHT="80.0" HPOS="12000.0" ID="TB.0239a.49_8_3" STYLEREFS="TS_24.0_B" VPOS="12448.0" WC="1.0" WIDTH="56.0" />
+          </TextLine>      
+    <TextLine HEIGHT="100.0" HPOS="9896.0" ID="TB.0239a.49_9" VPOS="12544.0" WIDTH="1740.0">
+            <String CONTENT="IMPORTER" HEIGHT="96.0" HPOS="9896.0" ID="TB.0239a.49_9_0" STYLEREFS="TS_8.0" VPOS="12548.0" WC="0.485" WIDTH="652.0" />
+            <SP HPOS="10548.0" VPOS="12544.0" WIDTH="56.0" />
+            <String CONTENT="AND" HEIGHT="92.0" HPOS="10604.0" ID="TB.0239a.49_9_1" STYLEREFS="TS_8.0" VPOS="12544.0" WC="0.47" WIDTH="268.0" />
+            <SP HPOS="10872.0" VPOS="12544.0" WIDTH="72.0" />
+            <String CONTENT="DEALER" HEIGHT="92.0" HPOS="10944.0" ID="TB.0239a.49_9_2" STYLEREFS="TS_8.0" VPOS="12544.0" WC="0.505" WIDTH="504.0" />
+            <SP HPOS="11448.0" VPOS="12544.0" WIDTH="56.0" />
+            <String CONTENT="IN" HEIGHT="92.0" HPOS="11504.0" ID="TB.0239a.49_9_3" STYLEREFS="TS_8.0" VPOS="12544.0" WC="0.45" WIDTH="132.0" />
+          </TextLine>
+          <TextLine HEIGHT="220.0" HPOS="9192.0" ID="TB.0239a.49_10" VPOS="12704.0" WIDTH="3188.0">
+            <String CONTENT="GROCERIES" HEIGHT="212.0" HPOS="9192.0" ID="TB.0239a.49_10_0" STYLEREFS="TS_17.0_B" VPOS="12712.0" WC="0.62" WIDTH="1276.0" />
+            <SP HPOS="10468.0" VPOS="12704.0" WIDTH="108.0" />
+            <String CONTENT="and" HEIGHT="128.0" HPOS="10576.0" ID="TB.0239a.49_10_1" STYLEREFS="TS_17.0_BM" VPOS="12748.0" WC="0.447" WIDTH="376.0" />
+            <SP HPOS="10952.0" VPOS="12704.0" WIDTH="84.0" />
+            <String CONTENT="PROVISIONS" HEIGHT="212.0" HPOS="11036.0" ID="TB.0239a.49_10_2" STYLEREFS="TS_17.0_B" VPOS="12704.0" WC="0.498" WIDTH="1344.0" />
+          </TextLine>
+          <TextLine HEIGHT="156.0" HPOS="9352.0" ID="TB.0239a.49_11" VPOS="12984.0" WIDTH="2208.0">
+            <String CONTENT="Fresh" HEIGHT="124.0" HPOS="9352.0" ID="TB.0239a.49_11_0" STYLEREFS="TS_11.0" VPOS="12992.0" WC="0.704" WIDTH="388.0" />
+            <SP HPOS="9740.0" VPOS="12984.0" WIDTH="68.0" />
+            <String CONTENT="Goods" HEIGHT="120.0" HPOS="9808.0" ID="TB.0239a.49_11_1" STYLEREFS="TS_11.0" VPOS="12988.0" WC="0.64" WIDTH="432.0" />
+            <SP HPOS="10240.0" VPOS="12984.0" WIDTH="88.0" />
+            <String CONTENT="by" HEIGHT="156.0" HPOS="10328.0" ID="TB.0239a.49_11_2" STYLEREFS="TS_11.0" VPOS="12984.0" WC="0.69" WIDTH="160.0" />
+            <SP HPOS="10488.0" VPOS="12984.0" WIDTH="60.0" />
+            <String CONTENT="every" HEIGHT="120.0" HPOS="10548.0" ID="TB.0239a.49_11_3" STYLEREFS="TS_11.0" VPOS="13016.0" WC="0.87" WIDTH="368.0" />
+            <SP HPOS="10916.0" VPOS="12984.0" WIDTH="64.0" />
+            <String CONTENT="steam" HEIGHT="104.0" HPOS="10980.0" ID="TB.0239a.49_11_4" STYLEREFS="TS_11.0" VPOS="13000.0" WC="0.496" WIDTH="396.0" />
+            <SP HPOS="11376.0" VPOS="12984.0" WIDTH="32.0" />
+            <String CONTENT="." HEIGHT="28.0" HPOS="11408.0" ID="TB.0239a.49_11_5" STYLEREFS="TS_11.0" VPOS="13072.0" WC="1.0" WIDTH="28.0" />
+            <SP HPOS="11436.0" VPOS="12984.0" WIDTH="32.0" />
+            <String CONTENT="r." HEIGHT="88.0" HPOS="11468.0" ID="TB.0239a.49_11_6" STYLEREFS="TS_11.0" VPOS="13016.0" WC="0.86" WIDTH="92.0" />
+          </TextLine>
+          <TextLine HEIGHT="172.0" HPOS="9352.0" ID="TB.0239a.49_12" VPOS="13136.0" WIDTH="3020.0">
+            <String CONTENT="Special" HEIGHT="160.0" HPOS="9352.0" ID="TB.0239a.49_12_0" STYLEREFS="TS_11.0" VPOS="13148.0" WC="0.87" WIDTH="484.0" />
+            <SP HPOS="9836.0" VPOS="13136.0" WIDTH="64.0" />
+            <String CONTENT="attention" HEIGHT="128.0" HPOS="9900.0" ID="TB.0239a.49_12_1" STYLEREFS="TS_11.0" VPOS="13144.0" WC="0.693" WIDTH="612.0" />
+            <SP HPOS="10512.0" VPOS="13136.0" WIDTH="108.0" />
+            <String CONTENT="paid" HEIGHT="160.0" HPOS="10620.0" ID="TB.0239a.49_12_2" STYLEREFS="TS_11.0" VPOS="13140.0" WC="0.895" WIDTH="280.0" />
+            <SP HPOS="10900.0" VPOS="13136.0" WIDTH="92.0" />
+            <String CONTENT="to" HEIGHT="104.0" HPOS="10992.0" ID="TB.0239a.49_12_3" STYLEREFS="TS_11.0" VPOS="13160.0" WC="0.8" WIDTH="132.0" />
+            <SP HPOS="11124.0" VPOS="13136.0" WIDTH="140.0" />
+            <String CONTENT="all" HEIGHT="124.0" HPOS="11264.0" ID="TB.0239a.49_12_4" STYLEREFS="TS_11.0" VPOS="13136.0" WC="0.543" WIDTH="164.0" />
+            <SP HPOS="11428.0" VPOS="13136.0" WIDTH="140.0" />
+            <String CONTENT="orders" HEIGHT="124.0" HPOS="11568.0" ID="TB.0239a.49_12_5" STYLEREFS="TS_11.0" VPOS="13140.0" WC="0.64" WIDTH="424.0" />
+            <SP HPOS="11992.0" VPOS="13136.0" WIDTH="132.0" />
+            <String CONTENT="and" HEIGHT="128.0" HPOS="12124.0" ID="TB.0239a.49_12_6" STYLEREFS="TS_11.0" VPOS="13140.0" WC="0.613" WIDTH="248.0" />
+          </TextLine>
+          <TextLine HEIGHT="164.0" HPOS="9180.0" ID="TB.0239a.49_13" VPOS="13300.0" WIDTH="1676.0">
+            <String CONTENT="satisfaction" HEIGHT="128.0" HPOS="9180.0" ID="TB.0239a.49_13_0" STYLEREFS="TS_11.0" VPOS="13308.0" WC="0.672" WIDTH="772.0" />
+            <SP HPOS="9952.0" VPOS="13300.0" WIDTH="96.0" />
+            <String CONTENT="guaranteed." HEIGHT="164.0" HPOS="10048.0" ID="TB.0239a.49_13_1" STYLEREFS="TS_11.0" VPOS="13300.0" WC="0.735" WIDTH="808.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.49_0_0" End="TB.0239a.49_3_1">
+        <Alt lang="ar">
+        المخدرات وتشيميكالسالوايس يد ماتجريالون أولبروتوجفلسبيج سطر كامل. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.49_3_2" End="TB.0239a.49_8_0">
+        <Alt lang="ar">
+        الأفلام واللوحات بعناية ديفيلوبيداند المطبوعة-----وصفات شارع Speoialty.Fort،:: هونولولو، I.CHAS حاء. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.49_8_1" End="TB.0239a.49_8_3">
+        <Alt lang="ar">
+        هوستيس...
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.49_9_0" End="TB.0239a.49_11_5">
+        <Alt lang="ar">
+        إينجروسيريس التاجر والمستورد والسلع بروفيسيونسفريش بكل قوته. 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.49_11_6" End="TB.0239a.49_13_1">
+        <Alt lang="ar">
+        r.Special اهتمام لجميع أوامر أندساتيسفاكشن مضمونة.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns50="http://www.w3.org/1999/xlink" HEIGHT="32" HPOS="7312" ID="TB.0239a.50" VPOS="14112" WIDTH="16" language="en" ns50:type="simple">
+          <TextLine HEIGHT="32.0" HPOS="7312.0" ID="TB.0239a.50_0" VPOS="14112.0" WIDTH="16.0">
+            <String CONTENT="," HEIGHT="32.0" HPOS="7312.0" ID="TB.0239a.50_0_0" STYLEREFS="TS_10.0_BA" VPOS="14112.0" WC="1.0" WIDTH="16.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.50_0_0" End="TB.0239a.50_0_0">
+        <Alt lang="ar">
+        ,
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns51="http://www.w3.org/1999/xlink" HEIGHT="264" HPOS="7504" ID="TB.0239a.51" VPOS="14704" WIDTH="208" language="en" ns51:type="simple">
+          <TextLine HEIGHT="264.0" HPOS="7504.0" ID="TB.0239a.51_0" VPOS="14704.0" WIDTH="208.0">
+            <String CONTENT="4." HEIGHT="264.0" HPOS="7504.0" ID="TB.0239a.51_0_0" STYLEREFS="TS_10.0_BI" VPOS="14704.0" WC="0.22" WIDTH="208.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.51_0_0" End="TB.0239a.51_0_0">
+        <Alt lang="ar">
+        4.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns52="http://www.w3.org/1999/xlink" HEIGHT="80" HPOS="7668" ID="TB.0239a.52" VPOS="15096" WIDTH="148" language="en" ns52:type="simple">
+          <TextLine HEIGHT="80.0" HPOS="7668.0" ID="TB.0239a.52_0" VPOS="15096.0" WIDTH="148.0">
+            <String CONTENT="v" HEIGHT="80.0" HPOS="7668.0" ID="TB.0239a.52_0_0" STYLEREFS="TS_10.0_BA" VPOS="15096.0" WC="0.13" WIDTH="148.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.52_0_0" End="TB.0239a.52_0_0">
+        <Alt lang="ar">
+        الخامس
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns53="http://www.w3.org/1999/xlink" HEIGHT="96" HPOS="5100" ID="TB.0239a.53" VPOS="15576" WIDTH="80" language="en" ns53:type="simple">
+          <TextLine HEIGHT="96.0" HPOS="5100.0" ID="TB.0239a.53_0" VPOS="15576.0" WIDTH="80.0">
+            <String CONTENT=".-'" HEIGHT="96.0" HPOS="5100.0" ID="TB.0239a.53_0_0" STYLEREFS="TS_10.0_BA" VPOS="15576.0" WC="0.53" WIDTH="80.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.53_0_0" End="TB.0239a.53_0_0">
+        <Alt lang="ar">
+        .-'
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns54="http://www.w3.org/1999/xlink" HEIGHT="8" HPOS="4920" ID="TB.0239a.54" VPOS="16424" WIDTH="1304" language="en" ns54:type="simple" />
+        <TextBlock xmlns:ns55="http://www.w3.org/1999/xlink" HEIGHT="128" HPOS="4920" ID="TB.0239a.55" VPOS="16432" WIDTH="1312" language="en" ns55:type="simple" />
+        <TextBlock xmlns:ns56="http://www.w3.org/1999/xlink" HEIGHT="8" HPOS="4920" ID="TB.0239a.56" VPOS="16560" WIDTH="1376" language="en" ns56:type="simple" />
+        <TextBlock xmlns:ns57="http://www.w3.org/1999/xlink" HEIGHT="276" HPOS="5408" ID="TB.0239a.57" VPOS="16604" WIDTH="1164" language="en" ns57:type="simple">
+          <TextLine HEIGHT="276.0" HPOS="5408.0" ID="TB.0239a.57_0" VPOS="16604.0" WIDTH="1164.0">
+            <String CONTENT="JCiB" HEIGHT="276.0" HPOS="5408.0" ID="TB.0239a.57_0_0" STYLEREFS="TS_16.0_BA" VPOS="16604.0" WC="0.127" WIDTH="1164.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.57_0_0" End="TB.0239a.57_0_0">
+        <Alt lang="ar">
+        جسيب
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns58="http://www.w3.org/1999/xlink" HEIGHT="72" HPOS="7456" ID="TB.0239a.58" VPOS="15616" WIDTH="412" language="en" ns58:type="simple">
+          <TextLine HEIGHT="72.0" HPOS="7456.0" ID="TB.0239a.58_0" VPOS="15616.0" WIDTH="412.0">
+            <String CONTENT="&quot;'" HEIGHT="44.0" HPOS="7456.0" ID="TB.0239a.58_0_0" STYLEREFS="TS_9.0_BA" VPOS="15616.0" WC="0.24" WIDTH="104.0" />
+            <SP HPOS="7560.0" VPOS="15616.0" WIDTH="296.0" />
+            <String CONTENT="." HEIGHT="12.0" HPOS="7856.0" ID="TB.0239a.58_0_1" STYLEREFS="TS_9.0_BIA" VPOS="15676.0" WC="0.58" WIDTH="12.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.58_0_0" End="TB.0239a.58_0_1">
+        <Alt lang="ar">
+        "' .
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns59="http://www.w3.org/1999/xlink" HEIGHT="100" HPOS="6224" ID="TB.0239a.59" VPOS="16460" WIDTH="616" language="en" ns59:type="simple">
+          <TextLine HEIGHT="100.0" HPOS="6224.0" ID="TB.0239a.59_0" VPOS="16460.0" WIDTH="616.0">
+            <String CONTENT="'L.f" HEIGHT="100.0" HPOS="6224.0" ID="TB.0239a.59_0_0" STYLEREFS="TS_7.0_BIA" VPOS="16460.0" WC="0.42" WIDTH="212.0" />
+            <SP HPOS="6436.0" VPOS="16460.0" WIDTH="348.0" />
+            <String CONTENT="t" HEIGHT="76.0" HPOS="6784.0" ID="TB.0239a.59_0_1" STYLEREFS="TS_7.0_BIA" VPOS="16484.0" WC="0.16" WIDTH="56.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.59_0_0" End="TB.0239a.59_0_1">
+        <Alt lang="ar">
+        ' تي L.f
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns60="http://www.w3.org/1999/xlink" HEIGHT="120" HPOS="6736" ID="TB.0239a.60" VPOS="16560" WIDTH="444" language="en" ns60:type="simple">
+          <TextLine HEIGHT="120.0" HPOS="6736.0" ID="TB.0239a.60_0" VPOS="16560.0" WIDTH="444.0">
+            <String CONTENT="i" HEIGHT="120.0" HPOS="6736.0" ID="TB.0239a.60_0_0" STYLEREFS="TS_11.0_BIA" VPOS="16560.0" WC="0.14" WIDTH="76.0" />
+            <SP HPOS="6812.0" VPOS="16560.0" WIDTH="144.0" />
+            <String CONTENT="." HEIGHT="40.0" HPOS="6956.0" ID="TB.0239a.60_0_1" STYLEREFS="TS_11.0_BIA" VPOS="16640.0" WC="0.27" WIDTH="36.0" />
+            <SP HPOS="6992.0" VPOS="16560.0" WIDTH="164.0" />
+            <String CONTENT="." HEIGHT="12.0" HPOS="7156.0" ID="TB.0239a.60_0_2" STYLEREFS="TS_11.0_BIA" VPOS="16664.0" WC="0.3" WIDTH="24.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.60_0_0" End="TB.0239a.60_0_1">
+        <Alt lang="ar">
+        (ط). 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.60_0_2" End="TB.0239a.60_0_2">
+        <Alt lang="ar">
+        .
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns61="http://www.w3.org/1999/xlink" HEIGHT="140" HPOS="6668" ID="TB.0239a.61" VPOS="16696" WIDTH="3028" language="en" ns61:type="simple">
+          <TextLine HEIGHT="140.0" HPOS="6668.0" ID="TB.0239a.61_0" VPOS="16696.0" WIDTH="3028.0">
+            <String CONTENT="." HEIGHT="24.0" HPOS="6668.0" ID="TB.0239a.61_0_0" STYLEREFS="TS_9.0_B" VPOS="16788.0" WC="0.38" WIDTH="24.0" />
+            <SP HPOS="6692.0" VPOS="16696.0" WIDTH="132.0" />
+            <String CONTENT="'.ft.ttg'JtoAA-iiA:," HEIGHT="116.0" HPOS="6824.0" ID="TB.0239a.61_0_1" STYLEREFS="TS_9.0_B" VPOS="16708.0" WC="0.253" WIDTH="1252.0" />
+            <SP HPOS="8076.0" VPOS="16696.0" WIDTH="48.0" />
+            <String CONTENT="i-titikSk" HEIGHT="104.0" HPOS="8124.0" ID="TB.0239a.61_0_2" STYLEREFS="TS_9.0_BI" VPOS="16724.0" WC="0.189" WIDTH="456.0" />
+            <SP HPOS="8580.0" VPOS="16696.0" WIDTH="168.0" />
+            <String CONTENT="&amp;$rii&amp;i" HEIGHT="140.0" HPOS="8748.0" ID="TB.0239a.61_0_3" STYLEREFS="TS_9.0_B" VPOS="16696.0" WC="0.202" WIDTH="948.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.61_0_0" End="TB.0239a.61_0_0">
+        <Alt lang="ar">
+        . 
+        </Alt>
+        </Sentence>
+        <Sentence Start="TB.0239a.61_0_1" End="TB.0239a.61_0_3">
+        <Alt lang="ar">
+        '.ft.ttg'JtoAA-اتفاقات الاستثمار الدولية:، ري تيتيكسك i &amp;$ &amp; أنا
+        </Alt>
+        </Sentence>
+        </TextBlock>
+        <TextBlock xmlns:ns62="http://www.w3.org/1999/xlink" HEIGHT="144" HPOS="11136" ID="TB.0239a.62" VPOS="16700" WIDTH="1052" language="en" ns62:type="simple">
+          <TextLine HEIGHT="144.0" HPOS="11136.0" ID="TB.0239a.62_0" VPOS="16700.0" WIDTH="1052.0">
+            <String CONTENT="4riaafcS,,We-." HEIGHT="144.0" HPOS="11136.0" ID="TB.0239a.62_0_0" STYLEREFS="TS_9.0_B" VPOS="16700.0" WC="0.232" WIDTH="1052.0" />
+          </TextLine>
+        <Sentence Start="TB.0239a.62_0_0" End="TB.0239a.62_0_0">
+        <Alt lang="ar">
+        4riaafcS, نحن-.
+        </Alt>
+        </Sentence>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
