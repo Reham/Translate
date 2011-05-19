@@ -2,21 +2,29 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.diwan;
 
 import com.diwan.translation.Translate;
 import com.diwan.translation.TranslateFault;
+import java.awt.BorderLayout;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.awt.image.RenderedImage;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringReader;
+import java.net.URL;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
@@ -31,13 +39,15 @@ import org.apache.commons.lang.StringEscapeUtils;
  */
 public class AltoTranslate extends HttpServlet {
 
-     String ticketId;
-     String inputLang;
-     String outputLang;
-     String sourceUrl;
-     String inputFacet;
-     String outputFacet;
-        /**
+    String ticketId;
+    String inputLang;
+    String outputLang;
+    String sourceUrl;
+    String inputFacet;
+    String outputFacet;
+    Image image = null;
+
+    /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
      * @param request servlet request
      * @param response servlet response
@@ -45,19 +55,24 @@ public class AltoTranslate extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+            throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
             /* TODO output your page here            */
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet AltoTranslate</title>");  
+            out.println("<title>Servlet AltoTranslate</title>");
             out.println("</head>");
             out.println("<body>");
+            // out.println("<img style="text-position:center;">Center-aligned image</img>");
+
             String data = request.getParameter("data");
-            out.println("<h1>Servlet AltoTranslate at " + request.getContextPath () + "</h1>");
-            out.println("<pre>" + StringEscapeUtils.escapeHtml(data) + "</pre>");
+
+            out.println(" <img src=http://dev.amuser-qstpb.com:8080/kk/images/logo.png  />");
+            out.println("<h1>Automatic translation of the book has started. It may take some time</h1>");
+
+
 
             StringReader in = new StringReader(data);
             XMLEventReader reader = XMLInputFactory.newInstance().createXMLEventReader(in);
@@ -70,21 +85,21 @@ public class AltoTranslate extends HttpServlet {
                     // detect start of a text block
                     if (startEventName.equalsIgnoreCase("url")) {
                         sourceUrl = reader.getElementText();
-                        out.println("<pre>" + sourceUrl  + "</pre>");
+                        //     out.println("<pre>" + sourceUrl  + "</pre>");
                     }
                     if (startEventName.equalsIgnoreCase("ticketId")) {
                         ticketId = reader.getElementText();
-                        out.println("<pre>" + ticketId  + "</pre>");
+                        //    out.println("<pre>" + ticketId  + "</pre>");
                     }
                     if (startEventName.equalsIgnoreCase("inputFacet")) {
-                        inputLang = iterateAttibutes(startEvent, "language").substring(0,2).toLowerCase();
+                        inputLang = iterateAttibutes(startEvent, "language").substring(0, 2).toLowerCase();
                         inputFacet = reader.getElementText();
-                        out.println("<pre>" + inputLang + " " + inputFacet + "</pre>");
+                        //  out.println("<pre>" + inputLang + " " + inputFacet + "</pre>");
                     }
                     if (startEventName.equalsIgnoreCase("outputFacet")) {
-                        outputLang = iterateAttibutes(startEvent, "language").substring(0,2).toLowerCase();
-                        outputFacet = reader.getElementText();
-                        out.println("<pre>" + outputLang  + " " + outputFacet + "</pre>");
+                        outputLang = iterateAttibutes(startEvent, "language").substring(0, 2).toLowerCase();
+                        //outputFacet = reader.getElementText();
+                        // out.println("<pre>" + outputLang  + " " + outputFacet + "</pre>");
                     }
                 }
 
@@ -94,9 +109,10 @@ public class AltoTranslate extends HttpServlet {
             out.println("</html>");
 
             TranslateThread trans = new TranslateThread(this);
-            Thread th = new Thread (trans);
-            if (th.isDaemon())
+            Thread th = new Thread(trans);
+            if (th.isDaemon()) {
                 th.setDaemon(false);
+            }
             th.start();
 
         } catch (XMLStreamException ex) {
@@ -132,9 +148,9 @@ public class AltoTranslate extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+            throws ServletException, IOException {
         processRequest(request, response);
-    } 
+    }
 
     /** 
      * Handles the HTTP <code>POST</code> method.
@@ -145,7 +161,7 @@ public class AltoTranslate extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+            throws ServletException, IOException {
         processRequest(request, response);
     }
 
@@ -157,5 +173,4 @@ public class AltoTranslate extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }
