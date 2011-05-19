@@ -29,26 +29,20 @@ public class AltoDoc {
         try {
             URL u = new URL(sourceUrl + "/objects/" + pid + "/datastreams/F_OCR/content");
             in = u.openStream();
-            int size = in.available();
-            byte[] buf = new byte[size];
-            BufferedReader br = new BufferedReader(
-                    new InputStreamReader(
-                    u.openStream()));
-
-            int r = 0;
+            BufferedReader br = new BufferedReader(new InputStreamReader(in, "UTF-8"));
             while ((tmp = br.readLine()) != null) {
                 altoXml += tmp + "\n";
             }
             in.close();
         } catch (Exception ex) {
             System.err.println("not a URL Java understands.");
+            System.err.println(ex.toString());
         } finally {
             if (in != null) {
                 try {
                     in.close();
                 } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    System.err.println(e.toString());
                 }
             }
         }
