@@ -62,7 +62,7 @@ public class Translate {
             Logger.getLogger(Translate.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
     /**
      * Constructs class with default parameters.
      */
@@ -570,22 +570,10 @@ public class Translate {
             String currentTextBlockID = null;
             String currentTextLineID = null;
             String currentStringID = null;
+
             XMLEventFactory m_eventFactory = XMLEventFactory.newInstance();
             ArrayList<String> pageId = AltoDoc.getPageIds(url,pid);
             String altoPage = null;
-            OutputStream outStream = new OutputStream() {
-                @Override
-                public void write(int b) throws IOException {
-                    throw new UnsupportedOperationException("Not supported yet.");
-                }
-            };
-            if (stub == null) {
-                try {
-                    init();
-                } catch (TranslateFault ex) {
-                    Logger.getLogger(Translate.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
 
             int i = 0;
             while (i < pageId.size()) {
@@ -639,58 +627,64 @@ public class Translate {
                                 blockText.append(" ");
                             }
                         } // I am at the closing text block tag so insert sentences
-                        else if (currentStringID != null && event.getEventType() == XMLEvent.END_ELEMENT && event.asEndElement().getName().getLocalPart().equalsIgnoreCase("textblock")) {
-                            try {
+                        else if (currentStringID != null 
+                                && event.getEventType() == XMLEvent.END_ELEMENT
+                                && event.asEndElement().getName().getLocalPart().equalsIgnoreCase("textblock"))
+                        {
+                            try
+                            {
+                                TranslateArrayResult[]  translatedStrings;
                                 int[] sentences = breakSentences(blockText.toString(), from);
-                                int sentenceStart = 0;
-                                String sentenceStartID = idOffsetMap.firstEntry().getValue();
-                                Integer currentKey = idOffsetMap.firstKey();
-                                int sentenceBreakDelta = 0;
-                                for (int sentenceLength : sentences) {
+                                ALTOSentence[] sentenceArray = extractSentencesArray(blockText.toString(), sentences, idOffsetMap);
+
+                                //try to translate all the strings as an array
+                                try
+                                {
+                                    String[] sentenceStrings = new String[sentenceArray.length];
+                                    int n = 0;
+                                    for (ALTOSentence theSentence : sentenceArray)
+                                        sentenceStrings[n++] = theSentence.sentence;
+                                    translatedStrings  =  translateArray(sentenceStrings,from,to);
+                                }
+                                catch (TranslateFault ex)
+                                {
+                                    System.out.println("Translate Array failed (will translate lines) at: " + pid + " Word: " + sentenceArray[0].startID + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
+                                    translatedStrings = null;
+                                }
+                                
+                                //write the sentences out to the ALTO file
+                                int n = 0;
+                                for (ALTOSentence theSentence : sentenceArray) {
                                     writer.add(ms.getNewSentenceEvent());
-                                    int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
-                                    // calculate the next sentence
-                                    Integer previousKey = currentKey;
-                                    while (currentKey != null && currentKey < sentenceEnd) {
-                                        previousKey = currentKey;
-                                        currentKey = idOffsetMap.higherKey(currentKey);
-                                    }
-                                    if (currentKey == null) {
-                                        currentKey = sentenceEnd;
-                                    }
-                                    String sentenceEndID = idOffsetMap.get(previousKey);
-                                    sentenceBreakDelta = currentKey - sentenceEnd;
-                                    if (currentKey > sentenceEnd) {
-                                        sentenceEnd = currentKey;
-                                    }
-                                    writer.add(ms.getNewSentenceStartId(sentenceStartID));
-                                    writer.add(ms.getNewSentenceEndId(sentenceEndID));
+                                    writer.add(ms.getNewSentenceStartId(theSentence.startID));
+                                    writer.add(ms.getNewSentenceEndId(theSentence.endID));
                                     writer.add(lastWhiteSpaceEvent);
+
                                     // calculate translated sentence
                                     writer.add(ms.getNewAltEvent());
                                     writer.add(ms.getNewAltLang(to));
                                     writer.add(lastWhiteSpaceEvent);
-                                    try {
-                                        String translatedString = translateLine(blockText.toString().substring(sentenceStart, sentenceEnd), from, to);
-                                        writer.add(ms.getNewCharactersEvent(translatedString));
-                                    } catch  (TranslateFault ex) {
-                                        System.out.println(ex.toString());
-                                        System.out.println("Translate fail at Book: " + pid + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
-                                        writer.add(ms.getNewCharactersEvent(blockText.toString().substring(sentenceStart, sentenceEnd)));
+                                    
+                                    //write the trnaslated strings if translate array succeeded otherwise call translateLine for each sentence
+                                    if (translatedStrings != null)
+                                        writer.add(ms.getNewCharactersEvent(translatedStrings[n++].getTranslatedText()));
+                                    else
+                                    {
+                                        try {
+                                            String translatedString = translateLine(theSentence.sentence, from, to);
+                                            writer.add(ms.getNewCharactersEvent(translatedString));
+                                        } catch  (TranslateFault ex) {
+                                            System.out.println(ex.toString());
+                                            System.out.println("Translate fail at Book: " + pid + " Word: " + theSentence.startID + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
+                                            writer.add(ms.getNewCharactersEvent(theSentence.sentence));
+                                        }
                                     }
+
                                     writer.add(lastWhiteSpaceEvent);
                                     writer.add(ms.getAltEndEvent());
                                     writer.add(lastWhiteSpaceEvent);
                                     writer.add(ms.getSentenceEndEvent());
                                     writer.add(lastWhiteSpaceEvent);
-                                    // set ending state for next iteration
-                                    sentenceStart += sentenceLength;
-                                    sentenceStartID = idOffsetMap.get(currentKey);
-                                    if (sentenceStartID == null) {
-                                        //I have gone past the last key so get the lower key
-                                        currentKey = idOffsetMap.lowerKey(currentKey);
-                                        sentenceStartID = idOffsetMap.get(currentKey);
-                                    }
                                 }
                             } catch (TranslateFault ex)
                             {
@@ -735,6 +729,7 @@ public class Translate {
                         System.out.println(httpCon.getResponseCode());
                         System.out.println(httpCon.getResponseMessage());
                     }
+                    System.out.println("Page: "+ (i+1) +" of "+ pageId.size());
                 } catch (Exception ex) {
                     //nothing to do here move along
                     System.out.println(ex.toString());
@@ -757,7 +752,69 @@ public class Translate {
         return stringLang;
 
     }
+    private ALTOSentence[] extractSentencesArray(String blocktext, int[] sentences, TreeMap<Integer, String> idOffsetMap)
+    {
+        ALTOSentence[] sentenceArray = new ALTOSentence[sentences.length];
+        
+        //setences may not match ALTO words. I will assume that the ALTO word breaks
+        //take precedence. So I only start a new sentence at the beginning of an ALTO word
+        //sentenceBreakDelta tracks this differnce. sentence length is the length minus the beginning
+        //of an ALTO word.
+        int sentenceBreakDelta = 0;
+        int i = 0;
+        int sentenceStart = 0;
+        String sentenceStartID = idOffsetMap.firstEntry().getValue();
+        Integer currentKey = idOffsetMap.firstKey();
+        
+        for (int sentenceLength : sentences) {
+            int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
+            // calculate the next sentence
+            Integer previousKey = currentKey;
+            while (currentKey != null && currentKey < sentenceEnd) {
+                previousKey = currentKey;
+                currentKey = idOffsetMap.higherKey(currentKey);
+            }
+            if (currentKey == null) {
+                currentKey = sentenceEnd;
+            }
+            String sentenceEndID = idOffsetMap.get(previousKey);
+            sentenceBreakDelta = currentKey - sentenceEnd;
+            if (currentKey > sentenceEnd) {
+                sentenceEnd = currentKey;
+            }
 
+            sentenceArray[i] = new ALTOSentence();
+            sentenceArray[i].startID = sentenceStartID;
+            sentenceArray[i].endID = sentenceEndID;
+            sentenceArray[i].sentence = blocktext.substring(sentenceStart, sentenceEnd);
+
+            // set ending state for next iteration
+            sentenceStart += sentenceLength;
+            sentenceStartID = idOffsetMap.get(currentKey);
+
+            if (sentenceStartID == null) {
+                //I have gone past the last key so get the lower key
+                currentKey = idOffsetMap.lowerKey(currentKey);
+                sentenceStartID = idOffsetMap.get(currentKey);
+            }
+
+            i++;
+        }
+
+        return sentenceArray;
+    }
+    
+    private class ALTOSentence
+    {
+        String sentence;
+        String startID;
+        String endID;
+
+        public String toString() {
+            return sentence;
+        }
+    }
+    
     /**
      * Iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
      * @param startEvent
