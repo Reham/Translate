@@ -4,34 +4,23 @@
  */
 package com.diwan;
 
-import com.diwan.translation.Translate;
-import com.diwan.translation.TranslateFault;
-import java.awt.BorderLayout;
 import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringReader;
-import java.net.URL;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
-import org.apache.commons.lang.StringEscapeUtils;
 
 /**
  *
@@ -65,7 +54,6 @@ public class AltoTranslate extends HttpServlet {
             out.println("<title>Servlet AltoTranslate</title>");
             out.println("</head>");
             out.println("<body>");
-            // out.println("<img style="text-position:center;">Center-aligned image</img>");
 
             String data = request.getParameter("data");
 
@@ -85,21 +73,17 @@ public class AltoTranslate extends HttpServlet {
                     // detect start of a text block
                     if (startEventName.equalsIgnoreCase("url")) {
                         sourceUrl = reader.getElementText();
-                        //     out.println("<pre>" + sourceUrl  + "</pre>");
                     }
                     if (startEventName.equalsIgnoreCase("ticketId")) {
                         ticketId = reader.getElementText();
-                        //    out.println("<pre>" + ticketId  + "</pre>");
                     }
                     if (startEventName.equalsIgnoreCase("inputFacet")) {
                         inputLang = iterateAttibutes(startEvent, "language").substring(0, 2).toLowerCase();
                         inputFacet = reader.getElementText();
-                        //  out.println("<pre>" + inputLang + " " + inputFacet + "</pre>");
                     }
                     if (startEventName.equalsIgnoreCase("outputFacet")) {
                         outputLang = iterateAttibutes(startEvent, "language").substring(0, 2).toLowerCase();
-                        //outputFacet = reader.getElementText();
-                        // out.println("<pre>" + outputLang  + " " + outputFacet + "</pre>");
+                        outputFacet = reader.getElementText();
                     }
                 }
 
