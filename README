@@ -1,2 +1,30 @@
 Translator is now a web project implementing a single servlet
 Takes an ALTO file and outputs an ALTO file with translations
+
+The servlet is implemented in com.diwan.AltoTranslate.java. The
+
+Translator Web Service
+
+Is a SOAP compliant web service that can be called to translate single lines of text to full web pages.
+Code is documented use Javadoc ti generate documentation.
+
+Steps for setting up Netbeans:
+==============================
+1. Install Netbeans 6.9.1 with java EE and Glassfish from (http://netbeans.org/downloads/index.html)
+2. Download axis2 1.5.4 from the following website (http://axis.apache.org/axis2/java/core/download.cgi)
+3. In NetBeans right click on the project translator -> Libraries -> Add JAR/Folder -> browse
+you will need to add the .jar in the build folder and under axis2-1.5.4\lib select all the jar files except the log4j.jar
+
+Set environment variables:
+right click my computer -> properties -> advanced -> environment variables -> create two user variable
+JAVA_HOME:"the directory where you installed java"
+and AXIS2_HOME:"the directory where you installed Axis2"
+
+To generate the stub class:
+===========================
+1. Open command window -> change your directory to where the wsdl2java.bat is -> write this command line:
+  wsdl2java.sh -o /projects/mstranslatorapi/ -p org.diwan.soap  -ns2p org.tempuri=org.diwan.soap -or -uri http://api.microsofttranslator.com/V2/Soap.svc
+
+wsdl2java.bat will automatically create a stub class that will call the Translate API. To see how to call the class add -t option to the
+  call which will generate test code.
+3. In the output folder you will get a src com.diwan.soap which will contain the stub class.
