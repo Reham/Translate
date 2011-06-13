@@ -31,26 +31,23 @@ public class Translate {
     private long numberOfCalls = 0;
     private boolean firstTime = true;
 
-    private void checkTime()
-    {
+    private void checkTime() {
         long endTime = System.currentTimeMillis();
         long totalTime = endTime - startTime;
         try {
             //in case this is called multiple times with a new class - always delay first call for 1.2 seconds
-            if (firstTime)
-            {
+            if (firstTime) {
                 firstTime = false;
-                if (totalTime < 1200)
+                if (totalTime < 1200) {
                     Thread.sleep(1200 - totalTime);
+                }
                 return;
             }
 
             if (startTime == 0 || totalTime > 60000) {
                 startTime = System.currentTimeMillis();
                 numberOfCalls = 0;
-            }
-            else
-            {
+            } else {
                 numberOfCalls++;
                 if (numberOfCalls > 50) {
                     Thread.sleep(60000 - totalTime);
@@ -154,7 +151,7 @@ public class Translate {
      * @return array that contains length of each sentence
      * @throws TranslateFault
      */
-    public int[] breakSentences(String text, String language) throws TranslateFault , InterruptedException {
+    public int[] breakSentences(String text, String language) throws TranslateFault, InterruptedException {
         checkTime();
         if (stub == null) {
             init();
@@ -469,7 +466,7 @@ public class Translate {
      * @throws TranslateFault
      */
     public String translateLine(String text, String from, String to)
-            throws TranslateFault , InterruptedException {
+            throws TranslateFault, InterruptedException {
         checkTime();
         if (stub == null) {
             init();
@@ -487,7 +484,7 @@ public class Translate {
         } catch (RemoteException e) {
             if (e.getMessage().contains("NoTranslationFound")) {
                 return text;
-			} else if (e.getMessage().contains("V2_Soap")) {
+            } else if (e.getMessage().contains("V2_Soap")) {
                 try {
                     Thread.sleep(60000);
                     SoapServiceStub.Translate translate = new SoapServiceStub.Translate();
@@ -540,8 +537,9 @@ public class Translate {
             TranslateArrayResponse[] t = translateArrayResponse.getTranslateArrayResult().getTranslateArrayResponse();
             TranslateArrayResult[] result = new TranslateArrayResult[t.length];
             int i = 0;
-            for (TranslateArrayResponse t1 : t)
+            for (TranslateArrayResponse t1 : t) {
                 result[i++] = new TranslateArrayResult(t1);
+            }
             return result;
         } catch (RemoteException e) {
             throw new TranslateFault(e.getMessage());
@@ -560,188 +558,182 @@ public class Translate {
      * @return array of bytes of the xml file
      * @throws TranslateFault
      */
-
     public void translateXML(String url, String pid, String from, String to, String outputFacet) {
-            XMLEventWriter writer = null;
-            ByteArrayOutputStream bos = null;
-            TreeMap<Integer, String> idOffsetMap = null;
-            StringBuffer blockText = null;
-            Boolean inTextBlock = false;
-            String currentTextBlockID = null;
-            String currentTextLineID = null;
-            String currentStringID = null;
+        XMLEventWriter writer = null;
+        ByteArrayOutputStream bos = null;
+        TreeMap<Integer, String> idOffsetMap = null;
+        StringBuffer blockText = null;
+        Boolean inTextBlock = false;
+        String currentTextBlockID = null;
+        String currentTextLineID = null;
+        String currentStringID = null;
 
-            XMLEventFactory m_eventFactory = XMLEventFactory.newInstance();
-            ArrayList<String> pageId = AltoDoc.getPageIds(url,pid);
-            String altoPage = null;
+        XMLEventFactory m_eventFactory = XMLEventFactory.newInstance();
+        ArrayList<String> pageId = AltoDoc.getPageIds(url, pid);
+        String altoPage = null;
 
-            int i = 0;
-            while (i < pageId.size()) {
-                altoPage = AltoDoc.getAlto(url, pageId.get(i));
-                StringReader serverStringReader = new StringReader(altoPage);
-                BufferedReader in = new BufferedReader(serverStringReader);
-                HttpURLConnection httpCon = null;
-                // DataInputStream in = new DataInputStream(uc.getInputStream());
-                try {
-                    EventProducerConsumer ms = new EventProducerConsumer();
-                    XMLEventReader reader = XMLInputFactory.newInstance().createXMLEventReader(in);
-                    bos = new ByteArrayOutputStream();
-                    writer = XMLOutputFactory.newInstance().createXMLEventWriter(bos);
-                    XMLEvent lastWhiteSpaceEvent = ms.getNewCharactersEvent(" ");
-                    while (reader.hasNext()) {
-                        XMLEvent event = (XMLEvent) reader.next();
-                        // detect start element
-                        if (event.getEventType() == XMLEvent.START_ELEMENT) {
-                            StartElement startEvent = event.asStartElement();
-                            String startEventName = startEvent.getName().getLocalPart();
-                            // detect start of a text block
-                            if (startEventName.equalsIgnoreCase("textblock")) {
-                                // initial state for a new text block
-                                inTextBlock = true;
-                                idOffsetMap = new TreeMap();
-                                blockText = new StringBuffer();
-                                currentTextBlockID = null;
-                                currentTextLineID = null;
-                                currentStringID = null;
-                                // find the ID
-                                currentTextBlockID = iterateAttibutes(startEvent, "ID");
+        int i = 0;
+        while (i < pageId.size()) {
+            altoPage = AltoDoc.getAlto(url, pageId.get(i));
+            StringReader serverStringReader = new StringReader(altoPage);
+            BufferedReader in = new BufferedReader(serverStringReader);
+            HttpURLConnection httpCon = null;
+            // DataInputStream in = new DataInputStream(uc.getInputStream());
+            try {
+                EventProducerConsumer ms = new EventProducerConsumer();
+                XMLEventReader reader = XMLInputFactory.newInstance().createXMLEventReader(in);
+                bos = new ByteArrayOutputStream();
+                writer = XMLOutputFactory.newInstance().createXMLEventWriter(bos);
+                XMLEvent lastWhiteSpaceEvent = ms.getNewCharactersEvent(" ");
+                while (reader.hasNext()) {
+                    XMLEvent event = (XMLEvent) reader.next();
+                    // detect start element
+                    if (event.getEventType() == XMLEvent.START_ELEMENT) {
+                        StartElement startEvent = event.asStartElement();
+                        String startEventName = startEvent.getName().getLocalPart();
+                        // detect start of a text block
+                        if (startEventName.equalsIgnoreCase("textblock")) {
+                            // initial state for a new text block
+                            inTextBlock = true;
+                            idOffsetMap = new TreeMap();
+                            blockText = new StringBuffer();
+                            currentTextBlockID = null;
+                            currentTextLineID = null;
+                            currentStringID = null;
+                            // find the ID
+                            currentTextBlockID = iterateAttibutes(startEvent, "ID");
+                        }
+                        if (startEventName.equalsIgnoreCase("textline")) {
+                            currentTextLineID = iterateAttibutes(startEvent, "ID");
+                        }
+                        if (startEventName.equalsIgnoreCase("string")) {
+                            currentStringID = iterateAttibutes(startEvent, "ID");
+                            boolean inHyph = false;
+                            String theString = null;
+                            if (iterateAttibutes(startEvent, "subs_type") != null) {
+                                inHyph = true;
+                                theString = iterateAttibutes(startEvent, "SUBS_CONTENT");
+                            } else {
+                                inHyph = false;
+                                theString = iterateAttibutes(startEvent, "content");
+                                idOffsetMap.put(new Integer(blockText.length()), currentStringID);
+                                blockText.append(theString);
                             }
-                            if (startEventName.equalsIgnoreCase("textline")) {
-                                currentTextLineID = iterateAttibutes(startEvent, "ID");
-                            }
-                            if (startEventName.equalsIgnoreCase("string")) {
-                                currentStringID = iterateAttibutes(startEvent, "ID");
-                                boolean inHyph = false;
-                                String theString = null;
-                                if (iterateAttibutes(startEvent, "subs_type") != null) {
-                                    inHyph = true;
-                                    theString = iterateAttibutes(startEvent, "SUBS_CONTENT");
-                                } else {
-                                    inHyph = false;
-                                    theString = iterateAttibutes(startEvent, "content");
-                                    idOffsetMap.put(new Integer(blockText.length()), currentStringID);
-                                    blockText.append(theString);
-                                }
-                            }
-                            if (startEventName.equalsIgnoreCase("sp")) {
-                                blockText.append(" ");
-                            }
-                        } // I am at the closing text block tag so insert sentences
-                        else if (currentStringID != null 
-                                && event.getEventType() == XMLEvent.END_ELEMENT
-                                && event.asEndElement().getName().getLocalPart().equalsIgnoreCase("textblock"))
-                        {
-                            try
-                            {
-                                TranslateArrayResult[]  translatedStrings;
-                                int[] sentences = breakSentences(blockText.toString(), from);
-                                ALTOSentence[] sentenceArray = extractSentencesArray(blockText.toString(), sentences, idOffsetMap);
+                        }
+                        if (startEventName.equalsIgnoreCase("sp")) {
+                            blockText.append(" ");
+                        }
+                    } // I am at the closing text block tag so insert sentences
+                    else if (currentStringID != null
+                            && event.getEventType() == XMLEvent.END_ELEMENT
+                            && event.asEndElement().getName().getLocalPart().equalsIgnoreCase("textblock")) {
+                        try {
+                            TranslateArrayResult[] translatedStrings;
+                            int[] sentences = breakSentences(blockText.toString(), from);
+                            ALTOSentence[] sentenceArray = extractSentencesArray(blockText.toString(), sentences, idOffsetMap);
 
-                                //try to translate all the strings as an array
-                                try
-                                {
-                                    String[] sentenceStrings = new String[sentenceArray.length];
-                                    int n = 0;
-                                    for (ALTOSentence theSentence : sentenceArray)
-                                        sentenceStrings[n++] = theSentence.sentence;
-                                    translatedStrings  =  translateArray(sentenceStrings,from,to);
-                                }
-                                catch (TranslateFault ex)
-                                {
-                                    System.out.println("Translate Array failed (will translate lines) at: " + pid + " Word: " + sentenceArray[0].startID + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
-                                    translatedStrings = null;
-                                }
-                                
-                                //write the sentences out to the ALTO file
+                            //try to translate all the strings as an array
+                            try {
+                                String[] sentenceStrings = new String[sentenceArray.length];
                                 int n = 0;
                                 for (ALTOSentence theSentence : sentenceArray) {
-                                    writer.add(ms.getNewSentenceEvent());
-                                    writer.add(ms.getNewSentenceStartId(theSentence.startID));
-                                    writer.add(ms.getNewSentenceEndId(theSentence.endID));
-                                    writer.add(lastWhiteSpaceEvent);
-
-                                    // calculate translated sentence
-                                    writer.add(ms.getNewAltEvent());
-                                    writer.add(ms.getNewAltLang(to));
-                                    writer.add(lastWhiteSpaceEvent);
-                                    
-                                    //write the trnaslated strings if translate array succeeded otherwise call translateLine for each sentence
-                                    if (translatedStrings != null)
-                                        writer.add(ms.getNewCharactersEvent(translatedStrings[n++].getTranslatedText()));
-                                    else
-                                    {
-                                        try {
-                                            String translatedString = translateLine(theSentence.sentence, from, to);
-                                            writer.add(ms.getNewCharactersEvent(translatedString));
-                                        } catch  (TranslateFault ex) {
-                                            System.out.println(ex.toString());
-                                            System.out.println("Translate fail at Book: " + pid + " Word: " + theSentence.startID + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
-                                            writer.add(ms.getNewCharactersEvent(theSentence.sentence));
-                                        }
-                                    }
-
-                                    writer.add(lastWhiteSpaceEvent);
-                                    writer.add(ms.getAltEndEvent());
-                                    writer.add(lastWhiteSpaceEvent);
-                                    writer.add(ms.getSentenceEndEvent());
-                                    writer.add(lastWhiteSpaceEvent);
+                                    sentenceStrings[n++] = theSentence.sentence;
                                 }
-                            } catch (TranslateFault ex)
-                            {
-                                //break sentence failed so insert single dummy word here
-                                System.out.println(ex.toString());
-                                System.out.println("Break sentence fail at Book: " + pid + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
-                                String sentenceStartID = idOffsetMap.firstEntry().getValue();
+                                translatedStrings = translateArray(sentenceStrings, from, to);
+                            } catch (TranslateFault ex) {
+                                System.out.println("Translate Array failed (will translate lines) at: " + pid + " Word: " + sentenceArray[0].startID + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
+                                translatedStrings = null;
+                            }
+
+                            //write the sentences out to the ALTO file
+                            int n = 0;
+                            for (ALTOSentence theSentence : sentenceArray) {
                                 writer.add(ms.getNewSentenceEvent());
-                                writer.add(ms.getNewSentenceStartId(sentenceStartID));
-                                writer.add(ms.getNewSentenceEndId(sentenceStartID));
+                                writer.add(ms.getNewSentenceStartId(theSentence.startID));
+                                writer.add(ms.getNewSentenceEndId(theSentence.endID));
                                 writer.add(lastWhiteSpaceEvent);
+
+                                // calculate translated sentence
                                 writer.add(ms.getNewAltEvent());
                                 writer.add(ms.getNewAltLang(to));
                                 writer.add(lastWhiteSpaceEvent);
-                                writer.add(ms.getNewCharactersEvent("empty"));
+
+                                //write the trnaslated strings if translate array succeeded otherwise call translateLine for each sentence
+                                if (translatedStrings != null) {
+                                    writer.add(ms.getNewCharactersEvent(translatedStrings[n++].getTranslatedText()));
+                                } else {
+                                    try {
+                                        String translatedString = translateLine(theSentence.sentence, from, to);
+                                        writer.add(ms.getNewCharactersEvent(translatedString));
+                                    } catch (TranslateFault ex) {
+                                        System.out.println(ex.toString());
+                                        System.out.println("Translate fail at Book: " + pid + " Word: " + theSentence.startID + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
+                                        writer.add(ms.getNewCharactersEvent(theSentence.sentence));
+                                    }
+                                }
+
                                 writer.add(lastWhiteSpaceEvent);
                                 writer.add(ms.getAltEndEvent());
                                 writer.add(lastWhiteSpaceEvent);
                                 writer.add(ms.getSentenceEndEvent());
                                 writer.add(lastWhiteSpaceEvent);
                             }
-                        } else if (event.getEventType() == XMLEvent.CHARACTERS && event.asCharacters().isWhiteSpace()) {
-                            lastWhiteSpaceEvent = event;
+                        } catch (TranslateFault ex) {
+                            //break sentence failed so insert single dummy word here
+                            System.out.println(ex.toString());
+                            System.out.println("Break sentence fail at Book: " + pid + " Page: " + pageId.get(i) + " From: " + from + " To: " + to);
+                            String sentenceStartID = idOffsetMap.firstEntry().getValue();
+                            writer.add(ms.getNewSentenceEvent());
+                            writer.add(ms.getNewSentenceStartId(sentenceStartID));
+                            writer.add(ms.getNewSentenceEndId(sentenceStartID));
+                            writer.add(lastWhiteSpaceEvent);
+                            writer.add(ms.getNewAltEvent());
+                            writer.add(ms.getNewAltLang(to));
+                            writer.add(lastWhiteSpaceEvent);
+                            writer.add(ms.getNewCharactersEvent("empty"));
+                            writer.add(lastWhiteSpaceEvent);
+                            writer.add(ms.getAltEndEvent());
+                            writer.add(lastWhiteSpaceEvent);
+                            writer.add(ms.getSentenceEndEvent());
+                            writer.add(lastWhiteSpaceEvent);
                         }
-                        writer.add(event);
+                    } else if (event.getEventType() == XMLEvent.CHARACTERS && event.asCharacters().isWhiteSpace()) {
+                        lastWhiteSpaceEvent = event;
                     }
-                    writer.flush();
-                    if (outputFacet.length() > 0)
-                    {
-                        URL outputUrl = new URL(url + "/objects/" + pageId.get(i) + "/datastreams/" + outputFacet);
-                        httpCon = (HttpURLConnection) outputUrl.openConnection();
-                        httpCon.setDoOutput(true);
-                        httpCon.setUseCaches (false);
-                        httpCon.setRequestProperty("Authorization", "Basic "+ BasicAuth.encode("IQRAUser", "!QraUs3r"));
-                        httpCon.setRequestProperty("Content-Type", "text/xml");
-                        httpCon.setRequestMethod("POST");
-                        httpCon.setRequestProperty("Content-Length", "" + Integer.toString(bos.toByteArray().length));
-                        DataOutputStream wr = new DataOutputStream(httpCon.getOutputStream());
-                        wr.write(bos.toByteArray());
-                        wr.flush();
-                        wr.close();
-                        System.out.println(httpCon.getResponseCode());
-                        System.out.println(httpCon.getResponseMessage());
-                    }
-                    System.out.println("Page: "+ (i+1) +" of "+ pageId.size());
-                } catch (Exception ex) {
-                    //nothing to do here move along
-                    System.out.println(ex.toString());
-                } finally {
-                    if (httpCon != null)
-                        httpCon.disconnect();
+                    writer.add(event);
                 }
-                i++;
+                writer.flush();
+                if (outputFacet.length() > 0) {
+                    URL outputUrl = new URL(url + "/objects/" + pageId.get(i) + "/datastreams/" + outputFacet);
+                    httpCon = (HttpURLConnection) outputUrl.openConnection();
+                    httpCon.setDoOutput(true);
+                    httpCon.setUseCaches(false);
+                    httpCon.setRequestProperty("Authorization", "Basic " + BasicAuth.encode("IQRAUser", "!QraUs3r"));
+                    httpCon.setRequestProperty("Content-Type", "text/xml");
+                    httpCon.setRequestMethod("POST");
+                    httpCon.setRequestProperty("Content-Length", "" + Integer.toString(bos.toByteArray().length));
+                    DataOutputStream wr = new DataOutputStream(httpCon.getOutputStream());
+                    wr.write(bos.toByteArray());
+                    wr.flush();
+                    wr.close();
+                    System.out.println(httpCon.getResponseCode());
+                    System.out.println(httpCon.getResponseMessage());
+                }
+                System.out.println("Page: " + (i + 1) + " of " + pageId.size());
+            } catch (Exception ex) {
+                //nothing to do here move along
+                System.out.println(ex.toString());
+            } finally {
+                if (httpCon != null) {
+                    httpCon.disconnect();
+                }
             }
-            //OutputStreamWriter out = new OutputStreamWriter(httpCon.getOutputStream());
+            i++;
+        }
+        //OutputStreamWriter out = new OutputStreamWriter(httpCon.getOutputStream());
 
     }
+
     public String getLanguage(String lang) {
         String stringLang = null;
         if (lang.equalsIgnoreCase("ar")) {
@@ -752,10 +744,10 @@ public class Translate {
         return stringLang;
 
     }
-    private ALTOSentence[] extractSentencesArray(String blocktext, int[] sentences, TreeMap<Integer, String> idOffsetMap)
-    {
+
+    private ALTOSentence[] extractSentencesArray(String blocktext, int[] sentences, TreeMap<Integer, String> idOffsetMap) {
         ALTOSentence[] sentenceArray = new ALTOSentence[sentences.length];
-        
+
         //setences may not match ALTO words. I will assume that the ALTO word breaks
         //take precedence. So I only start a new sentence at the beginning of an ALTO word
         //sentenceBreakDelta tracks this differnce. sentence length is the length minus the beginning
@@ -765,7 +757,7 @@ public class Translate {
         int sentenceStart = 0;
         String sentenceStartID = idOffsetMap.firstEntry().getValue();
         Integer currentKey = idOffsetMap.firstKey();
-        
+
         for (int sentenceLength : sentences) {
             int sentenceEnd = sentenceStart + sentenceLength - sentenceBreakDelta;
             // calculate the next sentence
@@ -803,9 +795,9 @@ public class Translate {
 
         return sentenceArray;
     }
-    
-    private class ALTOSentence
-    {
+
+    private class ALTOSentence {
+
         String sentence;
         String startID;
         String endID;
@@ -814,7 +806,7 @@ public class Translate {
             return sentence;
         }
     }
-    
+
     /**
      * Iterate the attributes of start elements until getting a specific attribute and then return the value of that attribute
      * @param startEvent
@@ -1036,14 +1028,13 @@ public class Translate {
             return m_eventFactory.createEndElement("", null, name);
         }
     }
-    public static class TranslateArrayResult {
 
+    public static class TranslateArrayResult {
 
         /**
          * field for Error
          */
         protected java.lang.String localError;
-
         /**
          * field for From
          */
@@ -1052,28 +1043,24 @@ public class Translate {
          *  for this attribute. It will be used to determine whether to include this field
          *  in the serialized XML
          */
-
         /**
          * field for OriginalTextSentenceLengths
          */
         protected int[] localOriginalTextSentenceLengths;
-
         /**
          * field for State
          */
         protected java.lang.String localState;
-
         /**
          * field for TranslatedText
          */
         protected java.lang.String localTranslatedText;
-
         /**
          * field for TranslatedTextSentenceLengths
          */
         protected int[] localTranslatedTextSentenceLengths;
 
-        public TranslateArrayResult (TranslateArrayResponse t) {
+        public TranslateArrayResult(TranslateArrayResponse t) {
             localError = t.getError();
             localState = t.getState();
             localFrom = t.getFrom();
@@ -1081,6 +1068,7 @@ public class Translate {
             localTranslatedText = t.getTranslatedText();
             localTranslatedTextSentenceLengths = t.getTranslatedTextSentenceLengths().get_int();
         }
+
         /**
          * @return the localError
          */
@@ -1164,30 +1152,30 @@ public class Translate {
         public void setTranslatedTextSentenceLengths(int[] localTranslatedTextSentenceLengths) {
             this.localTranslatedTextSentenceLengths = localTranslatedTextSentenceLengths;
         }
-
     }
 }
 
 class BasicAuth {
- private BasicAuth() {}
 
+    private BasicAuth() {
+    }
     // conversion table
     private static byte[] cvtTable = {
-        (byte)'A', (byte)'B', (byte)'C', (byte)'D', (byte)'E',
-        (byte)'F', (byte)'G', (byte)'H', (byte)'I', (byte)'J',
-        (byte)'K', (byte)'L', (byte)'M', (byte)'N', (byte)'O',
-        (byte)'P', (byte)'Q', (byte)'R', (byte)'S', (byte)'T',
-        (byte)'U', (byte)'V', (byte)'W', (byte)'X', (byte)'Y',
-        (byte)'Z',
-        (byte)'a', (byte)'b', (byte)'c', (byte)'d', (byte)'e',
-        (byte)'f', (byte)'g', (byte)'h', (byte)'i', (byte)'j',
-        (byte)'k', (byte)'l', (byte)'m', (byte)'n', (byte)'o',
-        (byte)'p', (byte)'q', (byte)'r', (byte)'s', (byte)'t',
-        (byte)'u', (byte)'v', (byte)'w', (byte)'x', (byte)'y',
-        (byte)'z',
-        (byte)'0', (byte)'1', (byte)'2', (byte)'3', (byte)'4',
-        (byte)'5', (byte)'6', (byte)'7', (byte)'8', (byte)'9',
-        (byte)'+', (byte)'/'
+        (byte) 'A', (byte) 'B', (byte) 'C', (byte) 'D', (byte) 'E',
+        (byte) 'F', (byte) 'G', (byte) 'H', (byte) 'I', (byte) 'J',
+        (byte) 'K', (byte) 'L', (byte) 'M', (byte) 'N', (byte) 'O',
+        (byte) 'P', (byte) 'Q', (byte) 'R', (byte) 'S', (byte) 'T',
+        (byte) 'U', (byte) 'V', (byte) 'W', (byte) 'X', (byte) 'Y',
+        (byte) 'Z',
+        (byte) 'a', (byte) 'b', (byte) 'c', (byte) 'd', (byte) 'e',
+        (byte) 'f', (byte) 'g', (byte) 'h', (byte) 'i', (byte) 'j',
+        (byte) 'k', (byte) 'l', (byte) 'm', (byte) 'n', (byte) 'o',
+        (byte) 'p', (byte) 'q', (byte) 'r', (byte) 's', (byte) 't',
+        (byte) 'u', (byte) 'v', (byte) 'w', (byte) 'x', (byte) 'y',
+        (byte) 'z',
+        (byte) '0', (byte) '1', (byte) '2', (byte) '3', (byte) '4',
+        (byte) '5', (byte) '6', (byte) '7', (byte) '8', (byte) '9',
+        (byte) '+', (byte) '/'
     };
 
     /**
@@ -1198,7 +1186,7 @@ class BasicAuth {
      *    returns  String   the base64 encoded name:password
      */
     static String encode(String name,
-                         String passwd) {
+            String passwd) {
         byte input[] = (name + ":" + passwd).getBytes();
         byte[] output = new byte[((input.length / 3) + 1) * 4];
         int ridx = 0;
@@ -1216,31 +1204,30 @@ class BasicAuth {
 
             // have at least three bytes of data left
             if (left > 2) {
-                chunk = (input[i] << 16)|
-                        (input[i + 1] << 8) |
-                         input[i + 2];
-                output[ridx++] = cvtTable[(chunk&0xFC0000)>>18];
-                output[ridx++] = cvtTable[(chunk&0x3F000) >>12];
-                output[ridx++] = cvtTable[(chunk&0xFC0)   >> 6];
-                output[ridx++] = cvtTable[(chunk&0x3F)];
+                chunk = (input[i] << 16)
+                        | (input[i + 1] << 8)
+                        | input[i + 2];
+                output[ridx++] = cvtTable[(chunk & 0xFC0000) >> 18];
+                output[ridx++] = cvtTable[(chunk & 0x3F000) >> 12];
+                output[ridx++] = cvtTable[(chunk & 0xFC0) >> 6];
+                output[ridx++] = cvtTable[(chunk & 0x3F)];
             } else if (left == 2) {
                 // down to 2 bytes. pad with 1 '='
-                chunk = (input[i] << 16) |
-                        (input[i + 1] << 8);
-                output[ridx++] = cvtTable[(chunk&0xFC0000)>>18];
-                output[ridx++] = cvtTable[(chunk&0x3F000) >>12];
-                output[ridx++] = cvtTable[(chunk&0xFC0)   >> 6];
+                chunk = (input[i] << 16)
+                        | (input[i + 1] << 8);
+                output[ridx++] = cvtTable[(chunk & 0xFC0000) >> 18];
+                output[ridx++] = cvtTable[(chunk & 0x3F000) >> 12];
+                output[ridx++] = cvtTable[(chunk & 0xFC0) >> 6];
                 output[ridx++] = '=';
             } else {
                 // down to 1 byte. pad with 2 '='
                 chunk = input[i] << 16;
-                output[ridx++] = cvtTable[(chunk&0xFC0000)>>18];
-                output[ridx++] = cvtTable[(chunk&0x3F000) >>12];
+                output[ridx++] = cvtTable[(chunk & 0xFC0000) >> 18];
+                output[ridx++] = cvtTable[(chunk & 0x3F000) >> 12];
                 output[ridx++] = '=';
                 output[ridx++] = '=';
             }
         }
         return new String(output);
     }
-
 }
