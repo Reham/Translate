@@ -24,7 +24,11 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>admin</word>
+            <word>Glassfish</word>
+            <word>Netbeans</word>
             <word>servlet</word>
+            <word>website</word>
         </spellchecker-wordlist>
     </configuration>
 </project>
