@@ -28,7 +28,7 @@
      <inputFacet language="EN_UK">F_OCR</inputFacet>
      <outputFacet language="AR_AR">F_MT_ar_QA</outputFacet>
      <user>169</user>
-     <url>http://dev.amuser-qstpb.com:8080/fedora</url>
+     <url>http://loghati.amuser-qstpb.com/fedora</url>
 </descriptor>
             </textarea>
             <input type="submit">
