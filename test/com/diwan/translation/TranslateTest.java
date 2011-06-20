@@ -244,6 +244,6 @@ public class TranslateTest {
     @Test
     public void testTranslateXML() throws Exception {
         System.out.println("TranslateXML");
-        t.translateXML("http://dev.amuser-qstpb.com:8080/fedora", "iqra:55", "en", "ar", ""); //last string blank so that a facet is not really created
+        t.translateXML("http://loghati.amuser-qstpb.com/fedora", "iqra:55", "en", "ar", ""); //last string blank so that a facet is not really created
     }
 }
