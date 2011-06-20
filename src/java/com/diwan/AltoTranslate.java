@@ -57,7 +57,7 @@ public class AltoTranslate extends HttpServlet {
 
             String data = request.getParameter("data");
 
-            out.println(" <img src=http://dev.amuser-qstpb.com:8080/kk/images/logo.png  />");
+            out.println(" <img src=http://loghati.amuser-qstpb.com/library/images/logo.png  />");
             out.println("<h1>Automatic translation of the book has started. It may take some time</h1>");
 
 
